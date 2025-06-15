@@ -255,6 +255,6 @@ func main() {
 	r.Handle("/static/*", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
 	// Start server
-	fmt.Println("Server starting on http://localhost:8080")
+	fmt.Println("Server starting on port 8080:  http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", r))
 }
