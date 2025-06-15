@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{.Fish.CommonName}} - FishDB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <header class="bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 10c0-1.5.5-3 1.5-4s2.5-1.5 4-1.5h5c1.5 0 3 .5 4 1.5s1.5 2.5 1.5 4-.5 3-1.5 4-2.5 1.5-4 1.5h-5c-1.5 0-3-.5-4-1.5s-1.5-2.5-1.5-4z"/>
+            </svg>
+          </div>
+          <h1 class="text-xl font-semibold text-gray-900">
+            <a href="/" class="hover:text-blue-600">FishDB</a>
+          </h1>
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="/list" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Browse All</a>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">Get App</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-8">
+    <nav class="mb-8">
+      <ol class="flex items-center space-x-2 text-sm text-gray-500">
+        <li><a href="/" class="hover:text-blue-600">Home</a></li>
+        <li>/</li>
+        <li><a href="/list" class="hover:text-blue-600">All Species</a></li>
+        <li>/</li>
+        <li class="text-gray-900">{{.Fish.CommonName}}</li>
+      </ol>
+    </nav>
+
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div class="p-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div class="md:col-span-1">
+            <img src="/static/{{.Fish.Image}}" alt="{{.Fish.CommonName}}" class="rounded-lg shadow-md w-full object-cover">
+          </div>
+          <div class="md:col-span-2">
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">{{.Fish.CommonName}}</h1>
+            <p class="text-xl text-gray-600 italic">{{.Fish.Species}}</p>
+            <div class="mt-6 p-4 bg-yellow-50 rounded-lg">
+              <h3 class="font-medium text-yellow-900 mb-2">Key Features</h3>
+              <ul class="list-disc list-inside text-yellow-800 text-sm space-y-1">
+                {{range .Fish.Features}}
+                <li>{{.}}</li>
+                {{end}}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4 border-t pt-6">Taxonomic Classification</h2>
+        <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+            <div class="flex justify-between items-center py-2 border-b">
+              <span class="font-medium text-gray-700">Class</span>
+              <span class="text-gray-900">{{.Fish.Class}}</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b">
+              <span class="font-medium text-gray-700">Order</span>
+              <span class="text-gray-900">{{.Fish.Order}}</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b">
+              <span class="font-medium text-gray-700">Family</span>
+              <span class="text-gray-900">{{.Fish.Family}}</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b">
+              <span class="font-medium text-gray-700">Species</span>
+              <span class="text-gray-900 italic">{{.Fish.Species}}</span>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center pt-8 mt-8 border-t border-gray-200">
+          {{if gt .Index 0}}
+          <a href="/fish/{{(index .AllFish (sub .Index 1)).Species}}" class="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            <span>Previous</span>
+          </a>
+          {{else}}
+          <div></div>
+          {{end}}
+
+          <a href="/list" class="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium hover:bg-gray-200 transition-colors">
+            Back to List
+          </a>
+
+          {{if lt .Index (sub (len .AllFish) 1)}}
+          <a href="/fish/{{(index .AllFish (add .Index 1)).Species}}" class="flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium">
+            <span>Next</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+          {{else}}
+          <div></div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 bg-gray-100 rounded-lg p-6">
+      <h3 class="font-semibold text-gray-900 mb-2">Source Publication</h3>
+      <p class="text-gray-700 mb-1">{{.Publication.Title}}</p>
+      <p class="text-sm text-gray-600">{{.Publication.Publisher}} | ISSN: {{.Publication.ISSN}}</p>
+    </div>
+  </main>
+</body>
+</html>

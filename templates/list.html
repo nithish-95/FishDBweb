@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    {{if .SearchQuery}}Results for "{{.SearchQuery}}"{{else}}All Fish Species{{end}} - FishDB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <header class="bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 10c0-1.5.5-3 1.5-4s2.5-1.5 4-1.5h5c1.5 0 3 .5 4 1.5s1.5 2.5 1.5 4-.5 3-1.5 4-2.5 1.5-4 1.5h-5c-1.5 0-3-.5-4-1.5s-1.5-2.5-1.5-4z"/>
+            </svg>
+          </div>
+          <h1 class="text-xl font-semibold text-gray-900">
+            <a href="/" class="hover:text-blue-600">FishDB</a>
+          </h1>
+        </div>
+        
+        <div class="flex items-center space-x-6">
+          <a href="/list" class="text-blue-600 font-medium transition-colors">Browse All</a>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">Get App</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-8">
+    <div class="mb-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">
+        {{if .SearchQuery}}
+          Search Results
+        {{else}}
+          All Fish Species
+        {{end}}
+      </h2>
+      <p class="text-gray-600">
+        {{if .SearchQuery}}
+          Found {{len .FishList}} species matching "{{.SearchQuery}}"
+        {{else}}
+          {{len .FishList}} species in our database
+        {{end}}
+      </p>
+    </div>
+
+    <div class="mb-8">
+      <form action="/list" method="GET" class="flex items-center bg-white border border-gray-200 rounded-lg shadow-sm">
+        <input type="text" name="search" value="{{.SearchQuery}}" placeholder="Search species..." class="flex-1 px-5 py-3 text-gray-900 bg-transparent rounded-lg outline-none">
+        <button type="submit" class="p-3 text-gray-400 hover:text-blue-600">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></path></svg>
+        </button>
+      </form>
+    </div>
+    
+    {{if .FishList}}
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {{range .FishList}}
+      <div class="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow flex flex-col">
+        <div class="flex-grow">
+          <div class="mb-4">
+            <a href="/fish/{{.Species}}">
+              <img src="/static/{{.Image}}" alt="{{.CommonName}}" class="rounded-md object-cover h-40 w-full hover:opacity-90 transition-opacity">
+            </a>
+          </div>
+          <h3 class="font-semibold text-gray-900 text-xl mb-2">{{.CommonName}}</h3>
+          <p class="text-gray-600 italic mb-4">{{.Species}}</p>
+          
+          <div class="space-y-2 mb-6 text-sm">
+            <p><span class="text-gray-500 font-medium">Family:</span> {{.Family}}</p>
+            <p><span class="text-gray-500 font-medium">Order:</span> {{.Order}}</p>
+          </div>
+        </div>
+        
+        <a href="/fish/{{.Species}}" class="w-full mt-auto inline-block text-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+          View Details
+        </a>
+      </div>
+      {{end}}
+    </div>
+    {{else}}
+      <div class="text-center py-16">
+        <p class="text-gray-600 text-lg">No fish found matching your search.</p>
+        <a href="/list" class="mt-4 inline-block text-blue-600 hover:text-blue-700 font-medium">Clear search and show all species</a>
+      </div>
+    {{end}}
+  </main>
+
+  <footer class="border-t border-gray-100 mt-20">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="text-center text-gray-500 text-sm">
+        <p>&copy; 2025 FishDB. {{.Publication.Publisher}}</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,4402 @@
+{
+  "title": "Field Guide on Reef Associated Fishes of India",
+  "publication_details": {
+    "special_publication_no": 117,
+    "issn": "0972-2351",
+    "publisher": "Central Marine Fisheries Research Institute",
+    "authors": [
+      "Dr. Rekha J. Nair",
+      "Dr. Somy Kuriakose"
+    ],
+    "technical_support": [
+      "S. Dinesh Kumar",
+      "Baiju P.T",
+      "P. Praveen"
+    ],
+    "director": "Dr. A. Gopalakrishnan"
+  },
+  "fishes": [
+    {
+      "class": "Elasmobranchii",
+      "order": "Orectolobiformes",
+      "family": "Stegostomatidae",
+      "species": "Stegostoma fasciatum",
+      "common_name": "Zebra Shark",
+      "image": "images/stegostoma_fasciatum.jpg",
+      "features": [
+        "Adults are yellowish-brown with dark brown spots.",
+        "Juveniles have a zebra-like pattern of stripes.",
+        "Possesses a very long caudal fin and prominent body ridges."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Orectolobiformes",
+      "family": "Hemiscyllidae",
+      "species": "Chiloscyllium griseum",
+      "common_name": "Grey Bamboo Shark",
+      "image": "images/chiloscyllium_griseum.jpg",
+      "features": [
+        "Spiracles are subequal in size to the eyes.",
+        "Greyish-brown coloration, sometimes with faint bands.",
+        "Slender body."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Orectolobiformes",
+      "family": "Hemiscyllidae",
+      "species": "Chiloscyllium punctatum",
+      "common_name": "Brownbanded Bambooshark",
+      "image": "images/chiloscyllium_punctatum.jpg",
+      "features": [
+        "Body is covered with dark spots and transverse bands.",
+        "Long tail, nearly the length of the body."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Carcharhiniformes",
+      "family": "Carcharhinidae",
+      "species": "Carcharhinus melanopterus",
+      "common_name": "Blacktip Reef Shark",
+      "image": "images/carcharhinus_melanopterus.jpg",
+      "features": [
+        "Conspicuous black markings on the tips of all fins."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Myliobatiformes",
+      "family": "Dasyatidae",
+      "species": "Himantura uarnak",
+      "common_name": "Banded Whip-tail Stingray",
+      "image": "images/himantura_uarnak.jpg",
+      "features": [
+        "Disc has a reticulated pattern.",
+        "Very long, whip-like tail."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Myliobatiformes",
+      "family": "Dasyatidae",
+      "species": "Himantura gerrardi",
+      "common_name": "Gerrard's Sting Ray",
+      "image": "images/himantura_gerrardi.jpg",
+      "features": [
+        "Presence of white dots at the base of the disc."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Myliobatiformes",
+      "family": "Dasyatidae",
+      "species": "Himantura undulata",
+      "common_name": "Leopard Whipray",
+      "image": "images/himantura_undulata.jpg",
+      "features": [
+        "Leopard-like pattern of rings and spots.",
+        "Undulating pattern on the disc."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Myliobatiformes",
+      "family": "Dasyatidae",
+      "species": "Neotrygon kuhlii",
+      "common_name": "Blue-spotted Sting Ray",
+      "image": "images/neotrygon_kuhlii.jpg",
+      "features": [
+        "Bright blue spots on the disc."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Myliobatiformes",
+      "family": "Dasyatidae",
+      "species": "Pastinachus sephen",
+      "common_name": "Cowtail Ray",
+      "image": "images/pastinachus_sephen.jpg",
+      "features": [
+        "Broad flap of skin on the tail."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Myliobatiformes",
+      "family": "Dasyatidae",
+      "species": "Taeniura meyeni",
+      "common_name": "Round Ribbontail Ray",
+      "image": "images/taeniura_meyeni.jpg",
+      "features": [
+        "Round disc with black spots."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Myliobatiformes",
+      "family": "Myliobatidae",
+      "species": "Aetobatus narinari",
+      "common_name": "Spotted Eagle Ray",
+      "image": "images/aetobatus_narinari.jpg",
+      "features": [
+        "Dark dorsal surface with white spots.",
+        "Prominent, pointed snout."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Myliobatiformes",
+      "family": "Myliobatidae",
+      "species": "Aetobatus flagellum",
+      "common_name": "Longheaded Eagle Ray",
+      "image": "images/aetobatus_flagellum.jpg",
+      "features": [
+        "Elongated head, lacks spots of A. narinari."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Myliobatiformes",
+      "family": "Myliobatidae",
+      "species": "Aetomylaeus nichofii",
+      "common_name": "Banded Eagle Ray",
+      "image": "images/aetomylaeus_nichofii.jpg",
+      "features": [
+        "Transverse blue lines across the back."
+      ]
+    },
+    {
+      "class": "Elasmobranchii",
+      "order": "Rajiformes",
+      "family": "Rhinidae",
+      "species": "Rhina ancylostoma",
+      "common_name": "Bow-mouthed Angel Fish",
+      "image": "images/rhina_ancylostoma.jpg",
+      "features": [
+        "Distinctive bow-shaped mouth.",
+        "Shark-like body with ray-like fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Anguilliformes",
+      "family": "Muraenidae",
+      "species": "Gymnothorax reticularis",
+      "common_name": "Banded Moray",
+      "image": "images/gymnothorax_reticularis.jpg",
+      "features": [
+        "White body with dark brown or black bands."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Anguilliformes",
+      "family": "Muraenidae",
+      "species": "Gymnothorax flavimarginatus",
+      "common_name": "Yellow Edged Moray",
+      "image": "images/gymnothorax_flavimarginatus.jpg",
+      "features": [
+        "Yellow or green margin on the fins.",
+        "Body is brownish with dark speckles."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Anguilliformes",
+      "family": "Muraenidae",
+      "species": "Strophidon sathete",
+      "common_name": "Slender Giant Moray",
+      "image": "images/strophidon_sathete.jpg",
+      "features": [
+        "Extremely long and slender body.",
+        "Uniform coloration."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Siluriformes",
+      "family": "Plotosidae",
+      "species": "Plotosus lineatus",
+      "common_name": "Striped Eel Catfish",
+      "image": "images/plotosus_lineatus.jpg",
+      "features": [
+        "Eel-like body with 2-3 pale horizontal stripes.",
+        "Short nasal barbels."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Aulopiformes",
+      "family": "Synodontidae",
+      "species": "Saurida tumbil",
+      "common_name": "Greater Lizardfish",
+      "image": "images/saurida_tumbil.jpg",
+      "features": [
+        "Pectoral fin does not reach the dorsal-fin origin.",
+        "Cylindrical body, large mouth."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Aulopiformes",
+      "family": "Synodontidae",
+      "species": "Saurida undosquamis",
+      "common_name": "Brushtooth Lizardfish",
+      "image": "images/saurida_undosquamis.jpg",
+      "features": [
+        "Banded pattern on the tail fin.",
+        "Series of dark blotches along the lateral line."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Aulopiformes",
+      "family": "Synodontidae",
+      "species": "Synodus variegatus",
+      "common_name": "Engleman's Lizardfish",
+      "image": "images/synodus_variegatus.jpg",
+      "features": [
+        "Variegated pattern of reddish bars and blotches.",
+        "Snout shorter than eye diameter."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Aulopiformes",
+      "family": "Synodontidae",
+      "species": "Trachinocephalus myops",
+      "common_name": "Snake Fish",
+      "image": "images/trachinocephalus_myops.jpg",
+      "features": [
+        "Anal-fin base is much longer than the dorsal-fin base.",
+        "Blunt, conical head."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Lophiiformes",
+      "family": "Antennariidae",
+      "species": "Antennarius striatus",
+      "common_name": "Striated Frogfish",
+      "image": "images/antennarius_striatus.jpg",
+      "features": [
+        "Rod-like lure (illicium).",
+        "Globular body with elongate pectoral-fin lobes.",
+        "Small gill opening.",
+        "Striped pattern."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Lophiiformes",
+      "family": "Antennariidae",
+      "species": "Antennarius pictus",
+      "common_name": "Painted Frogfish",
+      "image": "images/antennarius_pictus.jpg",
+      "features": [
+        "Variable color, often with patches and spots.",
+        "Distinct brown spot near the dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Lophiiformes",
+      "family": "Antennariidae",
+      "species": "Histrio histrio",
+      "common_name": "Sargassumfish",
+      "image": "images/histrio_histrio.jpg",
+      "features": [
+        "Covered in membranous fringes for camouflage.",
+        "Mottled color pattern."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Atheriniformes",
+      "family": "Atherinidae",
+      "species": "Atherinomorus duodecimalis",
+      "common_name": "Tropical Silverside",
+      "image": "images/atherinomorus_duodecimalis.jpg",
+      "features": [
+        "Prominent silvery band along the side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beloniformes",
+      "family": "Hemiramphidae",
+      "species": "Hemiramphus far",
+      "common_name": "Black-barred Halfbeak",
+      "image": "images/hemiramphus_far.jpg",
+      "features": [
+        "3-9 vertical black blotches on sides.",
+        "Elongated lower jaw forming a beak."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beloniformes",
+      "family": "Hemiramphidae",
+      "species": "Hyporhamphus dussumieri",
+      "common_name": "Dussumier's Halfbeak",
+      "image": "images/hyporhamphus_dussumieri.jpg",
+      "features": [
+        "Lacks vertical bars.",
+        "Silvery body with beak-like lower jaw."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beloniformes",
+      "family": "Belonidae",
+      "species": "Tylosurus crocodilus",
+      "common_name": "Hound Needlefish",
+      "image": "images/tylosurus_crocodilus.jpg",
+      "features": [
+        "Both jaws elongated with sharp teeth.",
+        "Long, slender body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Berycidae",
+      "species": "Centroberyx rubricaudus",
+      "common_name": "Not listed",
+      "image": "images/centroberyx_rubricaudus.jpg",
+      "features": [
+        "Deeply forked tail.",
+        "Reddish coloration."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Berycidae",
+      "species": "Beryx splendens",
+      "common_name": "Splendid Alfonsino",
+      "image": "images/beryx_splendens.jpg",
+      "features": [
+        "Forked tail.",
+        "Large eyes and mucous cavities on head.",
+        "Silvery-red body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Myripristis adusta",
+      "common_name": "Shadowfin Soldierfish",
+      "image": "images/myripristis_adusta.jpg",
+      "features": [
+        "Black edges on dorsal and caudal fins.",
+        "Single tooth patch on lower jaw."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Myripristis botche",
+      "common_name": "Blacktip Soldierfish",
+      "image": "images/myripristis_botche.jpg",
+      "features": [
+        "Black blotch on operculum.",
+        "Black tip on spinous dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Myripristis formosa",
+      "common_name": "Not listed",
+      "image": "images/myripristis_formosa.jpg",
+      "features": [
+        "Two tooth patches.",
+        "White margin on some fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Myripristis greenfieldi",
+      "common_name": "Not listed",
+      "image": "images/myripristis_greenfieldi.jpg",
+      "features": [
+        "Black blotch at axil of pectoral fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Myripristis seychellensis",
+      "common_name": "Seychelles Soldier",
+      "image": "images/myripristis_seychellensis.jpg",
+      "features": [
+        "White margin on caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Neoniphon sammara",
+      "common_name": "Sammara Squirrelfish",
+      "image": "images/neoniphon_sammara.jpg",
+      "features": [
+        "Reddish-black blotch on spinous dorsal fin.",
+        "White tips on dorsal spines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Ostichthys acanthorhinus",
+      "common_name": "Spinesnout Squirrelfish",
+      "image": "images/ostichthys_acanthorhinus.jpg",
+      "features": [
+        "Big eyes.",
+        "Rough scales."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Sargocentron caudimaculatum",
+      "common_name": "Silverspot Squirrelfish",
+      "image": "images/sargocentron_caudimaculatum.jpg",
+      "features": [
+        "Silvery white spot on caudal peduncle.",
+        "Mottled red body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Sargocentron rubrum",
+      "common_name": "Redcoat",
+      "image": "images/sargocentron_rubrum.jpg",
+      "features": [
+        "Sharp spine on corner of preopercle.",
+        "Dark spots on body.",
+        "Red and white stripes."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Sargocentron spiniferum",
+      "common_name": "Sabre Squirrelfish",
+      "image": "images/sargocentron_spiniferum.jpg",
+      "features": [
+        "Very long preopercular spine.",
+        "Projecting lower jaw.",
+        "Bright red dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Beryciformes",
+      "family": "Holocentridae",
+      "species": "Sargocentron violaceum",
+      "common_name": "Violet Squirrelfish",
+      "image": "images/sargocentron_violaceum.jpg",
+      "features": [
+        "Violet-tinged body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Syngnathiformes",
+      "family": "Solenostomidae",
+      "species": "Solenostomus cyanopterus",
+      "common_name": "Ghost Pipefish",
+      "image": "images/solenostomus_cyanopterus.jpg",
+      "features": [
+        "Large pelvic fin.",
+        "Body shape mimics leaves or seagrass."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Syngnathiformes",
+      "family": "Syngnathidae",
+      "species": "Corythoichthys flavofasciatus",
+      "common_name": "Not listed",
+      "image": "images/corythoichthys_flavofasciatus.jpg",
+      "features": [
+        "Elongated, pipe-like body with rings.",
+        "Banded pattern."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Syngnathiformes",
+      "family": "Fistularidae",
+      "species": "Fistularia petimba",
+      "common_name": "Cornet Fish",
+      "image": "images/fistularia_petimba.jpg",
+      "features": [
+        "Red to orange-brown above, silvery below.",
+        "Long filament extends from tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Syngnathiformes",
+      "family": "Fistularidae",
+      "species": "Fistularia commersonii",
+      "common_name": "Blue Spotted Red Cornetfish",
+      "image": "images/fistularia_commersonii.jpg",
+      "features": [
+        "Blue stripes and spots on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Syngnathiformes",
+      "family": "Centriscidae",
+      "species": "Centriscus scutatus",
+      "common_name": "Grooved Razor-fish",
+      "image": "images/centriscus_scutatus.jpg",
+      "features": [
+        "Extremely compressed, blade-like body.",
+        "1st dorsal-fin spine is long and sharp."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Apistidae",
+      "species": "Apistus carinatus",
+      "common_name": "Ocellated Waspfish",
+      "image": "images/apistus_carinatus.jpg",
+      "features": [
+        "Pectoral fin reaches past anal fin.",
+        "Blotch between 8-14 spines of dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Scorpaenidae",
+      "species": "Choridactylus multibarbus",
+      "common_name": "Orange Banded Stingfish",
+      "image": "images/choridactylus_multibarbus.jpg",
+      "features": [
+        "Single band on tail.",
+        "Mottled body pattern."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Scorpaenidae",
+      "species": "Dendrochirus brachypterus",
+      "common_name": "Shortfin Turkeyfish",
+      "image": "images/dendrochirus_brachypterus.jpg",
+      "features": [
+        "Banded body.",
+        "Spots in a line on caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Scorpaenidae",
+      "species": "Parascorpaena picta",
+      "common_name": "Painted Stingfish",
+      "image": "images/parascorpaena_picta.jpg",
+      "features": [
+        "Interorbital ridge weakly developed.",
+        "Mottled, camouflaged appearance."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Scorpaenidae",
+      "species": "Pontinus macrocephalus",
+      "common_name": "Large-headed Scorpionfish",
+      "image": "images/pontinus_macrocephalus.jpg",
+      "features": [
+        "Large head relative to body size.",
+        "Reddish coloration."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Scorpaenidae",
+      "species": "Pontinus nigerimum",
+      "common_name": "Blacklash Scorpionfish",
+      "image": "images/pontinus_nigerimum.jpg",
+      "features": [
+        "Large tentacle above the eye."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Scorpaenidae",
+      "species": "Pterois lunulata",
+      "common_name": "Luna Lion Fish",
+      "image": "images/pterois_lunulata.jpg",
+      "features": [
+        "Black tip on some fin rays.",
+        "Long, separated dorsal spines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Scorpaenidae",
+      "species": "Pterois mombasae",
+      "common_name": "Frillfin Turkeyfish",
+      "image": "images/pterois_mombasae.jpg",
+      "features": [
+        "Small banded tentacle above eye.",
+        "Large spots on upper half of pectoral fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Scorpaenidae",
+      "species": "Pterois miles",
+      "common_name": "Devil Firefish",
+      "image": "images/pterois_miles.jpg",
+      "features": [
+        "Black spots on soft dorsal, caudal and anal fins.",
+        "Red and white striped pattern."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Scorpaenidae",
+      "species": "Pterois russelii",
+      "common_name": "Plaintail Turkeyfish",
+      "image": "images/pterois_russelii.jpg",
+      "features": [
+        "Short dorsal spines.",
+        "Pectoral rays are simple (unbranched).",
+        "No spots on median fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Synanceiidae",
+      "species": "Inimicus didactylus",
+      "common_name": "Bearded Ghoul",
+      "image": "images/inimicus_didactylus.jpg",
+      "features": [
+        "Body color variable.",
+        "Banded tail.",
+        "Walks on pectoral fin rays."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Synanceiidae",
+      "species": "Minous dempsterae",
+      "common_name": "Obliquebanded Stingfish",
+      "image": "images/minous_dempsterae.jpg",
+      "features": [
+        "Oblique bands on body.",
+        "Lowermost pectoral ray is completely free."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Synanceiidae",
+      "species": "Minous monodactylus",
+      "common_name": "Grey Stingfish",
+      "image": "images/minous_monodactylus.jpg",
+      "features": [
+        "2 broad vertical bars on tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Synanceiidae",
+      "species": "Trachicephalus uranoscopus",
+      "common_name": "Stargazing Stonefish",
+      "image": "images/trachicephalus_uranoscopus.jpg",
+      "features": [
+        "Pattern on a brown background.",
+        "Anal fin with 2 spines and 12-15 soft rays."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Scorpaeniformes",
+      "family": "Dactylopteridae",
+      "species": "Dactyloptena orientalis",
+      "common_name": "Oriental Flying Gurnard",
+      "image": "images/dactyloptena_orientalis.jpg",
+      "features": [
+        "Enormous, wing-like pectoral fins.",
+        "First dorsal spines very long.",
+        "Lateral line absent."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Symphysanodontidae",
+      "species": "Symphysanodon typus",
+      "common_name": "Insular Shelf Beauty",
+      "image": "images/symphysanodon_typus.jpg",
+      "features": [
+        "Pinkish-red body with yellow fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Aethaloperca rogaa",
+      "common_name": "Redmouth Grouper",
+      "image": "images/aethaloperca_rogaa.jpg",
+      "features": [
+        "Inside of mouth and gill cavity are reddish-orange.",
+        "Body is dark brown to black.",
+        "Caudal fin is truncate."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Anyperodon leucogrammicus",
+      "common_name": "Slender Grouper",
+      "image": "images/anyperodon_leucogrammicus.jpg",
+      "features": [
+        "Elongated body with reddish spots.",
+        "Caudal fin margin is hyaline (clear)."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Cephalopholis argus",
+      "common_name": "Peacock Hind",
+      "image": "images/cephalopholis_argus.jpg",
+      "features": [
+        "Covered in small, bright blue spots.",
+        "Often displays 5-6 pale vertical bars."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Cephalopholis aurantia",
+      "common_name": "Golden Hind",
+      "image": "images/cephalopholis_aurantia.jpg",
+      "features": [
+        "Uniformly orange-red body.",
+        "White margin on caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Cephalopholis cyanostigma",
+      "common_name": "Bluespotted Hind",
+      "image": "images/cephalopholis_cyanostigma.jpg",
+      "features": [
+        "White to bluish spots on head and body.",
+        "Scattered blue spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Cephalopholis formosa",
+      "common_name": "Bluelined Hind",
+      "image": "images/cephalopholis_formosa.jpg",
+      "features": [
+        "Small dark blue spots on snout, lips, and ventral part of head and chest.",
+        "Wavy blue lines on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Cephalopholis miniata",
+      "common_name": "Coral Hind",
+      "image": "images/cephalopholis_miniata.jpg",
+      "features": [
+        "Bright orange-red body covered in small blue spots.",
+        "No spots on underside of lower jaw."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Cephalopholis sonnerati",
+      "common_name": "Tomato Hind",
+      "image": "images/cephalopholis_sonnerati.jpg",
+      "features": [
+        "Purple network pattern on head, maxilla and lips.",
+        "Head profile straight to concave in adults."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Cephalopholis urodeta",
+      "common_name": "Darkfin Hind",
+      "image": "images/cephalopholis_urodeta.jpg",
+      "features": [
+        "Dark brown body with small orange-yellowish spots.",
+        "Usually 2 dark spots on edge of lower lip."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Cephalopholis sexmaculata",
+      "common_name": "Sixblotch Hind",
+      "image": "images/cephalopholis_sexmaculata.jpg",
+      "features": [
+        "Six dark blotches on the back.",
+        "Body covered in small blue spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Chelidoperca investigatoris",
+      "common_name": "Not listed",
+      "image": "images/chelidoperca_investigatoris.jpg",
+      "features": [
+        "Orange stripe on back.",
+        "Black band along mid-body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Chelidoperca pleurospilus",
+      "common_name": "Not listed",
+      "image": "images/chelidoperca_pleurospilus.jpg",
+      "features": [
+        "Spotted first ray of caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Cromileptes altivelis",
+      "common_name": "Humpback Grouper",
+      "image": "images/cromileptes_altivelis.jpg",
+      "features": [
+        "Posterior nostril is a large vertical slit.",
+        "Body is pale with large, dark, round spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus albomarginatus",
+      "common_name": "White-edged Grouper",
+      "image": "images/epinephelus_albomarginatus.jpg",
+      "features": [
+        "Golden tips on the dorsal spines.",
+        "White margin on caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus areolatus",
+      "common_name": "Aerolate Grouper",
+      "image": "images/epinephelus_areolatus.jpg",
+      "features": [
+        "Dark spots subequal to pupil size.",
+        "Caudal fin is truncate with a white edge."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus bleekeri",
+      "common_name": "Dusky-tail Grouper",
+      "image": "images/epinephelus_bleekeri.jpg",
+      "features": [
+        "Upper half of body is spotted.",
+        "Lower part of caudal fin is dusky."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus chabaudi",
+      "common_name": "Moustache Grouper",
+      "image": "images/epinephelus_chabaudi.jpg",
+      "features": [
+        "Three faint bars on the back.",
+        "Truncate caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus chlorostigma",
+      "common_name": "Brown-spotted Grouper",
+      "image": "images/epinephelus_chlorostigma.jpg",
+      "features": [
+        "Largest spots are smaller than the pupil.",
+        "Slightly concave caudal fin with a white margin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus coeruleopunctatus",
+      "common_name": "Whitespotted Grouper",
+      "image": "images/epinephelus_coeruleopunctatus.jpg",
+      "features": [
+        "3-4 dorsal spines are long.",
+        "Covered in small white spots.",
+        "Convex caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus coioides",
+      "common_name": "Orange-spotted Grouper",
+      "image": "images/epinephelus_coioides.jpg",
+      "features": [
+        "5 faint irregular dark bars on body.",
+        "Body covered with brownish-orange spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus diacanthus",
+      "common_name": "Spinycheek Grouper",
+      "image": "images/epinephelus_diacanthus.jpg",
+      "features": [
+        "Usually 5 dark vertical bars broader than interspaces.",
+        "Posterior nostril is a large vertical slit."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus epistictus",
+      "common_name": "Dotted Grouper",
+      "image": "images/epinephelus_epistictus.jpg",
+      "features": [
+        "Convex dorsal profile.",
+        "Yellowish body with blackish-brown spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus fasciatus",
+      "common_name": "Blacktip Grouper",
+      "image": "images/epinephelus_fasciatus.jpg",
+      "features": [
+        "A black triangle on inter-spinous membranes of dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus faveatus",
+      "common_name": "Barred-chest Grouper",
+      "image": "images/epinephelus_faveatus.jpg",
+      "features": [
+        "Whitish base color with darker spots on fins.",
+        "Spots at base of dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus flavocaeruleus",
+      "common_name": "Blue-and-yellow Grouper",
+      "image": "images/epinephelus_flavocaeruleus.jpg",
+      "features": [
+        "Body is dark grey to blue, fins are bright yellow.",
+        "Caudal fin is truncate with a black margin in some fish."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus fuscoguttatus",
+      "common_name": "Brown-marbled Grouper",
+      "image": "images/epinephelus_fuscoguttatus.jpg",
+      "features": [
+        "Dark saddle blotch on caudal peduncle.",
+        "Body has a marbled pattern of dark blotches."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus lanceolatus",
+      "common_name": "Giant Grouper",
+      "image": "images/epinephelus_lanceolatus.jpg",
+      "features": [
+        "Fins with numerous small black spots.",
+        "Very large size; juveniles are yellow and black."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus latifasciatus",
+      "common_name": "Striped Grouper",
+      "image": "images/epinephelus_latifasciatus.jpg",
+      "features": [
+        "Three spotted horizontal lines on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus longispinis",
+      "common_name": "Longspine Grouper",
+      "image": "images/epinephelus_longispinis.jpg",
+      "features": [
+        "Reddish-brown spots that are elongated and darker posteriorly."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus malabaricus",
+      "common_name": "Malabar Grouper",
+      "image": "images/epinephelus_malabaricus.jpg",
+      "features": [
+        "5 irregular dark brown bars on body.",
+        "Numerous small dark spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus melanostigma",
+      "common_name": "One-blotch Grouper",
+      "image": "images/epinephelus_melanostigma.jpg",
+      "features": [
+        "Single large black blotch in the middle of the dorsal fin base.",
+        "Body covered in honeycomb-like spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus merra",
+      "common_name": "Honeycomb Grouper",
+      "image": "images/epinephelus_merra.jpg",
+      "features": [
+        "Distinctive honeycomb pattern of close-set brown hexagonal spots.",
+        "Small brown spots and a white reticulated pattern."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus morrhua",
+      "common_name": "Comet Grouper",
+      "image": "images/epinephelus_morrhua.jpg",
+      "features": [
+        "Banding pattern of dark brown bars.",
+        "Lines radiating from eye."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus miliaris",
+      "common_name": "Netfin Grouper",
+      "image": "images/epinephelus_miliaris.jpg",
+      "features": [
+        "Small close-set spots on the body.",
+        "Large brownish spots on soft portion of fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus ongus",
+      "common_name": "White-streaked Grouper",
+      "image": "images/epinephelus_ongus.jpg",
+      "features": [
+        "Big rounded eyes.",
+        "Convex tail.",
+        "Body has wavy, pale blue or white lines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus poecilonotus",
+      "common_name": "Dot-dash Grouper",
+      "image": "images/epinephelus_poecilonotus.jpg",
+      "features": [
+        "Dark blotch on back not joined to lower band.",
+        "Dark bands on head."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus polyphekadion",
+      "common_name": "Camouflage Grouper",
+      "image": "images/epinephelus_polyphekadion.jpg",
+      "features": [
+        "Moderately incised interspinous membrane.",
+        "Small dark spots and irregular blotches for camouflage."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus quoyanus",
+      "common_name": "Longfin Grouper",
+      "image": "images/epinephelus_quoyanus.jpg",
+      "features": [
+        "Large hexagonal spots on body.",
+        "Dark brown blotches on a pale background."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus radiatus",
+      "common_name": "Oblique-banded Grouper",
+      "image": "images/epinephelus_radiatus.jpg",
+      "features": [
+        "3rd and 4th dark bands branch ventrally.",
+        "Body has radiating lines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus spilotoceps",
+      "common_name": "Foursaddle Grouper",
+      "image": "images/epinephelus_spilotoceps.jpg",
+      "features": [
+        "3 large black blotches (saddles) on the back.",
+        "Body covered in small brown spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus tauvina",
+      "common_name": "Greasy Grouper",
+      "image": "images/epinephelus_tauvina.jpg",
+      "features": [
+        "Dark spots on dorsal fin.",
+        "Elongate body covered in faint, dusky spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Epinephelus undulosus",
+      "common_name": "Wavylined Grouper",
+      "image": "images/epinephelus_undulosus.jpg",
+      "features": [
+        "Dorsal fin membrane not incised.",
+        "Wavy brown lines on a paler background."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Hyporthodus octofasciatus",
+      "common_name": "Eightbar Grouper",
+      "image": "images/hyporthodus_octofasciatus.jpg",
+      "features": [
+        "8 dark vertical bands on body.",
+        "Prominent knob on ventral edge of maxilla in adults."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Liopropoma lunulatum",
+      "common_name": "Not listed",
+      "image": "images/liopropoma_lunulatum.jpg",
+      "features": [
+        "Body is dotted with spots.",
+        "Distinctive markings on tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Liopropoma randalli",
+      "common_name": "Not listed",
+      "image": "images/liopropoma_randalli.jpg",
+      "features": [
+        "Yellow streak from eye.",
+        "Black band along the body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Odontanthias rhodopeplus",
+      "common_name": "Not listed",
+      "image": "images/odontanthias_rhodopeplus.jpg",
+      "features": [
+        "Yellow tip on dorsal fin.",
+        "Orange tip on caudal fin.",
+        "Lunar white patch on tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Plectropomus areolatus",
+      "common_name": "Squaretail Coral Grouper",
+      "image": "images/plectropomus_areolatus.jpg",
+      "features": [
+        "Small blue spots on a red base.",
+        "Square-shaped (truncate) tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Plectropomus laevis",
+      "common_name": "Blacksaddled Coralgrouper",
+      "image": "images/plectropomus_laevis.jpg",
+      "features": [
+        "Has two color phases: white with large brown saddles, or dark brown/red.",
+        "Numerous small blue spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Plectropomus leopardus",
+      "common_name": "Leopard Coral Grouper",
+      "image": "images/plectropomus_leopardus.jpg",
+      "features": [
+        "Thick blue outer ring around the eye.",
+        "Body is reddish-brown with numerous small blue spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Pseudanthias marcia",
+      "common_name": "Marcia’s Anthias",
+      "image": "images/pseudanthias_marcia.jpg",
+      "features": [
+        "Distinctive color pattern with pink, orange, and yellow."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Pseudanthias pillai",
+      "common_name": "Not listed",
+      "image": "images/pseudanthias_pillai.jpg",
+      "features": [
+        "Pinkish body.",
+        "Yellow coloration on back and tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Pogonoperca ocellata",
+      "common_name": "Not listed",
+      "image": "images/pogonoperca_ocellata.jpg",
+      "features": [
+        "Long blotches on body.",
+        "Distinct ocelli (eye-spots)."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Sacura boulengeri",
+      "common_name": "Boulenger’s Anthias",
+      "image": "images/sacura_boulengeri.jpg",
+      "features": [
+        "Filamentous tip on dorsal fin.",
+        "White line on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Variola albimarginata",
+      "common_name": "White-edgedlyretail",
+      "image": "images/variola_albimarginata.jpg",
+      "features": [
+        "Thin white edge on the lunate tail.",
+        "Pelvic fins usually do not reach the anus."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Serranidae",
+      "species": "Variola louti",
+      "common_name": "Yellow-edged Lyretail",
+      "image": "images/variola_louti.jpg",
+      "features": [
+        "Thin yellow edge on the lunate tail.",
+        "Pelvic fins of adults reach the anus."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Plesiopidae",
+      "species": "Plesiops corallicola",
+      "common_name": "Blue Gill Longfin",
+      "image": "images/plesiops_corallicola.jpg",
+      "features": [
+        "Lateral line in two parts.",
+        "Dorsal fin has 11-26 spines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Opistognathidae",
+      "species": "Opistognathus rosenbergii",
+      "common_name": "Rosenberg’s Jawfish",
+      "image": "images/opistognathus_rosenbergii.jpg",
+      "features": [
+        "White linear spots on body.",
+        "Large mouth for burrowing."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Opistognathidae",
+      "species": "Opistognathus nigromarginatus",
+      "common_name": "Birdled Jawfish",
+      "image": "images/opistognathus_nigromarginatus.jpg",
+      "features": [
+        "White band on head.",
+        "Dark margin on fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Priacanthidae",
+      "species": "Cookeolus japonicus",
+      "common_name": "Longfin Bigeye",
+      "image": "images/cookeolus_japonicus.jpg",
+      "features": [
+        "Very large pelvic fins.",
+        "Black interspinous membranes in dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Priacanthidae",
+      "species": "Heteropriacanthus cruentatus",
+      "common_name": "Glasseye",
+      "image": "images/heteropriacanthus_cruentatus.jpg",
+      "features": [
+        "Body covered in black dots.",
+        "Large eyes, typical of the family."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Priacanthidae",
+      "species": "Priacanthus hamrur",
+      "common_name": "Moontail Bullseye",
+      "image": "images/priacanthus_hamrur.jpg",
+      "features": [
+        "Deeply lunate (crescent-shaped) caudal fin.",
+        "Red body and large eyes."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Priacanthidae",
+      "species": "Pristigenys refulgens",
+      "common_name": "Blackfringe Bigeye",
+      "image": "images/pristigenys_refulgens.jpg",
+      "features": [
+        "Deep red body.",
+        "Black fringe on fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Apogon ellioti",
+      "common_name": "Flag In Cardinal Fish",
+      "image": "images/apogon_ellioti.jpg",
+      "features": [
+        "Black band through eye.",
+        "Black tip on first dorsal fin.",
+        "Rounded caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Apogon queketti",
+      "common_name": "Spotfin Cardinal",
+      "image": "images/apogon_queketti.jpg",
+      "features": [
+        "Black spot on operculum.",
+        "Black edged fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Apogonichthyoides nigripinnis",
+      "common_name": "Bullseye",
+      "image": "images/apogonichthyoides_nigripinnis.jpg",
+      "features": [
+        "Black tips on scales, giving a netted appearance."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Apogonichthyoides pseudotaeniatus",
+      "common_name": "Doublebar Cardinalfish",
+      "image": "images/apogonichthyoides_pseudotaeniatus.jpg",
+      "features": [
+        "Two distinct black bands on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Holapogon maximus",
+      "common_name": "Titan Cardinalfish",
+      "image": "images/holapogon_maximus.jpg",
+      "features": [
+        "Golden or yellowish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Ostorhinchus fasciatus",
+      "common_name": "Broadbanded Cardinalfish",
+      "image": "images/ostorhinchus_fasciatus.jpg",
+      "features": [
+        "Stripes on body.",
+        "Forked tail.",
+        "Blue around eyes."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Ostorhinchus luteus",
+      "common_name": "Yellow Cardinalfish",
+      "image": "images/ostorhinchus_luteus.jpg",
+      "features": [
+        "Yellow body with black spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Ostorhinchus fleurieu",
+      "common_name": "Cardinalfish",
+      "image": "images/ostorhinus_fleurieu.jpg",
+      "features": [
+        "Band on caudal peduncle."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Pristiapogon fraenatus",
+      "common_name": "Bridled Cardinalfish",
+      "image": "images/pristiapogon_fraenatus.jpg",
+      "features": [
+        "Black band from snout through eye.",
+        "Spot on caudal peduncle, half above lateral line."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Apogonidae",
+      "species": "Sphaeramia orbicularis",
+      "common_name": "Orbiculate Cardinalfish",
+      "image": "images/sphaeramia_orbicularis.jpg",
+      "features": [
+        "Dark vertical bar on body.",
+        "Dark brown spots on posterior body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Carangidae",
+      "species": "Alectis ciliaris",
+      "common_name": "African Pompano",
+      "image": "images/alectis_ciliaris.jpg",
+      "features": [
+        "Juveniles have long, filamentous fin rays."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Carangidae",
+      "species": "Alectis indica",
+      "common_name": "Indian Threadfish",
+      "image": "images/alectis_indica.jpg",
+      "features": [
+        "Deeply compressed body, similar to A. ciliaris."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Carangidae",
+      "species": "Atropus atropos",
+      "common_name": "Cleftbelly Trevally",
+      "image": "images/atropus_atropos.jpg",
+      "features": [
+        "Black groove on ventral side to accommodate pelvic fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Carangidae",
+      "species": "Caranx heberi",
+      "common_name": "Blacktip Trevally",
+      "image": "images/caranx_heberi.jpg",
+      "features": [
+        "Black tip on the upper lobe of the caudal fin.",
+        "Upper jaw is toothless."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Carangidae",
+      "species": "Elagatis bipinnulata",
+      "common_name": "Rainbow Runner",
+      "image": "images/elagatis_bipinnulata.jpg",
+      "features": [
+        "2 bluish stripes on side.",
+        "Detached two-rayed finlet behind dorsal and anal fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Carangidae",
+      "species": "Gnathanodon speciosus",
+      "common_name": "Golden Trevally",
+      "image": "images/gnathanodon_speciosus.jpg",
+      "features": [
+        "Yellow body with black stripes.",
+        "Fleshy, papillose lips."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Carangidae",
+      "species": "Seriolina nigrofasciata",
+      "common_name": "Blackbanded Trevally",
+      "image": "images/seriolina_nigrofasciata.jpg",
+      "features": [
+        "Greyish soft body.",
+        "Faint black bars on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Carangidae",
+      "species": "Scomberoides commersonnianus",
+      "common_name": "Talang Queenfish",
+      "image": "images/scomberoides_commersonnianus.jpg",
+      "features": [
+        "Distinct pattern of large, dark spots on side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Aphareus furca",
+      "common_name": "Small Tooothed Jobfish",
+      "image": "images/aphareus_furca.jpg",
+      "features": [
+        "Preopercle and opercle delimited by a dark line.",
+        "Forked tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Aprion virescens",
+      "common_name": "Green Jobfish",
+      "image": "images/aprion_virescens.jpg",
+      "features": [
+        "Pectoral fin is short.",
+        "Caudal fin deeply forked."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lipocheilus carnolabrum",
+      "common_name": "Tang’s Snapper",
+      "image": "images/lipocheilus_carnolabrum.jpg",
+      "features": [
+        "Tip of upper jaw with a thickened fleshy knob in adults."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus argentimaculatus",
+      "common_name": "Mangrove Red Snapper",
+      "image": "images/lutjanus_argentimaculatus.jpg",
+      "features": [
+        "Silvery spot on scales.",
+        "Rounded caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus bengalensis",
+      "common_name": "Bengal Snapper",
+      "image": "images/lutjanus_bengalensis.jpg",
+      "features": [
+        "Sides of body yellow, with 4 blue lines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus biguttatus",
+      "common_name": "Two-spot Banded Snapper",
+      "image": "images/lutjanus_biguttatus.jpg",
+      "features": [
+        "Broad pearly white stripe along side.",
+        "Two white spots on back."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus bohar",
+      "common_name": "Two-spot Red Snapper",
+      "image": "images/lutjanus_bohar.jpg",
+      "features": [
+        "Pectoral fin pink, with a dorsal edge mostly black.",
+        "Two white spots on back in juveniles."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus coeruleolineatus",
+      "common_name": "Blueline Snapper",
+      "image": "images/lutjanus_coeruleolineatus.jpg",
+      "features": [
+        "Thin white bands on body.",
+        "Black spot below dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus decussatus",
+      "common_name": "Checkered Snapper",
+      "image": "images/lutjanus_decussatus.jpg",
+      "features": [
+        "Checkerboard pattern on upper sides.",
+        "Large black spot on caudal peduncle."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus dodecacanthoides",
+      "common_name": "Sunbeam Snapper",
+      "image": "images/lutjanus_dodecacanthoides.jpg",
+      "features": [
+        "Yellow stripes on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus erythropterus",
+      "common_name": "Crimson Snapper",
+      "image": "images/lutjanus_erythropterus.jpg",
+      "features": [
+        "Reddish body.",
+        "Black patch on back in juveniles."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus fulviflamma",
+      "common_name": "Dory Snapper",
+      "image": "images/lutjanus_fulviflamma.jpg",
+      "features": [
+        "Black spot below dorsal fin.",
+        "Yellowish stripes on side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus fulvus",
+      "common_name": "Blacktail Snapper",
+      "image": "images/lutjanus_fulvus.jpg",
+      "features": [
+        "Caudal fin is black with a narrow white margin.",
+        "Yellowish stripes on a brownish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus gibbus",
+      "common_name": "Humpback Red Snapper",
+      "image": "images/lutjanus_gibbus.jpg",
+      "features": [
+        "Reddish body.",
+        "Distinctly pointed soft dorsal and anal fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus indicus",
+      "common_name": "Not listed",
+      "image": "images/lutjanus_indicus.jpg",
+      "features": [
+        "Black spot below dorsal fin.",
+        "Brownish stripes on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus johnii",
+      "common_name": "John’s Snapper",
+      "image": "images/lutjanus_johnii.jpg",
+      "features": [
+        "Large black spot below dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus kasmira",
+      "common_name": "Common Bluestripe Snapper",
+      "image": "images/lutjanus_kasmira.jpg",
+      "features": [
+        "4 blue stripes on yellow body.",
+        "Well-developed preopercular knob and notch."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus lunulatus",
+      "common_name": "Lunartail Snapper",
+      "image": "images/lutjanus_lunulatus.jpg",
+      "features": [
+        "Yellow, crescent-shaped band on caudal fin.",
+        "Broad black band behind head."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus lutjanus",
+      "common_name": "Bigeye Snapper",
+      "image": "images/lutjanus_lutjanus.jpg",
+      "features": [
+        "Dark yellow stripe from eye to tail.",
+        "Thin yellow horizontal lines below."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus malabaricus",
+      "common_name": "Malabar Blood Snapper",
+      "image": "images/lutjanus_malabaricus.jpg",
+      "features": [
+        "Large head.",
+        "Dotted stripes on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus quinquelineatus",
+      "common_name": "Five-lined Snapper",
+      "image": "images/lutjanus_quinquelineatus.jpg",
+      "features": [
+        "Five bright blue stripes on yellow body.",
+        "Black spot below dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus rivulatus",
+      "common_name": "Blubberlip Snapper",
+      "image": "images/lutjanus_rivulatus.jpg",
+      "features": [
+        "Numerous wavy blue lines on head.",
+        "Scales on sides have bluish-white central spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Lutjanus vitta",
+      "common_name": "Brownstripe Red Snapper",
+      "image": "images/lutjanus_vitta.jpg",
+      "features": [
+        "Mid-lateral brown band.",
+        "Scale rows rise obliquely above lateral line."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Macolor macularis",
+      "common_name": "Midnight Snapper",
+      "image": "images/macolor_macularis.jpg",
+      "features": [
+        "Violet lines on head.",
+        "Juveniles are black and white."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Paracaesio sordida",
+      "common_name": "Dirty Ordure Snapper",
+      "image": "images/paracaesio_sordida.jpg",
+      "features": [
+        "Uniformly grey to brownish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Pinjalo lewisi",
+      "common_name": "Slender Pinjalo",
+      "image": "images/pinjalo_lewisi.jpg",
+      "features": [
+        "Body more slender than P. pinjalo.",
+        "Black border on fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Pinjalo pinjalo",
+      "common_name": "Pinjalo",
+      "image": "images/pinjalo_pinjalo.jpg",
+      "features": [
+        "Rosy pink body.",
+        "Flat interorbital space."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Pristipomoides auricilla",
+      "common_name": "Goldflag Jobfish",
+      "image": "images/pristipomoides_auricilla.jpg",
+      "features": [
+        "Upper lobe of caudal fin is bright yellow.",
+        "Faint yellow on sides."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Pristipomoides filamentosus",
+      "common_name": "Crimson Jobfish",
+      "image": "images/pristipomoides_filamentosus.jpg",
+      "features": [
+        "Forked caudal fin.",
+        "Canine teeth not enlarged.",
+        "Pinkish to reddish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lutjanidae",
+      "species": "Pristipomoides typus",
+      "common_name": "Sharptooth Jobfish",
+      "image": "images/pristipomoides_typus.jpg",
+      "features": [
+        "Yellow wavy lines on head.",
+        "Filamentous tip on caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Caesionidae",
+      "species": "Caesio caerulaurea",
+      "common_name": "Blue and Gold Fusilier",
+      "image": "images/caesio_caerulaurea.jpg",
+      "features": [
+        "Single yellow stripe on side.",
+        "Black streak in each caudal lobe."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Caesionidae",
+      "species": "Caesio cuning",
+      "common_name": "Redbelly Yellowtail Fusilier",
+      "image": "images/caesio_cuning.jpg",
+      "features": [
+        "Yellow caudal fin and upper caudal peduncle.",
+        "No black markings on fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Caesionidae",
+      "species": "Caesio varilineata",
+      "common_name": "Variable-lined Fusilier",
+      "image": "images/caesio_varilineata.jpg",
+      "features": [
+        "More than one yellow line on side.",
+        "Interorbital area is yellowish."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Caesionidae",
+      "species": "Caesio xanthonotus",
+      "common_name": "Yellowback Fusilier",
+      "image": "images/caesio_xanthonotus.jpg",
+      "features": [
+        "Tail and most of back are yellow.",
+        "Bluish sides."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Caesionidae",
+      "species": "Pterocaesio chrysozona",
+      "common_name": "Goldband Fusilier",
+      "image": "images/pterocaesio_chrysozona.jpg",
+      "features": [
+        "Yellow stripe under lateral line.",
+        "Black blotch at tips of caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Diagramma pictum",
+      "common_name": "Painted Sweetlips",
+      "image": "images/diagramma_pictum.jpg",
+      "features": [
+        "Juveniles have stripes, adults have spots.",
+        "Dorsal fin has 9-10 spines and 21-26 soft rays."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Plectorhinchus albovittatus",
+      "common_name": "Two-striped Sweetlips",
+      "image": "images/plectorhinchus_albovittatus.jpg",
+      "features": [
+        "Adults are grey with white bands.",
+        "Juveniles have bold black and white stripes."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Plectorhinchus chaetodonoides",
+      "common_name": "Harlequin Sweetlips",
+      "image": "images/plectorhinchus_chaetodonoides.jpg",
+      "features": [
+        "Juveniles have a dramatic pattern of large brown blotches.",
+        "Adults are grey with small dark spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Plectorhinchus chubbi",
+      "common_name": "Dusky Rubberlip",
+      "image": "images/plectorhinchus_chubbi.jpg",
+      "features": [
+        "Brownish black tip on fins.",
+        "Thick lips."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Plectorhinchus gaterinus",
+      "common_name": "Blackspotted Rubberlip",
+      "image": "images/plectorhinchus_gaterinus.jpg",
+      "features": [
+        "Yellow and black alternating bands on fins.",
+        "Body is yellow with black spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Plectorhinchus gibbosus",
+      "common_name": "Harry Hotlips",
+      "image": "images/plectorhinchus_gibbosus.jpg",
+      "features": [
+        "Lips become greatly swollen with age.",
+        "Dorsal fin has 14 spines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Plectorhinchus sordidus",
+      "common_name": "Sordid Rubberlip",
+      "image": "images/plectorhinchus_sordidus.jpg",
+      "features": [
+        "Upper bands are horizontal.",
+        "Thick lips."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Plectorhinchus vittatus",
+      "common_name": "Indian Ocean Oriental Sweetlips",
+      "image": "images/plectorhinchus_vittatus.jpg",
+      "features": [
+        "Bold black and white horizontal stripes.",
+        "Yellow fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Pomadasys guoraca",
+      "common_name": "Not listed",
+      "image": "images/pomadasys_guoraca.jpg",
+      "features": [
+        "Yellow stripes on body.",
+        "Forked tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Pomadasys furcatus",
+      "common_name": "Banded Grunter",
+      "image": "images/pomadasys_furcatus.jpg",
+      "features": [
+        "6 dark horizontal stripes on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Haemulidae",
+      "species": "Pomadasys maculatus",
+      "common_name": "Saddle Grunt",
+      "image": "images/pomadasys_maculatus.jpg",
+      "features": [
+        "Dark bars or saddles on the back."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Nemipterus bipunctatus",
+      "common_name": "Delagoa Threadfin Bream",
+      "image": "images/nemipterus_bipunctatus.jpg",
+      "features": [
+        "5-7 pale greenish-yellow stripes on body.",
+        "Two yellow stripes on anal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Nemipterus zysron",
+      "common_name": "Slender Threadfin Bream",
+      "image": "images/nemipterus_zysron.jpg",
+      "features": [
+        "Short yellow filament on upper lobe of caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Parascolopsis aspinosa",
+      "common_name": "Smooth Dwarf Monocle Bream",
+      "image": "images/parascolopsis_aspinosa.jpg",
+      "features": [
+        "Dark blotch on side.",
+        "Suborbital margin is smooth."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Parascolopsis baranesi",
+      "common_name": "Not listed",
+      "image": "images/parascolopsis_baranesi.jpg",
+      "features": [
+        "Red patch on side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Parascolopsis capitinis",
+      "common_name": "Not listed",
+      "image": "images/parascolopsis_capitinis.jpg",
+      "features": [
+        "Yellow on upper body, reddish lower down."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Parascolopsis eriomma",
+      "common_name": "Rosy Dwarf Monocle Bream",
+      "image": "images/parascolopsis_eriomma.jpg",
+      "features": [
+        "Yellow stripe on side.",
+        "Suborbital margin is serrated."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Parascolopsis inermis",
+      "common_name": "Unarmed Dwarf Monocle Bream",
+      "image": "images/parascolopsis_inermis.jpg",
+      "features": [
+        "5-7 pale greenish-yellow stripes on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Scolopsis aurata",
+      "common_name": "Yellowstripe Monocle Bream",
+      "image": "images/scolopsis_aurata.jpg",
+      "features": [
+        "Broad golden-yellow stripe on side.",
+        "Blue stripe joining the eyes."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Scolopsis bimaculatus",
+      "common_name": "Thumbprint Monocle Bream",
+      "image": "images/scolopsis_bimaculatus.jpg",
+      "features": [
+        "Large black or brownish blotch on side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Scolopsis ciliata",
+      "common_name": "Saw-jawed Monocle Bream",
+      "image": "images/scolopsis_ciliata.jpg",
+      "features": [
+        "Silvery white stripe on side.",
+        "Golden spots on sides."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Nemipteridae",
+      "species": "Scolopsis vosmeri",
+      "common_name": "Whitecheek Monocle Bream",
+      "image": "images/scolopsis_vosmeri.jpg",
+      "features": [
+        "White vertical bar behind head.",
+        "Large suborbital spine."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Gnathodentex aurolineatus",
+      "common_name": "Striped Large-eye Bream",
+      "image": "images/gnathodentex_aurolineatus.jpg",
+      "features": [
+        "Cheeks have scales.",
+        "Horizontal yellow lines on a silvery body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Gymnocranius elongatus",
+      "common_name": "Forktail Large-eye Bream",
+      "image": "images/gymnocranius_elongatus.jpg",
+      "features": [
+        "Maxilla surface is smooth.",
+        "Forked tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Gymnocranius grandoculis",
+      "common_name": "Blue-lined Large-eye Bream",
+      "image": "images/gymnocranius_grandoculis.jpg",
+      "features": [
+        "Cheeks with scales and wavy blue lines.",
+        "Moderately forked caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Lethrinus borbonicus",
+      "common_name": "Snubnose Emperor",
+      "image": "images/lethrinus_borbonicus.jpg",
+      "features": [
+        "Cheeks without scales.",
+        "Body is mottled with irregular dark markings."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Lethrinus conchyliatus",
+      "common_name": "Redaxil Emperor",
+      "image": "images/lethrinus_conchyliatus.jpg",
+      "features": [
+        "Large, unscaled red patch above pectoral-fin base."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Lethrinus erythracanthus",
+      "common_name": "Orange-spotted Emperor",
+      "image": "images/lethrinus_erythracanthus.jpg",
+      "features": [
+        "Bulbous lips.",
+        "Orange spots on a greyish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Lethrinus harak",
+      "common_name": "Thumbprintemperor",
+      "image": "images/lethrinus_harak.jpg",
+      "features": [
+        "Large elliptical blotch edged in yellow on side.",
+        "Body is greenish grey."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Lethrinus mahsena",
+      "common_name": "Sky Emperor",
+      "image": "images/lethrinus_mahsena.jpg",
+      "features": [
+        "Body is yellowish to greenish blue, often with darker bars.",
+        "Inner base of pectoral fin has scales."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Lethrinus nebulosus",
+      "common_name": "Spangled Emperor",
+      "image": "images/lethrinus_nebulosus.jpg",
+      "features": [
+        "Blue spots and lines on head and body.",
+        "Snout is long.",
+        "Inner base of pectoral fin has scales."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Lethrinus olivaceus",
+      "common_name": "Longface Emperor",
+      "image": "images/lethrinus_olivaceus.jpg",
+      "features": [
+        "Very long, pointed snout.",
+        "Inner base of pectoral fin is without scales."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Lethrinus ornatus",
+      "common_name": "Ornate Emperor",
+      "image": "images/lethrinus_ornatus.jpg",
+      "features": [
+        "Yellow stripes on a silvery body.",
+        "Red at axil of pectoral fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Lethrinus lentjan",
+      "common_name": "Pink Ear Emperor",
+      "image": "images/lethrinus_lentjan.jpg",
+      "features": [
+        "Red mark on the upper edge of the operculum.",
+        "Inner base of pectoral fin is scaled."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Monotaxis grandoculis",
+      "common_name": "Humpnose Big-eye Bream",
+      "image": "images/monotaxis_grandoculis.jpg",
+      "features": [
+        "Cheeks with scales.",
+        "Develops a hump on the snout with age.",
+        "No markings on fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Lethrinidae",
+      "species": "Wattsia mossambica",
+      "common_name": "Mozambique Large-eye Bream",
+      "image": "images/wattsia_mossambica.jpg",
+      "features": [
+        "Back is dusky yellow.",
+        "Dorsal fin is olive-yellow."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Sparidae",
+      "species": "Argyrops spinifer",
+      "common_name": "King Soldier Bream",
+      "image": "images/argyrops_spinifer.jpg",
+      "features": [
+        "First few dorsal spines are extremely elongated and flattened.",
+        "Reddish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Sparidae",
+      "species": "Rhabdosargus sarba",
+      "common_name": "Goldlined Seabream",
+      "image": "images/rhabdosargus_sarba.jpg",
+      "features": [
+        "Golden horizontal lines on a silvery body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Mulloidichthys pfluegeri",
+      "common_name": "Orange Goatfish",
+      "image": "images/mulloidichthys_pfluegeri.jpg",
+      "features": [
+        "Alternate orange-red bands on body.",
+        "No marks on fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Parupeneus cyclostomus",
+      "common_name": "Gold-saddle Goatfish",
+      "image": "images/parupeneus_cyclostomus.jpg",
+      "features": [
+        "Yellow saddle on caudal peduncle.",
+        "Barbels extend to or beyond posterior end of head."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Parupeneus heptacanthus",
+      "common_name": "Cinnabar Goatfish",
+      "image": "images/parupeneus_heptacanthus.jpg",
+      "features": [
+        "Small reddish-brown spot on side.",
+        "Light yellow stripe on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Parupeneus indicus",
+      "common_name": "Indian Goatfish",
+      "image": "images/parupeneus_indicus.jpg",
+      "features": [
+        "Black spot on caudal peduncle.",
+        "Elongate yellow spot on side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Parupeneus macronemus",
+      "common_name": "Long-barbel Goatfish",
+      "image": "images/parupeneus_macronemus.jpg",
+      "features": [
+        "Last ray of soft dorsal and anal fins are elongate.",
+        "Dark saddle on caudal peduncle."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Parupeneus trifasciatus",
+      "common_name": "Doublebar Goatfish",
+      "image": "images/parupeneus_trifasciatus.jpg",
+      "features": [
+        "Two dark vertical bands on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Upeneus japonicus",
+      "common_name": "Bensasi Goatfish",
+      "image": "images/upeneus_japonicus.jpg",
+      "features": [
+        "Stripes only on upper lobe of caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Upeneus moluccensis",
+      "common_name": "Goldband Goatfish",
+      "image": "images/upeneus_moluccensis.jpg",
+      "features": [
+        "Stripes on both lobes of caudal fin.",
+        "Yellow stripe on side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Upeneus tragula",
+      "common_name": "Freckled Goatfish",
+      "image": "images/upeneus_tragula.jpg",
+      "features": [
+        "Caudal fin is striped.",
+        "Body is mottled and freckled."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Mullidae",
+      "species": "Upeneus vittatus",
+      "common_name": "Yellowstriped Goatfish",
+      "image": "images/upeneus_vittatus.jpg",
+      "features": [
+        "Thick dark band on side.",
+        "Striped caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pempheridae",
+      "species": "Pempheris adusta",
+      "common_name": "Dusky Sweeper",
+      "image": "images/pempheris_adusta.jpg",
+      "features": [
+        "Eye is large.",
+        "Body is laterally compressed.",
+        "Single, short dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Monodactylidae",
+      "species": "Monodactylus argenteus",
+      "common_name": "Silver Moony",
+      "image": "images/monodactylus_argenteus.jpg",
+      "features": [
+        "Silver, disc-shaped body.",
+        "Thick black tip on dorsal and anal fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Toxotidae",
+      "species": "Toxotes jaculatrix",
+      "common_name": "Banded Archerfish",
+      "image": "images/toxotes_jaculatrix.jpg",
+      "features": [
+        "Lower jaw protruding.",
+        "Dark, wedge-shaped bars on upper side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Kyphosidae",
+      "species": "Kyphosus cinerascens",
+      "common_name": "Blue Sea Chub",
+      "image": "images/kyphosus_cinerascens.jpg",
+      "features": [
+        "Hockey-stick shaped teeth.",
+        "Uniform grey or bluish color."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Kyphosidae",
+      "species": "Kyphosus vaigiensis",
+      "common_name": "Brassy Chub",
+      "image": "images/kyphosus_vaigiensis.jpg",
+      "features": [
+        "Blue stripes on body.",
+        "Moderately forked tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Scatophagidae",
+      "species": "Scatophagus argus",
+      "common_name": "Spotted Scat",
+      "image": "images/scatophagus_argus.jpg",
+      "features": [
+        "Single dorsal fin is deeply notched.",
+        "Body covered in large dark spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Drepaneidae",
+      "species": "Drepane punctata",
+      "common_name": "Spotted Sicklefish",
+      "image": "images/drepane_punctata.jpg",
+      "features": [
+        "Long, sickle-shaped pectoral fin.",
+        "Vertical rows of dark spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Chaetodon auriga",
+      "common_name": "Threadfin Butterflyfish",
+      "image": "images/chaetodon_auriga.jpg",
+      "features": [
+        "Filament extending from the soft dorsal fin.",
+        "Black eye-band.",
+        "Chevron markings on the side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Chaetodon collare",
+      "common_name": "Redtail Butterflyfish",
+      "image": "images/chaetodon_collare.jpg",
+      "features": [
+        "White band behind the eye.",
+        "Red tail.",
+        "Cross-striated pattern on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Chaetodon decussatus",
+      "common_name": "Indian Vagabond Butterflyfish",
+      "image": "images/chaetodon_decussatus.jpg",
+      "features": [
+        "White tip on caudal fin, with yellow inside and a black outer tip.",
+        "Chevron markings."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Chaetodon falcula",
+      "common_name": "Blackwedged Butterflyfish",
+      "image": "images/chaetodon_falcula.jpg",
+      "features": [
+        "Two large, dark saddle-like patches on the back.",
+        "Black spot on caudal peduncle."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Chaetodon gardineri",
+      "common_name": "Gardner’s Butterflyfish",
+      "image": "images/chaetodon_gardineri.jpg",
+      "features": [
+        "Yellow body with faint vertical lines.",
+        "Dark posterior section."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Chaetodon lunulatus",
+      "common_name": "Oval Butterflyfish",
+      "image": "images/chaetodon_lunulatus.jpg",
+      "features": [
+        "Broad black bands and stripes on body.",
+        "Curved purple lines on side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Chaetodon octofasciatus",
+      "common_name": "Eightband Butterflyfish",
+      "image": "images/chaetodon_octofasciatus.jpg",
+      "features": [
+        "Eight vertical black bands on a yellow or white body.",
+        "Dark band does not cross the eye."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Chaetodon trifasciatus",
+      "common_name": "Melon Butterflyfish",
+      "image": "images/chaetodon_trifasciatus.jpg",
+      "features": [
+        "Black streak on body and at base of dorsal and anal fins.",
+        "Longitudinal purple stripes on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Heniochus acuminatus",
+      "common_name": "Pennant Coralfish",
+      "image": "images/heniochus_acuminatus.jpg",
+      "features": [
+        "Very long, white dorsal fin filament.",
+        "Two broad black bands on a white body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Heniochus monoceros",
+      "common_name": "Masked Bannerfish",
+      "image": "images/heniochus_monoceros.jpg",
+      "features": [
+        "Short dorsal fin extension.",
+        "Band across eye.",
+        "Broad black band on posterior body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Chaetodontidae",
+      "species": "Roa excelsa",
+      "common_name": "Hawaiian Gold-barred Butterflyfish",
+      "image": "images/roa_excelsa.jpg",
+      "features": [
+        "White body with broad, dark brown or golden bars.",
+        "Ocelli (eyespots) on the dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacanthidae",
+      "species": "Apolemichthys xanthurus",
+      "common_name": "Yellowtail Angelfish",
+      "image": "images/apolemichthys_xanthurus.jpg",
+      "features": [
+        "Tail is yellow.",
+        "Soft rays of dorsal and anal fins are black."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacanthidae",
+      "species": "Pomacanthus annularis",
+      "common_name": "Blue Ring Angelfish",
+      "image": "images/pomacanthus_annularis.jpg",
+      "features": [
+        "Blue ring on the side of the body (adults).",
+        "Curved blue lines on a brownish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacanthidae",
+      "species": "Pomacanthus imperator",
+      "common_name": "Emperor Angelfish",
+      "image": "images/pomacanthus_imperator.jpg",
+      "features": [
+        "Adults have longitudinal yellow lines on a blue body.",
+        "Juveniles have concentric white and blue rings."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacanthidae",
+      "species": "Pomacanthus semicirculatus",
+      "common_name": "Semicircle Angelfish",
+      "image": "images/pomacanthus_semicirculatus.jpg",
+      "features": [
+        "Adults are greenish-brown with blue spots.",
+        "Juveniles have semicircular white and blue lines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pentacerotidae",
+      "species": "Histiopterus typus",
+      "common_name": "Sailfin Armourhead",
+      "image": "images/histiopterus_typus.jpg",
+      "features": [
+        "Spinous part of dorsal fin is arched and not deeply notched.",
+        "Blotch of variable intensity."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Terapontidae",
+      "species": "Pelates quadrilineatus",
+      "common_name": "Fourlined Terapon",
+      "image": "images/pelates_quadrilineatus.jpg",
+      "features": [
+        "Several horizontal dark stripes.",
+        "Lower opercular spine not extending beyond edge of opercular flap."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Terapontidae",
+      "species": "Terapon jarbua",
+      "common_name": "Jarbua Terapon",
+      "image": "images/terapon_jarbua.jpg",
+      "features": [
+        "Curved stripes on body.",
+        "Spinous part of dorsal fin is strongly arched and deeply notched."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Terapontidae",
+      "species": "Terapon theraps",
+      "common_name": "Largescaled Terapon",
+      "image": "images/terapon_theraps.jpg",
+      "features": [
+        "Stripes on body are almost straight and broad."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Kuhliidae",
+      "species": "Kuhlia mugil",
+      "common_name": "Barred Flagtail",
+      "image": "images/kuhlia_mugil.jpg",
+      "features": [
+        "Distinct black and white pattern on caudal fin.",
+        "Two opercular spines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Cirrhitidae",
+      "species": "Cirrhitichthys bleekeri",
+      "common_name": "Not listed",
+      "image": "images/cirrhitichthys_bleekeri.jpg",
+      "features": [
+        "Cirri (small tufts) on the tips of dorsal spines.",
+        "Reddish-brown blotches on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Abudefduf sordidus",
+      "common_name": "Blackspot Sergeant",
+      "image": "images/abudefduf_sordidus.jpg",
+      "features": [
+        "Six dark vertical bands on a pale body.",
+        "Black spot at the base of the pectoral fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Abudefduf saxatilis",
+      "common_name": "Sergeant-major",
+      "image": "images/abudefduf_saxatilis.jpg",
+      "features": [
+        "Five dark vertical bands on body.",
+        "Upper body is often yellowish."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Abudefduf vaigiensis",
+      "common_name": "Indo-pacific Sergeant",
+      "image": "images/abudefduf_vaigiensis.jpg",
+      "features": [
+        "Five strong, dark bands on body.",
+        "Yellow back."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Amphiprion clarkii",
+      "common_name": "Yellowtail Clownfish",
+      "image": "images/amphiprion_clarkii.jpg",
+      "features": [
+        "Two white bars on a black or brown body.",
+        "Yellow or orange tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Amphiprion sebae",
+      "common_name": "Sebae Anemonefish",
+      "image": "images/amphiprion_sebae.jpg",
+      "features": [
+        "Two white bands, the middle one is often wide.",
+        "Dark body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Amphiprion percula",
+      "common_name": "Orange Clownfish",
+      "image": "images/amphiprion_percula.jpg",
+      "features": [
+        "Bright orange body with three white bars.",
+        "Bars are outlined in black."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Dascyllus aruanus",
+      "common_name": "Whitetail Dascyllus",
+      "image": "images/dascyllus_aruanus.jpg",
+      "features": [
+        "Three black bars on a white body.",
+        "White tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Dascyllus melanurus",
+      "common_name": "Blacktail Humbug",
+      "image": "images/dascyllus_melanurus.jpg",
+      "features": [
+        "Four dark bands across body.",
+        "Black tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Dascyllus trimaculatus",
+      "common_name": "Threespot Dascyllus",
+      "image": "images/dascyllus_trimaculatus.jpg",
+      "features": [
+        "Black body with a white spot on the forehead and upper sides."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Dischistodus perspicillatus",
+      "common_name": "White Damsel",
+      "image": "images/dischistodus_perspicillatus.jpg",
+      "features": [
+        "Black blotches on a white or pale body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Neoglyphidodon melas",
+      "common_name": "Bowtie Damselfish",
+      "image": "images/neoglyphidodon_melas.jpg",
+      "features": [
+        "Adults are entirely black.",
+        "Juveniles are bright yellow with blue lines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Pristotis obtusirostris",
+      "common_name": "Gulf Damselfish",
+      "image": "images/pristotis_obtusirostris.jpg",
+      "features": [
+        "Whitish lips, elongated body.",
+        "13 spines and 12-13 rays in dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Stegastes fasciolatus",
+      "common_name": "Pacific Gregory",
+      "image": "images/stegastes_fasciolatus.jpg",
+      "features": [
+        "Brown markings on scales.",
+        "Dusky grey-brown body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pomacentridae",
+      "species": "Stegastes nigricans",
+      "common_name": "Dusky Farmerfish",
+      "image": "images/stegastes_nigricans.jpg",
+      "features": [
+        "Diffuse black spot on posterior of dorsal fin.",
+        "Dark, almost black body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Bodianus neilli",
+      "common_name": "Bay of Bengal Hogfish",
+      "image": "images/bodianus_neilli.jpg",
+      "features": [
+        "Large dark blotch on dorsal fin.",
+        "Reddish coloration on head and anterior body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Cheilinus undulatus",
+      "common_name": "Humphead Wrasse",
+      "image": "images/cheilinus_undulatus.jpg",
+      "features": [
+        "Prominent hump on the head in adults.",
+        "Wavy green and purplish-brown lines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Cheilinus chlorourus",
+      "common_name": "Floral Wrasse",
+      "image": "images/cheilinus_chlorourus.jpg",
+      "features": [
+        "Head with red spots.",
+        "Body is mottled with small white and dark spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Cheilinus fasciatus",
+      "common_name": "Redbreasted Wrasse",
+      "image": "images/cheilinus_fasciatus.jpg",
+      "features": [
+        "6 dark vertical bands on a pale body.",
+        "Reddish-orange stripes and spots on head."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Choerodon anchorago",
+      "common_name": "Orange-dotted Tuskfish",
+      "image": "images/choerodon_anchorago.jpg",
+      "features": [
+        "Rectangular white saddle on back.",
+        "Head with orange spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Choerodon robustus",
+      "common_name": "Robust Tuskfish",
+      "image": "images/choerodon_robustus.jpg",
+      "features": [
+        "Blue lines on head.",
+        "Several horizontal rows of blue spots on caudal peduncle."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Coris centralis",
+      "common_name": "Not listed",
+      "image": "images/coris_centralis.jpg",
+      "features": [
+        "Black dotted line passing horizontally."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Coris formosa",
+      "common_name": "Queen Coris",
+      "image": "images/coris_formosa.jpg",
+      "features": [
+        "Adult male has brilliant blue to green stripes on head.",
+        "Juvenile is orange with white, black-edged saddles."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Chromis viridis",
+      "common_name": "Blue Green Damselfish",
+      "image": "images/chromis_viridis.jpg",
+      "features": [
+        "Uniformly bluish-green color."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Cymolutes praetextatus",
+      "common_name": "Knife Razorfish",
+      "image": "images/cymolutes_praetextatus.jpg",
+      "features": [
+        "Laterally compressed, knife-like body.",
+        "Dives into sand to escape danger."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Gomphosus caeruleus",
+      "common_name": "Green Birdmouth Wrasse",
+      "image": "images/gomphosus_caeruleus.jpg",
+      "features": [
+        "Snout produced into a prominent tube-like structure.",
+        "Body is greenish-blue."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Halichoeres hortulanus",
+      "common_name": "Checkerboard Wrasse",
+      "image": "images/halichoeres_hortulanus.jpg",
+      "features": [
+        "Prominent yellow patch on back.",
+        "Checkerboard-like pattern on scales."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Halichoeres scapularis",
+      "common_name": "Zigzag Wrasse",
+      "image": "images/halichoeres_scapularis.jpg",
+      "features": [
+        "Brown or blackish zigzag stripe along side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Halichoeres zeylonicus",
+      "common_name": "Goldstripe Wrasse",
+      "image": "images/halichoeres_zeylonicus.jpg",
+      "features": [
+        "Orange-yellow lateral stripe with a wavy blue margin.",
+        "Bluish bands radiating from eye."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Hologymnosus doliatus",
+      "common_name": "Pastel Ringwrasse",
+      "image": "images/hologymnosus_doliatus.jpg",
+      "features": [
+        "Terminal male has a deep blue to purple bar followed by a broad light red bar.",
+        "Initial phase has numerous thin vertical bars."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Hemigymnus melapterus",
+      "common_name": "Blackeye Thicklip",
+      "image": "images/hemigymnus_melapterus.jpg",
+      "features": [
+        "Anterior half of body is dark, posterior is white.",
+        "Thick lips."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Iniistius cyanifrons",
+      "common_name": "Not listed",
+      "image": "images/iniistius_cyanifrons.jpg",
+      "features": [
+        "Blue transverse lines on head.",
+        "Teeth protruding."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Iniistius pavo",
+      "common_name": "Peacock Wrasse",
+      "image": "images/iniistius_pavo.jpg",
+      "features": [
+        "First 2 dorsal spines are separated from the rest of the fin.",
+        "Blue-edged black spot below 6th dorsal-fin spine."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Iniistius twistii",
+      "common_name": "Redblotch Razorfish",
+      "image": "images/iniistius_twistii.jpg",
+      "features": [
+        "Red patch below eye.",
+        "Dark vertical band below eye."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Labroides dimidiatus",
+      "common_name": "Bluestreak Cleaner Wrasse",
+      "image": "images/labroides_dimidiatus.jpg",
+      "features": [
+        "Black stripe that widens towards the tail.",
+        "Known for cleaning other fish."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Oxycheilinus digramma",
+      "common_name": "Cheeklined Wrasse",
+      "image": "images/oxycheilinus_digramma.jpg",
+      "features": [
+        "Distinctive lines on the cheek.",
+        "Transparent tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Pteragogus flagellifer",
+      "common_name": "Cocktail Wrasse",
+      "image": "images/pteragogus_flagellifer.jpg",
+      "features": [
+        "Flagella-like extension on dorsal fin.",
+        "Rounded tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Stethojulis interrupta",
+      "common_name": "Cutribbon Wrasse",
+      "image": "images/stethojulis_interrupta.jpg",
+      "features": [
+        "Midlateral stripe.",
+        "Orange spot near eye."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Thalassoma hardwicke",
+      "common_name": "Sixbar Wrasse",
+      "image": "images/thalassoma_hardwicke.jpg",
+      "features": [
+        "Six distinct vertical bands on side.",
+        "Saddle-like spot on back."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Thalassoma lunare",
+      "common_name": "Moon Wrasse",
+      "image": "images/thalassoma_lunare.jpg",
+      "features": [
+        "Lunar-shaped pattern on tail.",
+        "Red or purple lines on head.",
+        "Vertical bands on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Labridae",
+      "species": "Xiphocheilus typus",
+      "common_name": "Blue-banded Wrasse",
+      "image": "images/xiphocheilus_typus.jpg",
+      "features": [
+        "Blue bands on head.",
+        "Protruding teeth."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Scaridae",
+      "species": "Scarus ghobban",
+      "common_name": "Blue-barred Parrotfish",
+      "image": "images/scarus_ghobban.jpg",
+      "features": [
+        "Often has 5 irregular blue bars on side.",
+        "Blue margin on fins."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Scaridae",
+      "species": "Scarus rubroviolaceus",
+      "common_name": "Ember Parrotfish",
+      "image": "images/scarus_rubroviolaceus.jpg",
+      "features": [
+        "Head profile rises sharply.",
+        "Pale red anteriorly, greenish posteriorly."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Sphyraenidae",
+      "species": "Sphyraena iburiensis",
+      "common_name": "Not listed",
+      "image": "images/sphyraena_iburiensis.jpg",
+      "features": [
+        "2 longitudinal stripes on body.",
+        "Transparent first dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pinguipedidae",
+      "species": "Parapercis alboguttata",
+      "common_name": "Whitespot Sandsmelt",
+      "image": "images/parapercis_alboguttata.jpg",
+      "features": [
+        "Two dark red spots on side.",
+        "Indistinct blotches on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pinguipedidae",
+      "species": "Parapercis hexophtalma",
+      "common_name": "Not listed",
+      "image": "images/parapercis_hexophtalma.jpg",
+      "features": [
+        "Black blotch on caudal fin.",
+        "Rows of spots along the body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Pinguipedidae",
+      "species": "Parapercis pulchella",
+      "common_name": "Harlequin Sandsmelt",
+      "image": "images/parapercis_pulchella.jpg",
+      "features": [
+        "Checkered pattern on lower body.",
+        "Dark saddles on back."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Percophidae",
+      "species": "Bembrops caudimacula",
+      "common_name": "Not listed",
+      "image": "images/bembrops_caudimacula.jpg",
+      "features": [
+        "Anterior black spot on first dorsal fin.",
+        "Lateral line slopes near hind part of pectoral fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Blenniidae",
+      "species": "Petroscirtes breviceps",
+      "common_name": "Striped Poison-fang Blenny Mimic",
+      "image": "images/petroscirtes_breviceps.jpg",
+      "features": [
+        "Fringed flap (cirri) over eyes.",
+        "No scales."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Blenniidae",
+      "species": "Xiphasia setifer",
+      "common_name": "Hairtail Blenny",
+      "image": "images/xiphasia_setifer.jpg",
+      "features": [
+        "Extremely elongated, eel-like body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Gobidae",
+      "species": "Favonigobius reichei",
+      "common_name": "Indo-pacific Tropical Sand Goby",
+      "image": "images/favonigobius_reichei.jpg",
+      "features": [
+        "Pelvic fins united.",
+        "Small, sand-colored goby."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Gobidae",
+      "species": "Oxyurichthys papuensis",
+      "common_name": "Frogface Goby",
+      "image": "images/oxyurichthys_papuensis.jpg",
+      "features": [
+        "Elongated body with a pointed tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Ephippidae",
+      "species": "Ephippus orbis",
+      "common_name": "Orbfish",
+      "image": "images/ephippus_orbis.jpg",
+      "features": [
+        "Deep, orb-like body.",
+        "Faint dark bars on silvery body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Ephippidae",
+      "species": "Platax teira",
+      "common_name": "Longfin Batfish",
+      "image": "images/platax_teira.jpg",
+      "features": [
+        "Juveniles have very long dorsal and anal fins.",
+        "Adults are more disc-shaped with dark bars."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Siganidae",
+      "species": "Siganus canaliculatus",
+      "common_name": "White-spotted Spinefoot",
+      "image": "images/siganus_canaliculatus.jpg",
+      "features": [
+        "Pale blue spots on body.",
+        "No bands on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Siganidae",
+      "species": "Siganus fuscescens",
+      "common_name": "Mottled Spinefoot",
+      "image": "images/siganus_fuscescens.jpg",
+      "features": [
+        "Bluish-white spots on a brownish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Siganidae",
+      "species": "Siganus guttatus",
+      "common_name": "Goldlined Spinefoot",
+      "image": "images/siganus_guttatus.jpg",
+      "features": [
+        "Orange spotted body.",
+        "Large yellow spot below dorsal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Siganidae",
+      "species": "Siganus javus",
+      "common_name": "Streaked Spinefoot",
+      "image": "images/siganus_javus.jpg",
+      "features": [
+        "Silvery blue undulating lines on lower sides.",
+        "Blue spots on head and upper sides."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Siganidae",
+      "species": "Siganus insomnis",
+      "common_name": "Not listed",
+      "image": "images/siganus_insomnis.jpg",
+      "features": [
+        "Horizontal golden bronze bands breaking into spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Siganidae",
+      "species": "Siganus sutor",
+      "common_name": "Shoemaker Spinefoot",
+      "image": "images/siganus_sutor.jpg",
+      "features": [
+        "Variable color pattern with blotches.",
+        "Dark spots on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Siganidae",
+      "species": "Siganus vermiculatus",
+      "common_name": "Vermiculated Spinefoot",
+      "image": "images/siganus_vermiculatus.jpg",
+      "features": [
+        "Vermiculated (wavy lines) pattern on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Zanclidae",
+      "species": "Zanclus cornutus",
+      "common_name": "Moorish Idol",
+      "image": "images/zanclus_cornutus.jpg",
+      "features": [
+        "Compressed, discoid body.",
+        "Broad vertical bands of black, white, and yellow.",
+        "Long, white dorsal fin filament."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus bariene",
+      "common_name": "Black-spot Surgeonfish",
+      "image": "images/acanthurus_bariene.jpg",
+      "features": [
+        "Black spot behind eye.",
+        "Blue line at fin base."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus blochii",
+      "common_name": "Ringtail Surgeonfish",
+      "image": "images/acanthurus_blochii.jpg",
+      "features": [
+        "White bar at tail base.",
+        "Brown socket around spine.",
+        "Narrow irregular stripes on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus dussumieri",
+      "common_name": "Eyestripe Surgeonfish",
+      "image": "images/acanthurus_dussumieri.jpg",
+      "features": [
+        "Yellow band through the eye.",
+        "Orange band between eyes."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus grammoptilus",
+      "common_name": "Finelined Surgeonfish",
+      "image": "images/acanthurus_grammoptilus.jpg",
+      "features": [
+        "White band on caudal fin base.",
+        "Bluish bands on head."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus lineatus",
+      "common_name": "Lined Surgeonfish",
+      "image": "images/acanthurus_lineatus.jpg",
+      "features": [
+        "Black-edged blue and yellow stripes.",
+        "Lower part of body is pale lavender."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus mata",
+      "common_name": "Elongate Surgeonfish",
+      "image": "images/acanthurus_mata.jpg",
+      "features": [
+        "Longitudinal blue lines on head and body.",
+        "Yellow area behind eye."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus nigricauda",
+      "common_name": "Epaulette Surgeonfish",
+      "image": "images/acanthurus_nigricauda.jpg",
+      "features": [
+        "Black stripe extending forward from the caudal spine.",
+        "Pointed black stripe behind eye."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus tennentii",
+      "common_name": "Doubleband Surgeonfish",
+      "image": "images/acanthurus_tennentii.jpg",
+      "features": [
+        "Two dark bands behind the head.",
+        "White band at caudal fin base."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus triostegus",
+      "common_name": "Convict Surgeonfish",
+      "image": "images/acanthurus_triostegus.jpg",
+      "features": [
+        "Narrow dark bars on a light greenish-grey body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Acanthurus xanthopterus",
+      "common_name": "Yellowfin Surgeonfish",
+      "image": "images/acanthurus_xanthopterus.jpg",
+      "features": [
+        "Outer part of pectoral fin is yellow.",
+        "Whitish band at base of tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Ctenochaetus striatus",
+      "common_name": "Striated Surgeonfish",
+      "image": "images/ctenochaetus_striatus.jpg",
+      "features": [
+        "Fine, pale longitudinal lines on body.",
+        "Small orange spots on head."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso brachycentron",
+      "common_name": "Humpback Unicornfish",
+      "image": "images/naso_brachycentron.jpg",
+      "features": [
+        "Prominent hump on the back."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso brevirostris",
+      "common_name": "Spotted Unicornfish",
+      "image": "images/naso_brevirostris.jpg",
+      "features": [
+        "Long, horn-like projection in front of eyes.",
+        "Body covered in small dark spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso elegans",
+      "common_name": "Elegant Unicornfish",
+      "image": "images/naso_elegans.jpg",
+      "features": [
+        "Orange keel on caudal peduncle.",
+        "Black-bordered caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso hexacanthus",
+      "common_name": "Sleek Unicornfish",
+      "image": "images/naso_hexacanthus.jpg",
+      "features": [
+        "No horn or hump.",
+        "Can rapidly change color from brown to pale blue."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso lopezi",
+      "common_name": "Elongate Unicornfish",
+      "image": "images/naso_lopezi.jpg",
+      "features": [
+        "Dark spots on body.",
+        "Distinct color divide on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso mcdadei",
+      "common_name": "Squarenose Unicornfish",
+      "image": "images/naso_mcdadei.jpg",
+      "features": [
+        "Convexly prominent snout.",
+        "Uniform brownish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso tergus",
+      "common_name": "Not listed",
+      "image": "images/naso_tergus.jpg",
+      "features": [
+        "6 dorsal spines.",
+        "Uniform brownish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso thynnoides",
+      "common_name": "Oneknife Unicornfish",
+      "image": "images/naso_thynnoides.jpg",
+      "features": [
+        "Single caudal peduncle plate.",
+        "Pectoral tip is yellowish."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso tonganus",
+      "common_name": "Bulbnose Unicornfish",
+      "image": "images/naso_tonganus.jpg",
+      "features": [
+        "Bulbous snout in adults."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso tuberosus",
+      "common_name": "Humpnose Unicornfish",
+      "image": "images/naso_tuberosus.jpg",
+      "features": [
+        "Adults with a rounded bump on snout.",
+        "2 keeled caudal plates."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso unicornis",
+      "common_name": "Bluespine Unicornfish",
+      "image": "images/naso_unicornis.jpg",
+      "features": [
+        "Forward-projecting horn on forehead.",
+        "Blue spines on caudal peduncle."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Naso vlamingii",
+      "common_name": "Bignose Unicornfish",
+      "image": "images/naso_vlamingii.jpg",
+      "features": [
+        "Prominent bump on snout.",
+        "Intricate blue pattern on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Perciformes",
+      "family": "Acanthuridae",
+      "species": "Zebrasoma velifer",
+      "common_name": "Sailfin Tang",
+      "image": "images/zebrasoma_velifer.jpg",
+      "features": [
+        "Very large, sail-like dorsal and anal fins.",
+        "Dark bands with yellowish lines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Balistidae",
+      "species": "Abalistes stellatus",
+      "common_name": "Not listed",
+      "image": "images/abalistes_stellatus.jpg",
+      "features": [
+        "Numerous small blue spots on body.",
+        "Deeply grooved caudal peduncle."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Balistidae",
+      "species": "Balistapus undulatus",
+      "common_name": "Orange-lined Triggerfish",
+      "image": "images/balistapus_undulatus.jpg",
+      "features": [
+        "Numerous orange stripes on a dark greenish-black body.",
+        "6 spines in 2 rows on caudal peduncle."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Balistidae",
+      "species": "Balistoides viridescens",
+      "common_name": "Titan Triggerfish",
+      "image": "images/balistoides_viridescens.jpg",
+      "features": [
+        "Large size.",
+        "Dark area around the eye and upper snout.",
+        "Rays of fins are black distally."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Balistidae",
+      "species": "Canthidermis maculata",
+      "common_name": "Rough Triggerfish",
+      "image": "images/canthidermis_maculata.jpg",
+      "features": [
+        "Body covered in small elongated dots.",
+        "Dark caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Balistidae",
+      "species": "Melichthys indicus",
+      "common_name": "Indian Triggerfish",
+      "image": "images/melichthys_indicus.jpg",
+      "features": [
+        "White bands at the base of the dorsal and anal fins.",
+        "Narrow white edge on caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Balistidae",
+      "species": "Odonus niger",
+      "common_name": "Red-toothed Triggerfish",
+      "image": "images/odonus_niger.jpg",
+      "features": [
+        "Teeth are red.",
+        "Deep blue or purplish body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Balistidae",
+      "species": "Rhinecanthus aculeatus",
+      "common_name": "White-banded Triggerfish",
+      "image": "images/rhinecanthus_aculeatus.jpg",
+      "features": [
+        "4 diagonal bluish-white bands on side.",
+        "3 blue lines on head."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Balistidae",
+      "species": "Sufflamen fraenatum",
+      "common_name": "Masked Triggerfish",
+      "image": "images/sufflamen_fraenatum.jpg",
+      "features": [
+        "Pale band running from corner of mouth backwards.",
+        "Yellowish-brown to dark brown body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Balistidae",
+      "species": "Xanthichthys lineopunctatus",
+      "common_name": "Striped Triggerfish",
+      "image": "images/xanthichthys_lineopunctatus.jpg",
+      "features": [
+        "Brown ridged lines on side."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Monacanthidae",
+      "species": "Aluterus monoceros",
+      "common_name": "Unicorn Leatherjacket Filefish",
+      "image": "images/aluterus_monoceros.jpg",
+      "features": [
+        "Dorsal-fin spine is weak.",
+        "Uniformly colored body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Monacanthidae",
+      "species": "Aluterus scriptus",
+      "common_name": "Scribbled Leatherjacket Filefish",
+      "image": "images/aluterus_scriptus.jpg",
+      "features": [
+        "Body covered with blue lines and brown spots.",
+        "Long caudal fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Monacanthidae",
+      "species": "Lalmohania velutina",
+      "common_name": "Not listed",
+      "image": "images/lalmohania_velutina.jpg",
+      "features": [
+        "Prickly spotted body.",
+        "Caudal fin is long."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Monacanthidae",
+      "species": "Paramonacanthus frenatus",
+      "common_name": "Wedgetail Filefish",
+      "image": "images/paramonacanthus_frenatus.jpg",
+      "features": [
+        "Convex black dorsal fin membrane.",
+        "Mottled body pattern."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Triacanthidae",
+      "species": "Pseudotriacanthus strigilifer",
+      "common_name": "Long-spined Tripodfish",
+      "image": "images/pseudotriacanthus_strigilifer.jpg",
+      "features": [
+        "Long spines on dorsal and pelvic fins.",
+        "Distinctive color pattern."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Triacanthidae",
+      "species": "Triacanthus biaculeatus",
+      "common_name": "Short-nosed Tripodfish",
+      "image": "images/triacanthus_biaculeatus.jpg",
+      "features": [
+        "Two prominent pelvic fin spines.",
+        "Silvery body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Ostraciidae",
+      "species": "Lactoria cornuta",
+      "common_name": "Long Horn Cowfish",
+      "image": "images/lactoria_cornuta.jpg",
+      "features": [
+        "Long horns protruding from above the eyes.",
+        "Boxy body shape."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Ostraciidae",
+      "species": "Ostracion cubicus",
+      "common_name": "Yellow Boxfish",
+      "image": "images/ostracion_cubicus.jpg",
+      "features": [
+        "Body is encased in a bony, box-like carapace.",
+        "Juveniles are bright yellow with black spots."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Ostraciidae",
+      "species": "Ostracion nasus",
+      "common_name": "Horn-nosed Boxfish",
+      "image": "images/ostracion_nasus.jpg",
+      "features": [
+        "Small protuberance (horn) on the snout."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Ostraciidae",
+      "species": "Tetrosomus gibbosus",
+      "common_name": "Humpback Turretfish",
+      "image": "images/tetrosomus_gibbosus.jpg",
+      "features": [
+        "Box-shaped fish with a prominent hump on the back.",
+        "Tubular protuberance."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Tetraodontidae",
+      "species": "Arothron hispidus",
+      "common_name": "White-spotted Puffer",
+      "image": "images/arothron_hispidus.jpg",
+      "features": [
+        "White spots on a green or grey background.",
+        "Yellow and black circles around pectoral fin."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Tetraodontidae",
+      "species": "Arothron immaculatus",
+      "common_name": "Immaculate Puffer",
+      "image": "images/arothron_immaculatus.jpg",
+      "features": [
+        "Body covered with small prickles.",
+        "Can be yellowish or grey, often with dark markings."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Tetraodontidae",
+      "species": "Arothron stellatus",
+      "common_name": "Stellate Puffer",
+      "image": "images/arothron_stellatus.jpg",
+      "features": [
+        "Spotted dorsal part (bands in juvenile).",
+        "Large size."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Tetraodontidae",
+      "species": "Canthigaster solandri",
+      "common_name": "Spotted Sharpnose",
+      "image": "images/canthigaster_solandri.jpg",
+      "features": [
+        "Lines radiating from the eye.",
+        "White spots on body."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Tetraodontidae",
+      "species": "Chelonodon patoca",
+      "common_name": "Milkspotted Puffer",
+      "image": "images/chelonodon_patoca.jpg",
+      "features": [
+        "Large white spots on a dark back.",
+        "Prickly belly."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Tetraodontidae",
+      "species": "Lagocephalus inermis",
+      "common_name": "Smooth Blaasop",
+      "image": "images/lagocephalus_inermis.jpg",
+      "features": [
+        "Smooth back.",
+        "Silvery belly."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Tetraodontidae",
+      "species": "Torquigener brevipinnis",
+      "common_name": "Not listed",
+      "image": "images/torquigener_brevipinnis.jpg",
+      "features": [
+        "1 or more small spines wholly on caudal peduncle.",
+        "Banded tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Tetraodontidae",
+      "species": "Torquigener flavimaculosus",
+      "common_name": "Not listed",
+      "image": "images/torquigener_flavimaculosus.jpg",
+      "features": [
+        "Yellow spots on back.",
+        "Banded tail."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Diodontidae",
+      "species": "Cyclichthys spilostylus",
+      "common_name": "Spotbase Burrfish",
+      "image": "images/cyclichthys_spilostylus.jpg",
+      "features": [
+        "Spines have yellow tips or bases.",
+        "Short, fixed spines."
+      ]
+    },
+    {
+      "class": "Actinopterygii",
+      "order": "Tetraodontiformes",
+      "family": "Diodontidae",
+      "species": "Diodon hystrix",
+      "common_name": "Spot-fin Porcupinefish",
+      "image": "images/diodon_hystrix.jpg",
+      "features": [
+        "Body covered in long, sharp spines.",
+        "Large eyes.",
+        "Body is spotted."
+      ]
+    }
+  ]
+}

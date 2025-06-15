@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FishDB - Indian Coral Reefs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .search-focus:focus-within { box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
+    .tag-hover:hover { transform: translateY(-1px); }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <header class="bg-white border-b border-gray-100 sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 10c0-1.5.5-3 1.5-4s2.5-1.5 4-1.5h5c1.5 0 3 .5 4 1.5s1.5 2.5 1.5 4-.5 3-1.5 4-2.5 1.5-4 1.5h-5c-1.5 0-3-.5-4-1.5s-1.5-2.5-1.5-4z"/>
+            </svg>
+          </div>
+          <h1 class="text-xl font-semibold text-gray-900">
+            <a href="/" class="hover:text-blue-600">FishDB</a>
+          </h1>
+        </div>
+        
+        <div class="flex items-center space-x-4">
+          <a href="/list" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Browse All</a>
+          <a href="/static/field_guide.pdf" download="CMFRI_Field_Guide.pdf" class="bg-green-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-700 transition-colors flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>Download Guide</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <div class="text-center">
+      <div class="mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          Explore Marine Life of <span class="text-blue-600">Reef associated
+fishes of India</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          An introductory guide to the diverse and colorful world of reef-associated fishes in Indian waters. This resource, based on extensive research , helps in the quick and easy identification of the various fish species found in India's unique marine habitats.
+        </p>
+      </div>
+
+      <div class="mb-12">
+        <div class="relative max-w-2xl mx-auto">
+          <form action="/list" method="GET" class="search-focus flex items-center bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search fish species..."
+              class="flex-1 px-6 py-4 text-gray-900 placeholder-gray-500 bg-transparent rounded-xl outline-none text-lg"
+            >
+            <button type="submit" class="p-4 text-gray-400 hover:text-blue-600 transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="mb-16">
+        <p class="text-sm font-medium text-gray-500 mb-4">Quick Actions</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a href="/list" class="tag-hover bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all">
+            Browse All Species
+          </a>
+          <a href="/list?search=shark" class="tag-hover bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all">
+            Sharks
+          </a>
+          <a href="/list?search=ray" class="tag-hover bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all">
+            Rays
+          </a>
+          <a href="/static/field_guide.pdf" download="CMFRI_Field_Guide.pdf" class="tag-hover bg-green-100 hover:bg-green-200 text-green-800 px-4 py-2 rounded-full text-sm font-medium transition-all">
+            Download Field Guide (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-20 space-y-12 text-gray-800 text-left">
+      <div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Introduction</h3>
+        <div class="prose max-w-none">
+            <p>The greatest abundance of marine fish and the highest biodiversity are associated with coral reefs, which provide essential habitats for the fishes and their prey. Coral reef fishes are one of the most colourful and diverse groups of animals in the sea. Their life cycles are closely linked to the reef environment for feeding, shelter, reproduction, and growth.</p>
+            <p>While India has a vast coastline of over 8,000 km , its coral and rocky reef areas are less extensive compared to other regions of the world. These important ecosystems are distributed in specific locations along the east and west coasts , including major reef areas like the Gulf of Mannar, Lakshadweep, the Andaman and Nicobar Islands, and the Gulf of Kutch.</p>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">About This Guide</h3>
+        <div class="prose max-w-none">
+          <p>This digital database is based on the <i>Field Guide on Reef Associated Fishes of India</i> , a comprehensive guide for the quick identification of ornamental and commercial reef-associated fishes in Indian waters. It was authored by Dr. Rekha J. Nair and Dr. Somy Kuriakose  and published in 2014 by the Central Marine Fisheries Research Institute (CMFRI)  as CMFRI Special Publication No. 117.</p>
+          <p>The guide documents over 372 fish species from 66 families , compiled from numerous visits to harbors along India's southern coastline and from underwater surveys conducted at Lakshadweep and the Andaman islands. The project was funded by the Ministry of Environment and Forests. This work aims to support researchers, students, and sport divers by making the identification of reef fish easier, which is crucial for biological studies, trade monitoring, and conservation efforts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-16">
+      <div class="text-center p-6">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <h3 class="font-semibold text-gray-900 mb-2">372+ Species</h3>
+        <p class="text-gray-600 text-sm">Comprehensive database of reef fish from the guide </p>
+      </div>
+      <div class="text-center p-6">
+        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3 class="font-semibold text-gray-900 mb-2">Research Based</h3>
+        <p class="text-gray-600 text-sm">Data from CMFRI field studies and surveys </p>
+      </div>
+      <div class="text-center p-6">
+        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <h3 class="font-semibold text-gray-900 mb-2">Scientifically Accurate</h3>
+        <p class="text-gray-600 text-sm">Peer-reviewed taxonomic data from CMFRI </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-gray-100 mt-20">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="text-center text-gray-500 text-sm">
+        <p>&copy; 2025 FishDB. Data sourced from the Central Marine Fisheries Research Institute (CMFRI). ©2014 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
