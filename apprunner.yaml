@@ -1,3 +1,6 @@
+# apprunner.yaml
+
+# Version of the App Runner configuration schema
 version: 1.0
 
 # Services section defines the configuration for your App Runner service
@@ -10,9 +13,34 @@ services:
           type: BRANCH
           value: main
         codeConfiguration:
+          # Use the MANAGED_REPOSITORY_SOURCE for managed runtimes
           configurationSource: REPOSITORY
-          imageConfiguration:
-            port: 8080
-            # Removed buildCommand as App Runner implicitly builds the Dockerfile
-            startCommand: "./main" # Command to start your application inside the container
-            runtime: "other" # Since we're using a Dockerfile, specify "other"
+          # For managed runtimes, specify the runtime directly
+          runtime: go1 # Indicates the Go managed runtime
+          # Build configuration
+          build:
+            commands:
+              pre-build:
+                - scripts/prebuild.sh # Make sure this script exists and is executable
+              build:
+                - go build -o main ./main.go # Builds your Go application
+              post-build:
+                - scripts/postbuild.sh # Make sure this script exists and is executable
+            # Environment variables for the build phase (if needed)
+            env:
+              - name: MY_VAR_EXAMPLE_BUILD
+                value: "build_example" # Example build environment variable
+          # Run configuration
+          run:
+            # Important: Set runtime-version to a supported Go version
+            # App Runner supports specific versions. Check App Runner docs for the latest.
+            # For now, let's use a recent common one, but verify supported versions.
+            runtime-version: 1.22.5 # Changed to match your Dockerfile's Go version, if supported by App Runner
+            command: ./main # Command to start your application
+            network:
+              port: 8080 # CORRECTED: Your Go app listens on 8080
+              env: APP_PORT # Environment variable that App Runner sets for the port
+            # Environment variables for the run phase (if needed)
+            env:
+              - name: MY_VAR_EXAMPLE_RUN
+                value: "run_example" # Example runtime environment variable
