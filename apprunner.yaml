@@ -19,7 +19,7 @@ services:
             commands:
               # Temporarily removed pre-build and post-build scripts for debugging
               build:
-                - go build -o main ./main.go
+                - go build ./main.go ./main
             env:
               - name: MY_VAR_EXAMPLE_BUILD
                 value: "build_example"
