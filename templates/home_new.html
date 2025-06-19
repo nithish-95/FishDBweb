@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FishDB - Indian Coral Reefs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "ocean-deep": "#0d3b66",
+              "ocean-medium": "#1d6fa5",
+              "ocean-light": "#3a9bdc",
+              coral: "#ff6b6b",
+              seafoam: "#4ecdc4",
+              sand: "#f9d5bb",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
+                "50%": { transform: "translateY(-20px) rotate(3deg)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(to bottom, #f0f9ff, #e6f7ff, #f0f9ff);
+      }
+
+      .hero-pattern {
+        background: radial-gradient(
+            circle at top right,
+            rgba(26, 115, 232, 0.1) 0%,
+            transparent 30%
+          ),
+          radial-gradient(
+            circle at bottom left,
+            rgba(58, 155, 220, 0.1) 0%,
+            transparent 30%
+          );
+      }
+
+      .fish-animation {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .coral-bg {
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,20 Q40,5 60,20 T100,20 Q85,40 100,60 T100,100 Q60,85 20,100 Q5,85 20,60 Q5,40 20,20" fill="%23ff6b6b" opacity="0.1"/></svg>');
+        background-size: 200px;
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .wave-divider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+      }
+
+      .wave-divider svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 80px;
+      }
+
+      .wave-divider .shape-fill {
+        fill: #f0f9ff;
+      }
+
+      .search-focus:focus-within {
+        box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.3);
+      }
+
+      .tag-hover {
+        transition: all 0.2s ease;
+      }
+
+      .tag-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+
+      .species-counter {
+        background: linear-gradient(135deg, #3a9bdc, #1d6fa5);
+        box-shadow: 0 4px 6px rgba(26, 115, 232, 0.3);
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #3a9bdc, #1d6fa5);
+        box-shadow: 0 4px 6px rgba(26, 115, 232, 0.3);
+      }
+
+      .map-container {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        height: 100%;
+        min-height: 320px;
+      }
+
+      .map-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(13, 59, 102, 0.8),
+          transparent
+        );
+        padding: 1.5rem;
+        color: white;
+      }
+
+      .map-marker {
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translate(-50%, -50%);
+        animation: pulse 2s infinite;
+      }
+
+      .map-marker i {
+        color: #3a9bdc;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(58, 155, 220, 0.4);
+        }
+        70% {
+          box-shadow: 0 0 0 12px rgba(58, 155, 220, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(58, 155, 220, 0);
+        }
+      }
+
+      .guide-image {
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        transform: rotate(2deg);
+        transition: transform 0.3s ease;
+      }
+
+      .guide-image:hover {
+        transform: rotate(0deg) scale(1.02);
+      }
+
+      .guide-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          45deg,
+          rgba(26, 115, 232, 0.1),
+          rgba(58, 155, 220, 0.2)
+        );
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-blue-50 to-cyan-50 coral-bg">
+    <!-- Header -->
+    <header
+      class="bg-white/90 backdrop-blur-sm border-b border-blue-100 sticky top-0 z-50 shadow-sm"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+        <nav class="flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <div class="bg-blue-100 p-2 rounded-xl">
+              <svg
+                class="h-10 w-10 text-blue-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+            </div>
+            <h1
+              class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500"
+            >
+              <a href="/">FishDB</a>
+            </h1>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <a
+              href="/list"
+              class="text-blue-900 font-medium hover:text-teal-600 transition-colors hidden md:block"
+            >
+              <i class="fas fa-fish mr-2"></i>Browse All Species
+            </a>
+            <a
+              href="/static/field_guide.pdf"
+              download="CMFRI_Field_Guide.pdf"
+              class="bg-gradient-to-r from-teal-500 to-emerald-600 text-white px-4 py-2 rounded-xl font-medium hover:opacity-90 transition-all flex items-center space-x-2"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                ></path>
+              </svg>
+              <span>GET FIELD GUIDE</span>
+            </a>
+            <button class="md:hidden text-blue-800">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 hero-pattern">
+        <div class="relative z-10">
+          <div class="max-w-3xl mx-auto text-center mb-12">
+            <div
+              class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-sm font-medium mb-6"
+            >
+              <i class="fas fa-water mr-2"></i> Explore India's Marine
+              Biodiversity
+            </div>
+            <h2
+              class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight"
+            >
+              Discover
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500"
+                >Reef Associated Fishes</span
+              >
+              of India
+            </h2>
+            <p class="text-lg text-blue-800 max-w-2xl mx-auto">
+              An interactive guide to the diverse and colorful world of
+              reef-associated fishes in Indian waters. Based on extensive
+              research by CMFRI.
+            </p>
+          </div>
+
+          <div class="mb-12">
+            <div class="relative max-w-2xl mx-auto">
+              <form
+                action="/list"
+                method="GET"
+                class="search-focus flex items-center bg-white border border-blue-200 rounded-xl shadow-lg hover:shadow-xl transition-all"
+              >
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search fish species..."
+                  class="flex-1 px-6 py-4 text-gray-900 placeholder-blue-400 bg-transparent rounded-xl outline-none text-lg"
+                />
+                <button
+                  type="submit"
+                  class="p-4 text-blue-500 hover:text-blue-700 transition-colors"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="mb-16">
+            <p class="text-sm font-medium text-blue-700 mb-4">Quick Actions</p>
+            <div class="flex flex-wrap justify-center gap-3">
+              <a
+                href="/list"
+                class="tag-hover bg-white shadow text-blue-800 px-4 py-2 rounded-lg font-medium transition-all hover:bg-blue-50"
+              >
+                <i class="fas fa-list mr-2"></i>Browse All Species
+              </a>
+              <a
+                href="/list?search=shark"
+                class="tag-hover bg-white shadow text-blue-800 px-4 py-2 rounded-lg font-medium transition-all hover:bg-blue-50"
+              >
+                <i class="fas fa-fish mr-2"></i>Sharks
+              </a>
+              <a
+                href="/list?search=ray"
+                class="tag-hover bg-white shadow text-blue-800 px-4 py-2 rounded-lg font-medium transition-all hover:bg-blue-50"
+              >
+                <i class="fas fa-fish mr-2"></i>Rays
+              </a>
+              <a
+                href="/static/field_guide.pdf"
+                download="CMFRI_Field_Guide.pdf"
+                class="tag-hover bg-gradient-to-r from-teal-500 to-emerald-600 text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-all"
+              >
+                <i class="fas fa-download mr-2"></i>Download Guide
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative fish elements -->
+        <div
+          class="absolute top-20 right-10 opacity-40 fish-animation hidden lg:block"
+        >
+          <svg
+            class="w-32 h-32 text-blue-400"
+            fill="currentColor"
+            viewBox="0 0 100 100"
+          >
+            <path d="M10,50 Q30,30 50,50 T90,50 Q70,70 50,50 T10,50" />
+          </svg>
+        </div>
+        <div
+          class="absolute bottom-20 left-10 opacity-40 fish-animation"
+          style="animation-delay: 2s; transform: scaleX(-1)"
+        >
+          <svg
+            class="w-24 h-24 text-teal-400"
+            fill="currentColor"
+            viewBox="0 0 100 100"
+          >
+            <path d="M10,50 Q30,30 50,50 T90,50 Q70,70 50,50 T10,50" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Wave divider -->
+      <div class="wave-divider">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section
+      class="py-12 bg-gradient-to-r from-blue-500 to-cyan-500 text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="species-counter p-6 rounded-2xl">
+            <div class="text-3xl font-bold">372+</div>
+            <div class="text-blue-100">Species</div>
+          </div>
+          <div class="species-counter p-6 rounded-2xl">
+            <div class="text-3xl font-bold">66</div>
+            <div class="text-blue-100">Families</div>
+          </div>
+          <div class="species-counter p-6 rounded-2xl">
+            <div class="text-3xl font-bold">4</div>
+            <div class="text-blue-100">Major Reef Areas</div>
+          </div>
+          <div class="species-counter p-6 rounded-2xl">
+            <div class="text-3xl font-bold">14+</div>
+            <div class="text-blue-100">Years of Research</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div>
+          <h3 class="text-3xl font-bold text-gray-900 mb-4">
+            About India's Coral Reefs
+          </h3>
+          <div class="prose max-w-none text-gray-700">
+            <p class="mb-4">
+              The greatest abundance of marine fish and the highest biodiversity
+              are associated with coral reefs, which provide essential habitats
+              for the fishes and their prey. Coral reef fishes are one of the
+              most colourful and diverse groups of animals in the sea.
+            </p>
+            <p>
+              While India has a vast coastline of over 8,000 km, its coral and
+              rocky reef areas are distributed in specific locations along the
+              east and west coasts, including major reef areas like the Gulf of
+              Mannar, Lakshadweep, the Andaman and Nicobar Islands, and the Gulf
+              of Kutch.
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="map-container relative w-full h-auto">
+            <img
+              src="./static/images/map/reef_map_india.jpg"
+              alt="Map of India's Coral Reefs"
+              class="w-full h-full object-contain rounded-xl shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .map-container {
+          /* Ensure the container for the map is positioned relatively */
+          position: relative;
+          padding-bottom: 75%; /* Adjust this based on your image's aspect ratio (height/width * 100%) */
+          height: 0;
+          overflow: hidden;
+        }
+
+        .map-container img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: contain; /* Ensures the entire image is visible within the container */
+        }
+
+        .map-label {
+          /* Style for the marker itself (a small dot or icon) */
+          width: 12px;
+          height: 12px;
+          background-color: red;
+          border-radius: 50%;
+          transform: translate(-50%, -50%); /* Center the dot on its position */
+          cursor: pointer;
+          z-index: 10; /* Ensure markers are above the map */
+        }
+
+        .map-label .tooltip-text {
+          visibility: hidden;
+          width: max-content;
+          background-color: rgba(0, 0, 0, 0.7);
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 8px;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%; /* Position the tooltip above the marker */
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s;
+          font-size: 0.8rem;
+          white-space: nowrap; /* Prevent text wrapping */
+        }
+
+        .map-label:hover .tooltip-text {
+          visibility: visible;
+          opacity: 1;
+        }
+      </style>
+
+      <!-- Section with Field Guide -->
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div class="order-2 md:order-1">
+          <div class="guide-image relative">
+            <!-- Field guide cover -->
+            <div
+              class="w-full h-80 bg-gradient-to-br from-blue-50 to-cyan-50 flex flex-col items-center justify-center p-8 text-center border border-blue-200"
+            >
+              <div
+                class="w-24 h-32 bg-gradient-to-b from-blue-300 to-blue-500 rounded-lg shadow-lg mb-6"
+              ></div>
+              <h4 class="text-xl font-bold text-blue-900">Field Guide on</h4>
+              <h3 class="text-2xl font-bold text-blue-800 mb-2">
+                Reef Associated Fishes of India
+              </h3>
+              <div class="text-blue-700">CMFRI Special Publication No. 117</div>
+              <div class="mt-4 text-blue-600">
+                Dr. Rekha J. Nair & Dr. Somy Kuriakose
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <h3 class="text-3xl font-bold text-gray-900 mb-4">
+            About This Guide
+          </h3>
+          <div class="prose max-w-none text-gray-700">
+            <p class="mb-4">
+              This digital database is based on the
+              <span class="font-semibold"
+                >Field Guide on Reef Associated Fishes of India</span
+              >, a comprehensive guide for the quick identification of
+              ornamental and commercial reef-associated fishes in Indian waters.
+            </p>
+            <p>
+              Compiled from numerous visits to harbors along India's southern
+              coastline and underwater surveys at Lakshadweep and the Andaman
+              islands, this work aims to support researchers, students, and
+              sport divers in identifying reef fish for biological studies,
+              trade monitoring, and conservation efforts.
+            </p>
+          </div>
+          <a
+            href="/static/field_guide.pdf"
+            class="mt-6 inline-flex items-center px-5 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 shadow-md"
+          >
+            Download Full Guide <i class="fas fa-arrow-right ml-2 text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <div class="text-center mb-16">
+        <h3 class="text-3xl font-bold text-gray-900 mb-4">Key Features</h3>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+          Our database provides comprehensive information on reef-associated
+          fishes of India
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="card-hover bg-white p-8 rounded-2xl shadow-md">
+            <div class="feature-icon mx-auto">
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                />
+              </svg>
+            </div>
+            <h4 class="font-bold text-xl text-gray-900 mb-3">
+              Comprehensive Database
+            </h4>
+            <p class="text-gray-600">
+              Detailed profiles of 372+ reef fish species with taxonomy,
+              habitat, and identification features.
+            </p>
+          </div>
+          <div class="card-hover bg-white p-8 rounded-2xl shadow-md">
+            <div class="feature-icon mx-auto">
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </div>
+            <h4 class="font-bold text-xl text-gray-900 mb-3">Research Based</h4>
+            <p class="text-gray-600">
+              Data collected from extensive field studies and surveys by CMFRI
+              scientists.
+            </p>
+          </div>
+          <div class="card-hover bg-white p-8 rounded-2xl shadow-md">
+            <div class="feature-icon mx-auto">
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+            <h4 class="font-bold text-xl text-gray-900 mb-3">
+              Conservation Focused
+            </h4>
+            <p class="text-gray-600">
+              Information to support conservation efforts and sustainable
+              management of reef ecosystems.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Species -->
+      <div class="mb-20">
+        <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Featured Species
+        </h3>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="card-hover bg-white rounded-2xl overflow-hidden shadow-md"
+          >
+            <div
+              class="h-40 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center"
+            >
+              <i class="fas fa-fish text-5xl text-blue-500"></i>
+            </div>
+            <div class="p-4">
+              <div class="font-bold text-gray-900">Clownfish</div>
+              <div class="text-sm text-gray-500">Amphiprioninae</div>
+            </div>
+          </div>
+          <div
+            class="card-hover bg-white rounded-2xl overflow-hidden shadow-md"
+          >
+            <div
+              class="h-40 bg-gradient-to-br from-teal-100 to-emerald-100 flex items-center justify-center"
+            >
+              <i class="fas fa-fish text-5xl text-teal-500"></i>
+            </div>
+            <div class="p-4">
+              <div class="font-bold text-gray-900">Butterflyfish</div>
+              <div class="text-sm text-gray-500">Chaetodontidae</div>
+            </div>
+          </div>
+          <div
+            class="card-hover bg-white rounded-2xl overflow-hidden shadow-md"
+          >
+            <div
+              class="h-40 bg-gradient-to-br from-purple-100 to-indigo-100 flex items-center justify-center"
+            >
+              <i class="fas fa-fish text-5xl text-purple-500"></i>
+            </div>
+            <div class="p-4">
+              <div class="font-bold text-gray-900">Parrotfish</div>
+              <div class="text-sm text-gray-500">Scaridae</div>
+            </div>
+          </div>
+          <div
+            class="card-hover bg-white rounded-2xl overflow-hidden shadow-md"
+          >
+            <div
+              class="h-40 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center"
+            >
+              <i class="fas fa-fish text-5xl text-amber-500"></i>
+            </div>
+            <div class="p-4">
+              <div class="font-bold text-gray-900">Angelfish</div>
+              <div class="text-sm text-gray-500">Pomacanthidae</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/list"
+            class="inline-flex items-center px-5 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 shadow-md"
+          >
+            Browse All Species <i class="fas fa-arrow-right ml-2 text-sm"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-r from-blue-900 to-cyan-900 text-white pt-16 pb-8"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h4 class="text-lg font-bold mb-4">FishDB</h4>
+            <p class="text-blue-200 mb-4">
+              An interactive guide to reef-associated fishes in Indian waters.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-blue-300 hover:text-white">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-blue-300 hover:text-white">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-blue-300 hover:text-white">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Resources</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-blue-200 hover:text-white"
+                  >Field Guide</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-200 hover:text-white"
+                  >Research Papers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-200 hover:text-white"
+                  >Species Database</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-200 hover:text-white"
+                  >Conservation Efforts</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="/" class="text-blue-200 hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="/list" class="text-blue-200 hover:text-white"
+                  >Browse Species</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-200 hover:text-white"
+                  >About CMFRI</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-blue-200 hover:text-white"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+            <p class="text-blue-200 mb-4">
+              Subscribe for updates on new species and research.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800"
+              />
+              <button
+                class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 rounded-r-lg"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-t border-blue-800 pt-8">
+          <div class="text-center text-blue-300 text-sm">
+            <p>
+              &copy; 2025 FishDB. Data sourced from the Central Marine Fisheries
+              Research Institute (CMFRI). All rights reserved.
+            </p>
+            <p class="mt-2">
+              Developed with <i class="fas fa-heart text-red-400"></i> for
+              marine conservation
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
