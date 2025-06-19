@@ -1,0 +1,35 @@
+# apprunner.yaml
+
+# Version of the App Runner configuration schema
+version: 1.0
+
+# Services section defines the configuration for your App Runner service
+services:
+  - # The name of your service (optional, will be derived from repo name if not provided)
+    serviceName: fishdb-app
+
+    # Source configuration specifies where App Runner gets your code
+    sourceConfiguration:
+      # Use code repository as the source
+      codeRepository:
+        # The type of repository. Use 'GITHUB' if using GitHub. Other options available.
+        repositoryUrl: <https://github.com/nithish-95/FishDBweb.git> 
+        sourceCodeVersion:
+          # Use 'BRANCH' and specify your branch, e.g., 'main'
+          type: BRANCH
+          value: main # Replace with your branch name (e.g., main, master, development)
+
+        # Build and runtime configuration
+        codeConfiguration:
+          # Use a Dockerfile for building the image
+          configurationSource: REPOSITORY
+          imageConfiguration:
+            # Port your application listens on
+            port: 8080
+            # Path to your Dockerfile relative to the source directory
+            # Assuming Dockerfile is in the root: Dockerfile
+            # If it were in a 'deploy' folder: deploy/Dockerfile
+            buildCommand: "docker build -t fishdb-app ." # Command to build the Docker image
+            startCommand: "./main" # Command to start your application inside the container
+            # The runtime environment for your application
+            runtime: "other" # Since we're using a Dockerfile, specify "other"
