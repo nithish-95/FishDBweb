@@ -1,6 +1,3 @@
-# apprunner.yaml
-
-# Version of the App Runner configuration schema
 version: 1.0
 
 # Services section defines the configuration for your App Runner service
@@ -17,9 +14,8 @@ services:
           runtime: go1
           build:
             commands:
-              # Temporarily removed pre-build and post-build scripts for debugging
               build:
-                - go build main.go
+                - go build -o main ./main.go 
             env:
               - name: MY_VAR_EXAMPLE_BUILD
                 value: "build_example"
