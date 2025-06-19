@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"html/template"
@@ -39,6 +40,17 @@ type FishDatabase struct {
 	Title              string             `json:"title"`
 	PublicationDetails PublicationDetails `json:"publication_details"`
 	Fishes             []Fish             `json:"fishes"`
+}
+
+type OllamaGenerateRequest struct {
+	Model  string `json:"model"`
+	Prompt string `json:"prompt"`
+	Stream bool   `json:"stream"`
+}
+
+// OllamaGenerateResponse represents a simplified response from Ollama's /api/generate endpoint
+type OllamaGenerateResponse struct {
+	Response string `json:"response"`
 }
 
 var (
@@ -222,6 +234,57 @@ func apiSearch(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(results)
 }
 
+// API endpoint: Ask AI
+func apiAskAI(w http.ResponseWriter, r *http.Request) {
+	query := r.URL.Query().Get("q")
+	if query == "" {
+		http.Error(w, "Query parameter 'q' is required", http.StatusBadRequest)
+		return
+	}
+
+	// For demonstration, let's assume the query is about the fish's common name
+	// In a real scenario, you'd want more sophisticated prompt engineering
+	prompt := fmt.Sprintf("Give me some details on %s like mode details on the species, habitate and other important details.", query)
+
+	ollamaReq := OllamaGenerateRequest{
+		Model:  "tinyllama", // Or any other small model you have downloaded
+		Prompt: prompt,
+		Stream: false, // For simpler initial implementation, don't stream
+	}
+
+	jsonReq, err := json.Marshal(ollamaReq)
+	if err != nil {
+		log.Printf("Error marshalling Ollama request: %v", err)
+		http.Error(w, "Internal server error", http.StatusInternalServerError)
+		return
+	}
+
+	// Make HTTP POST request to Ollama
+	resp, err := http.Post("http://localhost:11434/api/generate", "application/json", bytes.NewBuffer(jsonReq))
+	if err != nil {
+		log.Printf("Error calling Ollama API: %v", err)
+		http.Error(w, "Failed to get AI response", http.StatusInternalServerError)
+		return
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		log.Printf("Ollama API returned non-OK status: %d", resp.StatusCode)
+		http.Error(w, "Ollama API error", http.StatusInternalServerError)
+		return
+	}
+
+	var ollamaResp OllamaGenerateResponse
+	if err := json.NewDecoder(resp.Body).Decode(&ollamaResp); err != nil {
+		log.Printf("Error decoding Ollama response: %v", err)
+		http.Error(w, "Internal server error", http.StatusInternalServerError)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(map[string]string{"ai_response": ollamaResp.Response})
+}
+
 func main() {
 	// Initialize templates
 	if err := initTemplates(); err != nil {
@@ -249,6 +312,7 @@ func main() {
 		r.Get("/fish", apiAllFish)
 		r.Get("/fish/{species}", apiFishDetail)
 		r.Get("/search", apiSearch)
+		r.Get("/ask-ai", apiAskAI)
 	})
 
 	// Serve static files
