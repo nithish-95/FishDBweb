@@ -5,14 +5,23 @@ import (
 	"encoding/json"
 	"fmt"
 	"html/template"
+	"io"
 	"log"
 	"net/http"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )
+
+// Configuration struct
+type Config struct {
+	OllamaURL   string
+	OllamaModel string
+	InDocker    bool
+}
 
 // Fish struct represents a fish species
 type Fish struct {
@@ -42,20 +51,25 @@ type FishDatabase struct {
 	Fishes             []Fish             `json:"fishes"`
 }
 
+// OllamaGenerateRequest struct for AI requests
 type OllamaGenerateRequest struct {
 	Model  string `json:"model"`
 	Prompt string `json:"prompt"`
 	Stream bool   `json:"stream"`
 }
 
-// OllamaGenerateResponse represents a simplified response from Ollama's /api/generate endpoint
+// OllamaGenerateResponse represents a simplified response from Ollama
 type OllamaGenerateResponse struct {
-	Response string `json:"response"`
+	Model     string `json:"model"`
+	CreatedAt string `json:"created_at"`
+	Response  string `json:"response"`
+	Done      bool   `json:"done"`
 }
 
 var (
 	fishDB    FishDatabase
 	templates *template.Template
+	config    Config
 )
 
 // Initialize templates with custom functions
@@ -68,10 +82,33 @@ func initTemplates() error {
 		"gt":  func(a, b int) bool { return a > b },
 	}
 
-	tmpl := template.New("").Funcs(funcMap)
 	var err error
-	templates, err = tmpl.ParseGlob("templates/*.html")
+	templates = template.New("").Funcs(funcMap)
+	templates, err = templates.ParseGlob("templates/*.html")
 	return err
+}
+
+// Load configuration from environment variables
+func loadConfig() {
+	config = Config{
+		OllamaURL:   os.Getenv("OLLAMA_URL"),
+		OllamaModel: os.Getenv("OLLAMA_MODEL"),
+		InDocker:    os.Getenv("IN_DOCKER") == "true",
+	}
+
+	// Set default Ollama URL based on environment
+	if config.OllamaURL == "" {
+		if config.InDocker {
+			config.OllamaURL = "http://host.docker.internal:11434/api/generate"
+		} else {
+			config.OllamaURL = "http://localhost:11434/api/generate"
+		}
+	}
+
+	// Set default model
+	if config.OllamaModel == "" {
+		config.OllamaModel = "tinyllama"
+	}
 }
 
 // Load fish data from JSON file
@@ -203,7 +240,10 @@ func searchFish(query string) []Fish {
 // API endpoint: Get all fish
 func apiAllFish(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(fishDB.Fishes)
+	if err := json.NewEncoder(w).Encode(fishDB.Fishes); err != nil {
+		log.Printf("JSON encoding error: %v", err)
+		http.Error(w, "Internal server error", http.StatusInternalServerError)
+	}
 }
 
 // API endpoint: Get specific fish by species
@@ -213,7 +253,10 @@ func apiFishDetail(w http.ResponseWriter, r *http.Request) {
 	for _, fish := range fishDB.Fishes {
 		if fish.Species == speciesParam {
 			w.Header().Set("Content-Type", "application/json")
-			json.NewEncoder(w).Encode(fish)
+			if err := json.NewEncoder(w).Encode(fish); err != nil {
+				log.Printf("JSON encoding error: %v", err)
+				http.Error(w, "Internal server error", http.StatusInternalServerError)
+			}
 			return
 		}
 	}
@@ -231,7 +274,10 @@ func apiSearch(w http.ResponseWriter, r *http.Request) {
 
 	results := searchFish(query)
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(results)
+	if err := json.NewEncoder(w).Encode(results); err != nil {
+		log.Printf("JSON encoding error: %v", err)
+		http.Error(w, "Internal server error", http.StatusInternalServerError)
+	}
 }
 
 // API endpoint: Ask AI
@@ -242,14 +288,18 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// For demonstration, let's assume the query is about the fish's common name
-	// In a real scenario, you'd want more sophisticated prompt engineering
-	prompt := fmt.Sprintf("Give me some details on %s like mode details on the species, habitate and other important details.", query)
+	// Sanitize input and create prompt
+	query = template.HTMLEscapeString(query)
+	prompt := fmt.Sprintf(
+		"You are a marine biologist. Provide accurate information about %s. "+
+			"Include scientific details about its species, habitat, behavior, "+
+			"diet, and conservation status. Use professional terminology but "+
+			"keep it accessible for enthusiasts.", query)
 
 	ollamaReq := OllamaGenerateRequest{
-		Model:  "tinyllama", // Or any other small model you have downloaded
+		Model:  config.OllamaModel,
 		Prompt: prompt,
-		Stream: false, // For simpler initial implementation, don't stream
+		Stream: false,
 	}
 
 	jsonReq, err := json.Marshal(ollamaReq)
@@ -259,8 +309,9 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Make HTTP POST request to Ollama
-	resp, err := http.Post("http://localhost:11434/api/generate", "application/json", bytes.NewBuffer(jsonReq))
+	// Create HTTP client with timeout
+	client := &http.Client{Timeout: 30 * time.Second}
+	resp, err := client.Post(config.OllamaURL, "application/json", bytes.NewBuffer(jsonReq))
 	if err != nil {
 		log.Printf("Error calling Ollama API: %v", err)
 		http.Error(w, "Failed to get AI response", http.StatusInternalServerError)
@@ -269,7 +320,8 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		log.Printf("Ollama API returned non-OK status: %d", resp.StatusCode)
+		body, _ := io.ReadAll(resp.Body)
+		log.Printf("Ollama API error: Status %d, Body: %s", resp.StatusCode, body)
 		http.Error(w, "Ollama API error", http.StatusInternalServerError)
 		return
 	}
@@ -282,10 +334,16 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(map[string]string{"ai_response": ollamaResp.Response})
+	if err := json.NewEncoder(w).Encode(map[string]string{"ai_response": ollamaResp.Response}); err != nil {
+		log.Printf("JSON encoding error: %v", err)
+		http.Error(w, "Internal server error", http.StatusInternalServerError)
+	}
 }
 
 func main() {
+	// Load configuration
+	loadConfig()
+
 	// Initialize templates
 	if err := initTemplates(); err != nil {
 		log.Fatalf("Error initializing templates: %v", err)
@@ -315,10 +373,17 @@ func main() {
 		r.Get("/ask-ai", apiAskAI)
 	})
 
+	// Health check endpoint
+	r.Get("/health", func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("OK"))
+	})
+
 	// Serve static files
 	r.Handle("/static/*", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
 	// Start server
-	fmt.Println("Server starting on port 8080:  http://localhost:8080")
+	fmt.Printf("Server starting on port 8080\n")
+	fmt.Printf("Ollama Configuration: URL=%s, Model=%s\n", config.OllamaURL, config.OllamaModel)
 	log.Fatal(http.ListenAndServe(":8080", r))
 }
