@@ -229,12 +229,18 @@
         </h1>
       </div>
 
-          <div class="flex items-center space-x-4">
+          <div class="hidden md:flex items-center space-x-4">
             <a
               href="/list"
-              class="text-blue-900 font-medium hover:text-teal-600 transition-colors hidden md:block"
+              class="text-blue-900 font-medium hover:text-teal-600 transition-colors"
             >
               <i class="fas fa-fish mr-2"></i>Browse All Species
+            </a>
+            <a
+              href="/favorites"
+              class="text-blue-900 font-medium hover:text-teal-600 transition-colors"
+            >
+              <i class="fas fa-heart mr-2"></i>Favorites
             </a>
             <a
               href="/static/field_guide.pdf"
@@ -256,11 +262,18 @@
               </svg>
               <span>GET FIELD GUIDE</span>
             </a>
-            <button class="md:hidden text-blue-800">
-              <i class="fas fa-bars text-xl"></i>
-            </button>
           </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-blue-800">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
         </nav>
+          <div id="mobile-menu" class="hidden md:hidden mt-4">
+              <a href="/list" class="block py-2 px-4 text-sm text-blue-900 hover:bg-blue-50 rounded">Browse All Species</a>
+              <a href="/favorites" class="block py-2 px-4 text-sm text-blue-900 hover:bg-blue-50 rounded">Favorites</a>
+              <a href="/static/field_guide.pdf" download="CMFRI_Field_Guide.pdf" class="block py-2 px-4 text-sm text-blue-900 hover:bg-blue-50 rounded">Get Field Guide</a>
+          </div>
       </div>
     </header>
 
@@ -523,9 +536,7 @@
             <div
               class="w-full h-80 bg-gradient-to-br from-blue-50 to-cyan-50 flex flex-col items-center justify-center p-8 text-center border border-blue-200"
             >
-              <div
-                class="w-24 h-32 bg-gradient-to-b from-blue-300 to-blue-500 rounded-lg shadow-lg mb-6"
-              ></div>
+              <img src="/static/images/icons/CMFRI.png" alt="CMFRI Logo" class="h-32 w-auto mb-6">
               <h4 class="text-xl font-bold text-blue-900">Field Guide on</h4>
               <h3 class="text-2xl font-bold text-blue-800 mb-2">
                 Reef Associated Fishes of India
@@ -661,58 +672,17 @@
         </h3>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div
-            class="card-hover bg-white rounded-2xl overflow-hidden shadow-md"
-          >
-            <div
-              class="h-40 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center"
-            >
-              <i class="fas fa-fish text-5xl text-blue-500"></i>
+          {{range .FeaturedFish}}
+          <a href="/fish/{{.Species}}" class="card-hover bg-white rounded-2xl overflow-hidden shadow-md block">
+            <div class="h-40 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
+              <img src="/static/{{.Image}}" alt="{{.CommonName}}" class="w-full h-full object-cover">
             </div>
             <div class="p-4">
-              <div class="font-bold text-gray-900">Clownfish</div>
-              <div class="text-sm text-gray-500">Amphiprioninae</div>
+              <div class="font-bold text-gray-900">{{.CommonName}}</div>
+              <div class="text-sm text-gray-500 italic">{{.Species}}</div>
             </div>
-          </div>
-          <div
-            class="card-hover bg-white rounded-2xl overflow-hidden shadow-md"
-          >
-            <div
-              class="h-40 bg-gradient-to-br from-teal-100 to-emerald-100 flex items-center justify-center"
-            >
-              <i class="fas fa-fish text-5xl text-teal-500"></i>
-            </div>
-            <div class="p-4">
-              <div class="font-bold text-gray-900">Butterflyfish</div>
-              <div class="text-sm text-gray-500">Chaetodontidae</div>
-            </div>
-          </div>
-          <div
-            class="card-hover bg-white rounded-2xl overflow-hidden shadow-md"
-          >
-            <div
-              class="h-40 bg-gradient-to-br from-purple-100 to-indigo-100 flex items-center justify-center"
-            >
-              <i class="fas fa-fish text-5xl text-purple-500"></i>
-            </div>
-            <div class="p-4">
-              <div class="font-bold text-gray-900">Parrotfish</div>
-              <div class="text-sm text-gray-500">Scaridae</div>
-            </div>
-          </div>
-          <div
-            class="card-hover bg-white rounded-2xl overflow-hidden shadow-md"
-          >
-            <div
-              class="h-40 bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center"
-            >
-              <i class="fas fa-fish text-5xl text-amber-500"></i>
-            </div>
-            <div class="p-4">
-              <div class="font-bold text-gray-900">Angelfish</div>
-              <div class="text-sm text-gray-500">Pomacanthidae</div>
-            </div>
-          </div>
+          </a>
+          {{end}}
         </div>
 
         <div class="text-center mt-8">
@@ -834,5 +804,15 @@
         </div>
       </div>
     </footer>
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+      });
+    </script>
   </body>
 </html>

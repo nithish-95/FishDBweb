@@ -1,47 +1,37 @@
-# Stage 1: The Build Stage
-# We use a specific Go version for reproducibility.
-# The 'alpine' tag provides a lightweight base image.
-FROM golang:1.22-alpine AS builder
+# Stage 1: Build the Go binary
+FROM golang:1.21-alpine AS builder
 
-# Set the working directory inside the container
+# Set the Current Working Directory inside the container
 WORKDIR /app
 
-# Copy the Go module files first. This allows Docker to cache the dependencies
-# layer, speeding up subsequent builds if the dependencies haven't changed.
+# Copy go mod and sum files
 COPY go.mod go.sum ./
+# Download all dependencies. Dependencies will be cached if the go.mod and go.sum files are not changed
 RUN go mod download
 
-# Copy the rest of the application source code
+# Copy the source code into the container
 COPY . .
 
-# Build the Go application.
-# -o /fishdb2 specifies the output file name and path.
-# We are creating a statically linked binary to ensure it runs in a minimal container.
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /fishdb2 ./main.go
+# Build the Go app. CGO_ENABLED=0 is important for building a static binary
+# that can run in a minimal container from scratch.
+# -o /app/fishdb builds the application into an executable named fishdb
+RUN CGO_ENABLED=0 GOOS=linux go build -o /app/fishdb .
 
-# ---
-
-# Stage 2: The Final/Production Stage
-# Start from a minimal, lightweight image. alpine is a great choice.
+# Stage 2: Create the final, minimal image
 FROM alpine:latest
 
-# Set the working directory
-WORKDIR /root/
+WORKDIR /app
 
-# Copy the built binary from the 'builder' stage
-COPY --from=builder /fishdb2 .
-
-# Copy the assets the application needs at runtime.
-# The Go binary will look for these directories relative to its execution path.
+# Copy the static assets and templates from the builder stage
 COPY --from=builder /app/db/ ./db/
-COPY --from=builder /app/static/ ./static/
-COPY --from=builder /app/static/images ./static/images
 COPY --from=builder /app/templates/ ./templates/
+COPY --from=builder /app/static/ ./static/
 
-# Expose the port the application will run on.
-# AWS App Runner will use this port to route requests to the container.
-# Make sure your Go application listens on this port (e.g., 8080).
+# Copy the built binary from the builder stage
+COPY --from=builder /app/fishdb .
+
+# Expose port 8080 to the outside world
 EXPOSE 8080
 
-# Command to run the application
-CMD ["./fishdb2"]
+# Command to run the executable
+CMD ["./fishdb"]

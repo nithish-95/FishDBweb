@@ -7,9 +7,12 @@ import (
 	"html/template"
 	"io"
 	"log"
+	"math/rand"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
+	"time"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
@@ -102,14 +105,26 @@ func loadFishData() error {
 
 // Home page handler
 func home(w http.ResponseWriter, r *http.Request) {
+	rand.Seed(time.Now().UnixNano())
+	shuffledFishes := make([]Fish, len(fishDB.Fishes))
+	copy(shuffledFishes, fishDB.Fishes)
+	rand.Shuffle(len(shuffledFishes), func(i, j int) {
+		shuffledFishes[i], shuffledFishes[j] = shuffledFishes[j], shuffledFishes[i]
+	})
+
+	featuredCount := 4
+	if len(shuffledFishes) < featuredCount {
+		featuredCount = len(shuffledFishes)
+	}
+
 	data := struct {
-		Title     string
-		Publisher string
-		AllFish   []Fish
+		Title         string
+		Publisher     string
+		FeaturedFish  []Fish
 	}{
-		Title:     fishDB.Title,
-		Publisher: fishDB.PublicationDetails.Publisher,
-		AllFish:   fishDB.Fishes,
+		Title:         fishDB.Title,
+		Publisher:     fishDB.PublicationDetails.Publisher,
+		FeaturedFish:  shuffledFishes[:featuredCount],
 	}
 
 	w.Header().Set("Content-Type", "text/html")
@@ -199,6 +214,23 @@ func fishDetail(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// Favorites page handler
+func favoritesPage(w http.ResponseWriter, r *http.Request) {
+	data := struct {
+		Title     string
+		Publisher string
+	}{
+		Title:     fishDB.Title,
+		Publisher: fishDB.PublicationDetails.Publisher,
+	}
+
+	w.Header().Set("Content-Type", "text/html")
+	if err := templates.ExecuteTemplate(w, "favorites.html", data); err != nil {
+		log.Printf("Error executing template: %v", err)
+		http.Error(w, "Internal server error", http.StatusInternalServerError)
+	}
+}
+
 // Search fish function
 func searchFish(query string) []Fish {
 	var results []Fish
@@ -217,11 +249,63 @@ func searchFish(query string) []Fish {
 	return results
 }
 
-// API endpoint: Get all fish
+// API endpoint: Get all fish with pagination
 func apiAllFish(w http.ResponseWriter, r *http.Request) {
+	pageStr := r.URL.Query().Get("page")
+	limitStr := r.URL.Query().Get("limit")
+
+	page := 1
+	if p, err := strconv.Atoi(pageStr); err == nil && p > 0 {
+		page = p
+	}
+
+	limit := 12
+	if l, err := strconv.Atoi(limitStr); err == nil && l > 0 {
+		limit = l
+	}
+
+	startIndex := (page - 1) * limit
+	endIndex := startIndex + limit
+
+	if startIndex >= len(fishDB.Fishes) {
+		w.Header().Set("Content-Type", "application/json")
+		json.NewEncoder(w).Encode([]Fish{})
+		return
+	}
+
+	if endIndex > len(fishDB.Fishes) {
+		endIndex = len(fishDB.Fishes)
+	}
+
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(fishDB.Fishes)
+	json.NewEncoder(w).Encode(fishDB.Fishes[startIndex:endIndex])
 }
+
+// API endpoint: Get fish by a list of species names
+func apiFishBySpecies(w http.ResponseWriter, r *http.Request) {
+	speciesQuery := r.URL.Query().Get("species")
+	if speciesQuery == "" {
+		http.Error(w, "Missing 'species' query parameter", http.StatusBadRequest)
+		return
+	}
+
+	speciesList := strings.Split(speciesQuery, ",")
+	speciesSet := make(map[string]struct{})
+	for _, s := range speciesList {
+		speciesSet[s] = struct{}{}
+	}
+
+	var results []Fish
+	for _, fish := range fishDB.Fishes {
+		if _, found := speciesSet[fish.Species]; found {
+			results = append(results, fish)
+		}
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(results)
+}
+
 
 // API endpoint: Get specific fish by species
 func apiFishDetail(w http.ResponseWriter, r *http.Request) {
@@ -347,10 +431,12 @@ func main() {
 	r.Get("/", home)
 	r.Get("/list", listFish)
 	r.Get("/fish/{species}", fishDetail)
+	r.Get("/favorites", favoritesPage)
 
 	// API routes
 	r.Route("/api", func(r chi.Router) {
 		r.Get("/fish", apiAllFish)
+		r.Get("/fish/species", apiFishBySpecies)
 		r.Get("/fish/{species}", apiFishDetail)
 		r.Get("/search", apiSearch)
 		r.Get("/ask-ai", apiAskAI)
