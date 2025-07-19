@@ -35,6 +35,7 @@ COPY --from=builder /fishdb2 .
 # The Go binary will look for these directories relative to its execution path.
 COPY --from=builder /app/db/ ./db/
 COPY --from=builder /app/static/ ./static/
+COPY --from=builder /app/static/images ./static/images
 COPY --from=builder /app/templates/ ./templates/
 
 # Expose the port the application will run on.

@@ -208,7 +208,7 @@
       "family": "Muraenidae",
       "species": "Strophidon sathete",
       "common_name": "Slender Giant Moray",
-      "image": "images/strophidon_sathete.jpg",
+      "image": "images/Strophidon_satheta.jpg",
       "features": [
         "Extremely long and slender body.",
         "Uniform coloration."
@@ -437,7 +437,7 @@
       "family": "Holocentridae",
       "species": "Myripristis seychellensis",
       "common_name": "Seychelles Soldier",
-      "image": "images/myripristis_seychellensis.jpg",
+      "image": "images/Myripristis_setchellensis.jpg",
       "features": [
         "White margin on caudal fin."
       ]
@@ -687,7 +687,7 @@
       "family": "Scorpaenidae",
       "species": "Pterois russelii",
       "common_name": "Plaintail Turkeyfish",
-      "image": "images/pterois_russelii.jpg",
+      "image": "images/Pterois_russelli.jpg",
       "features": [
         "Short dorsal spines.",
         "Pectoral rays are simple (unbranched).",
@@ -1215,7 +1215,7 @@
       "family": "Serranidae",
       "species": "Epinephelus quoyanus",
       "common_name": "Longfin Grouper",
-      "image": "images/epinephelus_quoyanus.jpg",
+      "image": "images/epinephulus_quoyanus.jpg",
       "features": [
         "Large hexagonal spots on body.",
         "Dark brown blotches on a pale background."
@@ -1287,7 +1287,7 @@
       "family": "Serranidae",
       "species": "Liopropoma lunulatum",
       "common_name": "Not listed",
-      "image": "images/liopropoma_lunulatum.jpg",
+      "image": "images/Liopoproma_lunulatum.jpg",
       "features": [
         "Body is dotted with spots.",
         "Distinctive markings on tail."
@@ -1299,7 +1299,7 @@
       "family": "Serranidae",
       "species": "Liopropoma randalli",
       "common_name": "Not listed",
-      "image": "images/liopropoma_randalli.jpg",
+      "image": "images/Liopoproma_randalli.jpg",
       "features": [
         "Yellow streak from eye.",
         "Black band along the body."
@@ -1713,7 +1713,7 @@
       "family": "Carangidae",
       "species": "Scomberoides commersonnianus",
       "common_name": "Talang Queenfish",
-      "image": "images/scomberoides_commersonnianus.jpg",
+      "image": "images/Scomberoides_commersonianus.jpg",
       "features": [
         "Distinct pattern of large, dark spots on side."
       ]
@@ -2200,7 +2200,7 @@
       "family": "Haemulidae",
       "species": "Plectorhinchus gibbosus",
       "common_name": "Harry Hotlips",
-      "image": "images/plectorhinchus_gibbosus.jpg",
+      "image": "images/Plectorhinchus_gibbosus_juvenile.jpg",
       "features": [
         "Lips become greatly swollen with age.",
         "Dorsal fin has 14 spines."
@@ -2224,7 +2224,7 @@
       "family": "Haemulidae",
       "species": "Plectorhinchus vittatus",
       "common_name": "Indian Ocean Oriental Sweetlips",
-      "image": "images/plectorhinchus_vittatus.jpg",
+      "image": "images/plectorhinchuc_vittatus.jpg",
       "features": [
         "Bold black and white horizontal stripes.",
         "Yellow fins."
@@ -4141,7 +4141,7 @@
       "family": "Balistidae",
       "species": "Sufflamen fraenatum",
       "common_name": "Masked Triggerfish",
-      "image": "images/sufflamen_fraenatum.jpg",
+      "image": "images/images/sufflamen_fraenatum.jpg",
       "features": [
         "Pale band running from corner of mouth backwards.",
         "Yellowish-brown to dark brown body."
@@ -4153,7 +4153,7 @@
       "family": "Balistidae",
       "species": "Xanthichthys lineopunctatus",
       "common_name": "Striped Triggerfish",
-      "image": "images/xanthichthys_lineopunctatus.jpg",
+      "image": "images/images/xanthichthys_lineopunctatus.jpg",
       "features": [
         "Brown ridged lines on side."
       ]
@@ -4164,7 +4164,7 @@
       "family": "Monacanthidae",
       "species": "Aluterus monoceros",
       "common_name": "Unicorn Leatherjacket Filefish",
-      "image": "images/aluterus_monoceros.jpg",
+      "image": "images/images/aluterus_monoceros.jpg",
       "features": [
         "Dorsal-fin spine is weak.",
         "Uniformly colored body."
