@@ -22,7 +22,7 @@
       "family": "Stegostomatidae",
       "species": "Stegostoma fasciatum",
       "common_name": "Zebra Shark",
-      "image": "images/stegostoma_fasciatum.jpg",
+      "image": "images/stegostoma_fasciatum.webp",
       "features": [
         "Adults are yellowish-brown with dark brown spots.",
         "Juveniles have a zebra-like pattern of stripes.",
@@ -35,7 +35,7 @@
       "family": "Hemiscyllidae",
       "species": "Chiloscyllium griseum",
       "common_name": "Grey Bamboo Shark",
-      "image": "images/chiloscyllium_griseum.jpg",
+      "image": "images/chiloscyllium_griseum.webp",
       "features": [
         "Spiracles are subequal in size to the eyes.",
         "Greyish-brown coloration, sometimes with faint bands.",
@@ -48,7 +48,7 @@
       "family": "Hemiscyllidae",
       "species": "Chiloscyllium punctatum",
       "common_name": "Brownbanded Bambooshark",
-      "image": "images/chiloscyllium_punctatum.jpg",
+      "image": "images/chiloscyllium_punctatum.webp",
       "features": [
         "Body is covered with dark spots and transverse bands.",
         "Long tail, nearly the length of the body."
@@ -60,7 +60,7 @@
       "family": "Carcharhinidae",
       "species": "Carcharhinus melanopterus",
       "common_name": "Blacktip Reef Shark",
-      "image": "images/carcharhinus_melanopterus.jpg",
+      "image": "images/carcharhinus_melanopterus.webp",
       "features": [
         "Conspicuous black markings on the tips of all fins."
       ]
@@ -71,7 +71,7 @@
       "family": "Dasyatidae",
       "species": "Himantura uarnak",
       "common_name": "Banded Whip-tail Stingray",
-      "image": "images/himantura_uarnak.jpg",
+      "image": "images/himantura_uarnak.webp",
       "features": [
         "Disc has a reticulated pattern.",
         "Very long, whip-like tail."
@@ -83,7 +83,7 @@
       "family": "Dasyatidae",
       "species": "Himantura gerrardi",
       "common_name": "Gerrard's Sting Ray",
-      "image": "images/himantura_gerrardi.jpg",
+      "image": "images/himantura_gerrardi.webp",
       "features": [
         "Presence of white dots at the base of the disc."
       ]
@@ -94,7 +94,7 @@
       "family": "Dasyatidae",
       "species": "Himantura undulata",
       "common_name": "Leopard Whipray",
-      "image": "images/himantura_undulata.jpg",
+      "image": "images/himantura_undulata.webp",
       "features": [
         "Leopard-like pattern of rings and spots.",
         "Undulating pattern on the disc."
@@ -106,7 +106,7 @@
       "family": "Dasyatidae",
       "species": "Neotrygon kuhlii",
       "common_name": "Blue-spotted Sting Ray",
-      "image": "images/neotrygon_kuhlii.jpg",
+      "image": "images/neotrygon_kuhlii.webp",
       "features": [
         "Bright blue spots on the disc."
       ]
@@ -117,7 +117,7 @@
       "family": "Dasyatidae",
       "species": "Pastinachus sephen",
       "common_name": "Cowtail Ray",
-      "image": "images/pastinachus_sephen.jpg",
+      "image": "images/pastinachus_sephen.webp",
       "features": [
         "Broad flap of skin on the tail."
       ]
@@ -128,7 +128,7 @@
       "family": "Dasyatidae",
       "species": "Taeniura meyeni",
       "common_name": "Round Ribbontail Ray",
-      "image": "images/taeniura_meyeni.jpg",
+      "image": "images/taeniura_meyeni.webp",
       "features": [
         "Round disc with black spots."
       ]
@@ -139,7 +139,7 @@
       "family": "Myliobatidae",
       "species": "Aetobatus narinari",
       "common_name": "Spotted Eagle Ray",
-      "image": "images/aetobatus_narinari.jpg",
+      "image": "images/aetobatus_narinari.webp",
       "features": [
         "Dark dorsal surface with white spots.",
         "Prominent, pointed snout."
@@ -151,7 +151,7 @@
       "family": "Myliobatidae",
       "species": "Aetobatus flagellum",
       "common_name": "Longheaded Eagle Ray",
-      "image": "images/aetobatus_flagellum.jpg",
+      "image": "images/aetobatus_flagellum.webp",
       "features": [
         "Elongated head, lacks spots of A. narinari."
       ]
@@ -162,7 +162,7 @@
       "family": "Myliobatidae",
       "species": "Aetomylaeus nichofii",
       "common_name": "Banded Eagle Ray",
-      "image": "images/aetomylaeus_nichofii.jpg",
+      "image": "images/aetomylaeus_nichofii.webp",
       "features": [
         "Transverse blue lines across the back."
       ]
@@ -173,7 +173,7 @@
       "family": "Rhinidae",
       "species": "Rhina ancylostoma",
       "common_name": "Bow-mouthed Angel Fish",
-      "image": "images/rhina_ancylostoma.jpg",
+      "image": "images/rhina_ancylostoma.webp",
       "features": [
         "Distinctive bow-shaped mouth.",
         "Shark-like body with ray-like fins."
@@ -185,7 +185,7 @@
       "family": "Muraenidae",
       "species": "Gymnothorax reticularis",
       "common_name": "Banded Moray",
-      "image": "images/gymnothorax_reticularis.jpg",
+      "image": "images/gymnothorax_reticularis.webp",
       "features": [
         "White body with dark brown or black bands."
       ]
@@ -196,7 +196,7 @@
       "family": "Muraenidae",
       "species": "Gymnothorax flavimarginatus",
       "common_name": "Yellow Edged Moray",
-      "image": "images/gymnothorax_flavimarginatus.jpg",
+      "image": "images/gymnothorax_flavimarginatus.webp",
       "features": [
         "Yellow or green margin on the fins.",
         "Body is brownish with dark speckles."
@@ -208,7 +208,7 @@
       "family": "Muraenidae",
       "species": "Strophidon sathete",
       "common_name": "Slender Giant Moray",
-      "image": "images/Strophidon_satheta.jpg",
+      "image": "images/Strophidon_satheta.webp",
       "features": [
         "Extremely long and slender body.",
         "Uniform coloration."
@@ -220,7 +220,7 @@
       "family": "Plotosidae",
       "species": "Plotosus lineatus",
       "common_name": "Striped Eel Catfish",
-      "image": "images/plotosus_lineatus.jpg",
+      "image": "images/plotosus_lineatus.webp",
       "features": [
         "Eel-like body with 2-3 pale horizontal stripes.",
         "Short nasal barbels."
@@ -232,7 +232,7 @@
       "family": "Synodontidae",
       "species": "Saurida tumbil",
       "common_name": "Greater Lizardfish",
-      "image": "images/saurida_tumbil.jpg",
+      "image": "images/saurida_tumbil.webp",
       "features": [
         "Pectoral fin does not reach the dorsal-fin origin.",
         "Cylindrical body, large mouth."
@@ -244,7 +244,7 @@
       "family": "Synodontidae",
       "species": "Saurida undosquamis",
       "common_name": "Brushtooth Lizardfish",
-      "image": "images/saurida_undosquamis.jpg",
+      "image": "images/saurida_undosquamis.webp",
       "features": [
         "Banded pattern on the tail fin.",
         "Series of dark blotches along the lateral line."
@@ -256,7 +256,7 @@
       "family": "Synodontidae",
       "species": "Synodus variegatus",
       "common_name": "Engleman's Lizardfish",
-      "image": "images/synodus_variegatus.jpg",
+      "image": "images/synodus_variegatus.webp",
       "features": [
         "Variegated pattern of reddish bars and blotches.",
         "Snout shorter than eye diameter."
@@ -268,7 +268,7 @@
       "family": "Synodontidae",
       "species": "Trachinocephalus myops",
       "common_name": "Snake Fish",
-      "image": "images/trachinocephalus_myops.jpg",
+      "image": "images/trachinocephalus_myops.webp",
       "features": [
         "Anal-fin base is much longer than the dorsal-fin base.",
         "Blunt, conical head."
@@ -280,7 +280,7 @@
       "family": "Antennariidae",
       "species": "Antennarius striatus",
       "common_name": "Striated Frogfish",
-      "image": "images/antennarius_striatus.jpg",
+      "image": "images/antennarius_striatus.webp",
       "features": [
         "Rod-like lure (illicium).",
         "Globular body with elongate pectoral-fin lobes.",
@@ -294,7 +294,7 @@
       "family": "Antennariidae",
       "species": "Antennarius pictus",
       "common_name": "Painted Frogfish",
-      "image": "images/antennarius_pictus.jpg",
+      "image": "images/antennarius_pictus.webp",
       "features": [
         "Variable color, often with patches and spots.",
         "Distinct brown spot near the dorsal fin."
@@ -306,7 +306,7 @@
       "family": "Antennariidae",
       "species": "Histrio histrio",
       "common_name": "Sargassumfish",
-      "image": "images/histrio_histrio.jpg",
+      "image": "images/histrio_histrio.webp",
       "features": [
         "Covered in membranous fringes for camouflage.",
         "Mottled color pattern."
@@ -318,7 +318,7 @@
       "family": "Atherinidae",
       "species": "Atherinomorus duodecimalis",
       "common_name": "Tropical Silverside",
-      "image": "images/atherinomorus_duodecimalis.jpg",
+      "image": "images/atherinomorus_duodecimalis.webp",
       "features": [
         "Prominent silvery band along the side."
       ]
@@ -329,7 +329,7 @@
       "family": "Hemiramphidae",
       "species": "Hemiramphus far",
       "common_name": "Black-barred Halfbeak",
-      "image": "images/hemiramphus_far.jpg",
+      "image": "images/hemiramphus_far.webp",
       "features": [
         "3-9 vertical black blotches on sides.",
         "Elongated lower jaw forming a beak."
@@ -341,7 +341,7 @@
       "family": "Hemiramphidae",
       "species": "Hyporhamphus dussumieri",
       "common_name": "Dussumier's Halfbeak",
-      "image": "images/hyporhamphus_dussumieri.jpg",
+      "image": "images/hyporhamphus_dussumieri.webp",
       "features": [
         "Lacks vertical bars.",
         "Silvery body with beak-like lower jaw."
@@ -353,7 +353,7 @@
       "family": "Belonidae",
       "species": "Tylosurus crocodilus",
       "common_name": "Hound Needlefish",
-      "image": "images/tylosurus_crocodilus.jpg",
+      "image": "images/tylosurus_crocodilus.webp",
       "features": [
         "Both jaws elongated with sharp teeth.",
         "Long, slender body."
@@ -365,7 +365,7 @@
       "family": "Berycidae",
       "species": "Centroberyx rubricaudus",
       "common_name": "Not listed",
-      "image": "images/centroberyx_rubricaudus.jpg",
+      "image": "images/centroberyx_rubricaudus.webp",
       "features": [
         "Deeply forked tail.",
         "Reddish coloration."
@@ -377,7 +377,7 @@
       "family": "Berycidae",
       "species": "Beryx splendens",
       "common_name": "Splendid Alfonsino",
-      "image": "images/beryx_splendens.jpg",
+      "image": "images/beryx_splendens.webp",
       "features": [
         "Forked tail.",
         "Large eyes and mucous cavities on head.",
@@ -390,7 +390,7 @@
       "family": "Holocentridae",
       "species": "Myripristis adusta",
       "common_name": "Shadowfin Soldierfish",
-      "image": "images/myripristis_adusta.jpg",
+      "image": "images/myripristis_adusta.webp",
       "features": [
         "Black edges on dorsal and caudal fins.",
         "Single tooth patch on lower jaw."
@@ -402,7 +402,7 @@
       "family": "Holocentridae",
       "species": "Myripristis botche",
       "common_name": "Blacktip Soldierfish",
-      "image": "images/myripristis_botche.jpg",
+      "image": "images/myripristis_botche.webp",
       "features": [
         "Black blotch on operculum.",
         "Black tip on spinous dorsal fin."
@@ -414,7 +414,7 @@
       "family": "Holocentridae",
       "species": "Myripristis formosa",
       "common_name": "Not listed",
-      "image": "images/myripristis_formosa.jpg",
+      "image": "images/myripristis_formosa.webp",
       "features": [
         "Two tooth patches.",
         "White margin on some fins."
@@ -426,7 +426,7 @@
       "family": "Holocentridae",
       "species": "Myripristis greenfieldi",
       "common_name": "Not listed",
-      "image": "images/myripristis_greenfieldi.jpg",
+      "image": "images/myripristis_greenfieldi.webp",
       "features": [
         "Black blotch at axil of pectoral fin."
       ]
@@ -437,7 +437,7 @@
       "family": "Holocentridae",
       "species": "Myripristis seychellensis",
       "common_name": "Seychelles Soldier",
-      "image": "images/Myripristis_setchellensis.jpg",
+      "image": "images/Myripristis_setchellensis.webp",
       "features": [
         "White margin on caudal fin."
       ]
@@ -448,7 +448,7 @@
       "family": "Holocentridae",
       "species": "Neoniphon sammara",
       "common_name": "Sammara Squirrelfish",
-      "image": "images/neoniphon_sammara.jpg",
+      "image": "images/neoniphon_sammara.webp",
       "features": [
         "Reddish-black blotch on spinous dorsal fin.",
         "White tips on dorsal spines."
@@ -460,7 +460,7 @@
       "family": "Holocentridae",
       "species": "Ostichthys acanthorhinus",
       "common_name": "Spinesnout Squirrelfish",
-      "image": "images/ostichthys_acanthorhinus.jpg",
+      "image": "images/ostichthys_acanthorhinus.webp",
       "features": [
         "Big eyes.",
         "Rough scales."
@@ -472,7 +472,7 @@
       "family": "Holocentridae",
       "species": "Sargocentron caudimaculatum",
       "common_name": "Silverspot Squirrelfish",
-      "image": "images/sargocentron_caudimaculatum.jpg",
+      "image": "images/sargocentron_caudimaculatum.webp",
       "features": [
         "Silvery white spot on caudal peduncle.",
         "Mottled red body."
@@ -484,7 +484,7 @@
       "family": "Holocentridae",
       "species": "Sargocentron rubrum",
       "common_name": "Redcoat",
-      "image": "images/sargocentron_rubrum.jpg",
+      "image": "images/sargocentron_rubrum.webp",
       "features": [
         "Sharp spine on corner of preopercle.",
         "Dark spots on body.",
@@ -497,7 +497,7 @@
       "family": "Holocentridae",
       "species": "Sargocentron spiniferum",
       "common_name": "Sabre Squirrelfish",
-      "image": "images/sargocentron_spiniferum.jpg",
+      "image": "images/sargocentron_spiniferum.webp",
       "features": [
         "Very long preopercular spine.",
         "Projecting lower jaw.",
@@ -510,7 +510,7 @@
       "family": "Holocentridae",
       "species": "Sargocentron violaceum",
       "common_name": "Violet Squirrelfish",
-      "image": "images/sargocentron_violaceum.jpg",
+      "image": "images/sargocentron_violaceum.webp",
       "features": [
         "Violet-tinged body."
       ]
@@ -521,7 +521,7 @@
       "family": "Solenostomidae",
       "species": "Solenostomus cyanopterus",
       "common_name": "Ghost Pipefish",
-      "image": "images/solenostomus_cyanopterus.jpg",
+      "image": "images/solenostomus_cyanopterus.webp",
       "features": [
         "Large pelvic fin.",
         "Body shape mimics leaves or seagrass."
@@ -533,7 +533,7 @@
       "family": "Syngnathidae",
       "species": "Corythoichthys flavofasciatus",
       "common_name": "Not listed",
-      "image": "images/corythoichthys_flavofasciatus.jpg",
+      "image": "images/corythoichthys_flavofasciatus.webp",
       "features": [
         "Elongated, pipe-like body with rings.",
         "Banded pattern."
@@ -545,7 +545,7 @@
       "family": "Fistularidae",
       "species": "Fistularia petimba",
       "common_name": "Cornet Fish",
-      "image": "images/fistularia_petimba.jpg",
+      "image": "images/fistularia_petimba.webp",
       "features": [
         "Red to orange-brown above, silvery below.",
         "Long filament extends from tail."
@@ -557,7 +557,7 @@
       "family": "Fistularidae",
       "species": "Fistularia commersonii",
       "common_name": "Blue Spotted Red Cornetfish",
-      "image": "images/fistularia_commersonii.jpg",
+      "image": "images/fistularia_commersonii.webp",
       "features": [
         "Blue stripes and spots on body."
       ]
@@ -568,7 +568,7 @@
       "family": "Centriscidae",
       "species": "Centriscus scutatus",
       "common_name": "Grooved Razor-fish",
-      "image": "images/centriscus_scutatus.jpg",
+      "image": "images/centriscus_scutatus.webp",
       "features": [
         "Extremely compressed, blade-like body.",
         "1st dorsal-fin spine is long and sharp."
@@ -580,7 +580,7 @@
       "family": "Apistidae",
       "species": "Apistus carinatus",
       "common_name": "Ocellated Waspfish",
-      "image": "images/apistus_carinatus.jpg",
+      "image": "images/apistus_carinatus.webp",
       "features": [
         "Pectoral fin reaches past anal fin.",
         "Blotch between 8-14 spines of dorsal fin."
@@ -592,7 +592,7 @@
       "family": "Scorpaenidae",
       "species": "Choridactylus multibarbus",
       "common_name": "Orange Banded Stingfish",
-      "image": "images/choridactylus_multibarbus.jpg",
+      "image": "images/choridactylus_multibarbus.webp",
       "features": [
         "Single band on tail.",
         "Mottled body pattern."
@@ -604,7 +604,7 @@
       "family": "Scorpaenidae",
       "species": "Dendrochirus brachypterus",
       "common_name": "Shortfin Turkeyfish",
-      "image": "images/dendrochirus_brachypterus.jpg",
+      "image": "images/dendrochirus_brachypterus.webp",
       "features": [
         "Banded body.",
         "Spots in a line on caudal fin."
@@ -616,7 +616,7 @@
       "family": "Scorpaenidae",
       "species": "Parascorpaena picta",
       "common_name": "Painted Stingfish",
-      "image": "images/parascorpaena_picta.jpg",
+      "image": "images/parascorpaena_picta.webp",
       "features": [
         "Interorbital ridge weakly developed.",
         "Mottled, camouflaged appearance."
@@ -628,7 +628,7 @@
       "family": "Scorpaenidae",
       "species": "Pontinus macrocephalus",
       "common_name": "Large-headed Scorpionfish",
-      "image": "images/pontinus_macrocephalus.jpg",
+      "image": "images/pontinus_macrocephalus.webp",
       "features": [
         "Large head relative to body size.",
         "Reddish coloration."
@@ -640,7 +640,7 @@
       "family": "Scorpaenidae",
       "species": "Pontinus nigerimum",
       "common_name": "Blacklash Scorpionfish",
-      "image": "images/pontinus_nigerimum.jpg",
+      "image": "images/pontinus_nigerimum.webp",
       "features": [
         "Large tentacle above the eye."
       ]
@@ -651,7 +651,7 @@
       "family": "Scorpaenidae",
       "species": "Pterois lunulata",
       "common_name": "Luna Lion Fish",
-      "image": "images/pterois_lunulata.jpg",
+      "image": "images/pterois_lunulata.webp",
       "features": [
         "Black tip on some fin rays.",
         "Long, separated dorsal spines."
@@ -663,7 +663,7 @@
       "family": "Scorpaenidae",
       "species": "Pterois mombasae",
       "common_name": "Frillfin Turkeyfish",
-      "image": "images/pterois_mombasae.jpg",
+      "image": "images/pterois_mombasae.webp",
       "features": [
         "Small banded tentacle above eye.",
         "Large spots on upper half of pectoral fin."
@@ -675,7 +675,7 @@
       "family": "Scorpaenidae",
       "species": "Pterois miles",
       "common_name": "Devil Firefish",
-      "image": "images/pterois_miles.jpg",
+      "image": "images/pterois_miles.webp",
       "features": [
         "Black spots on soft dorsal, caudal and anal fins.",
         "Red and white striped pattern."
@@ -687,7 +687,7 @@
       "family": "Scorpaenidae",
       "species": "Pterois russelii",
       "common_name": "Plaintail Turkeyfish",
-      "image": "images/Pterois_russelli.jpg",
+      "image": "images/Pterois_russelli.webp",
       "features": [
         "Short dorsal spines.",
         "Pectoral rays are simple (unbranched).",
@@ -700,7 +700,7 @@
       "family": "Synanceiidae",
       "species": "Inimicus didactylus",
       "common_name": "Bearded Ghoul",
-      "image": "images/inimicus_didactylus.jpg",
+      "image": "images/inimicus_didactylus.webp",
       "features": [
         "Body color variable.",
         "Banded tail.",
@@ -713,7 +713,7 @@
       "family": "Synanceiidae",
       "species": "Minous dempsterae",
       "common_name": "Obliquebanded Stingfish",
-      "image": "images/minous_dempsterae.jpg",
+      "image": "images/minous_dempsterae.webp",
       "features": [
         "Oblique bands on body.",
         "Lowermost pectoral ray is completely free."
@@ -725,7 +725,7 @@
       "family": "Synanceiidae",
       "species": "Minous monodactylus",
       "common_name": "Grey Stingfish",
-      "image": "images/minous_monodactylus.jpg",
+      "image": "images/minous_monodactylus.webp",
       "features": [
         "2 broad vertical bars on tail."
       ]
@@ -736,7 +736,7 @@
       "family": "Synanceiidae",
       "species": "Trachicephalus uranoscopus",
       "common_name": "Stargazing Stonefish",
-      "image": "images/trachicephalus_uranoscopus.jpg",
+      "image": "images/trachicephalus_uranoscopus.webp",
       "features": [
         "Pattern on a brown background.",
         "Anal fin with 2 spines and 12-15 soft rays."
@@ -748,7 +748,7 @@
       "family": "Dactylopteridae",
       "species": "Dactyloptena orientalis",
       "common_name": "Oriental Flying Gurnard",
-      "image": "images/dactyloptena_orientalis.jpg",
+      "image": "images/dactyloptena_orientalis.webp",
       "features": [
         "Enormous, wing-like pectoral fins.",
         "First dorsal spines very long.",
@@ -761,7 +761,7 @@
       "family": "Symphysanodontidae",
       "species": "Symphysanodon typus",
       "common_name": "Insular Shelf Beauty",
-      "image": "images/symphysanodon_typus.jpg",
+      "image": "images/symphysanodon_typus.webp",
       "features": [
         "Pinkish-red body with yellow fins."
       ]
@@ -772,7 +772,7 @@
       "family": "Serranidae",
       "species": "Aethaloperca rogaa",
       "common_name": "Redmouth Grouper",
-      "image": "images/aethaloperca_rogaa.jpg",
+      "image": "images/aethaloperca_rogaa.webp",
       "features": [
         "Inside of mouth and gill cavity are reddish-orange.",
         "Body is dark brown to black.",
@@ -785,7 +785,7 @@
       "family": "Serranidae",
       "species": "Anyperodon leucogrammicus",
       "common_name": "Slender Grouper",
-      "image": "images/anyperodon_leucogrammicus.jpg",
+      "image": "images/anyperodon_leucogrammicus.webp",
       "features": [
         "Elongated body with reddish spots.",
         "Caudal fin margin is hyaline (clear)."
@@ -797,7 +797,7 @@
       "family": "Serranidae",
       "species": "Cephalopholis argus",
       "common_name": "Peacock Hind",
-      "image": "images/cephalopholis_argus.jpg",
+      "image": "images/cephalopholis_argus.webp",
       "features": [
         "Covered in small, bright blue spots.",
         "Often displays 5-6 pale vertical bars."
@@ -809,7 +809,7 @@
       "family": "Serranidae",
       "species": "Cephalopholis aurantia",
       "common_name": "Golden Hind",
-      "image": "images/cephalopholis_aurantia.jpg",
+      "image": "images/cephalopholis_aurantia.webp",
       "features": [
         "Uniformly orange-red body.",
         "White margin on caudal fin."
@@ -821,7 +821,7 @@
       "family": "Serranidae",
       "species": "Cephalopholis cyanostigma",
       "common_name": "Bluespotted Hind",
-      "image": "images/cephalopholis_cyanostigma.jpg",
+      "image": "images/cephalopholis_cyanostigma.webp",
       "features": [
         "White to bluish spots on head and body.",
         "Scattered blue spots."
@@ -833,7 +833,7 @@
       "family": "Serranidae",
       "species": "Cephalopholis formosa",
       "common_name": "Bluelined Hind",
-      "image": "images/cephalopholis_formosa.jpg",
+      "image": "images/cephalopholis_formosa.webp",
       "features": [
         "Small dark blue spots on snout, lips, and ventral part of head and chest.",
         "Wavy blue lines on body."
@@ -845,7 +845,7 @@
       "family": "Serranidae",
       "species": "Cephalopholis miniata",
       "common_name": "Coral Hind",
-      "image": "images/cephalopholis_miniata.jpg",
+      "image": "images/cephalopholis_miniata.webp",
       "features": [
         "Bright orange-red body covered in small blue spots.",
         "No spots on underside of lower jaw."
@@ -857,7 +857,7 @@
       "family": "Serranidae",
       "species": "Cephalopholis sonnerati",
       "common_name": "Tomato Hind",
-      "image": "images/cephalopholis_sonnerati.jpg",
+      "image": "images/cephalopholis_sonnerati.webp",
       "features": [
         "Purple network pattern on head, maxilla and lips.",
         "Head profile straight to concave in adults."
@@ -869,7 +869,7 @@
       "family": "Serranidae",
       "species": "Cephalopholis urodeta",
       "common_name": "Darkfin Hind",
-      "image": "images/cephalopholis_urodeta.jpg",
+      "image": "images/cephalopholis_urodeta.webp",
       "features": [
         "Dark brown body with small orange-yellowish spots.",
         "Usually 2 dark spots on edge of lower lip."
@@ -881,7 +881,7 @@
       "family": "Serranidae",
       "species": "Cephalopholis sexmaculata",
       "common_name": "Sixblotch Hind",
-      "image": "images/cephalopholis_sexmaculata.jpg",
+      "image": "images/cephalopholis_sexmaculata.webp",
       "features": [
         "Six dark blotches on the back.",
         "Body covered in small blue spots."
@@ -893,7 +893,7 @@
       "family": "Serranidae",
       "species": "Chelidoperca investigatoris",
       "common_name": "Not listed",
-      "image": "images/chelidoperca_investigatoris.jpg",
+      "image": "images/chelidoperca_investigatoris.webp",
       "features": [
         "Orange stripe on back.",
         "Black band along mid-body."
@@ -905,7 +905,7 @@
       "family": "Serranidae",
       "species": "Chelidoperca pleurospilus",
       "common_name": "Not listed",
-      "image": "images/chelidoperca_pleurospilus.jpg",
+      "image": "images/chelidoperca_pleurospilus.webp",
       "features": [
         "Spotted first ray of caudal fin."
       ]
@@ -916,7 +916,7 @@
       "family": "Serranidae",
       "species": "Cromileptes altivelis",
       "common_name": "Humpback Grouper",
-      "image": "images/cromileptes_altivelis.jpg",
+      "image": "images/cromileptes_altivelis.webp",
       "features": [
         "Posterior nostril is a large vertical slit.",
         "Body is pale with large, dark, round spots."
@@ -928,7 +928,7 @@
       "family": "Serranidae",
       "species": "Epinephelus albomarginatus",
       "common_name": "White-edged Grouper",
-      "image": "images/epinephelus_albomarginatus.jpg",
+      "image": "images/epinephelus_albomarginatus.webp",
       "features": [
         "Golden tips on the dorsal spines.",
         "White margin on caudal fin."
@@ -940,7 +940,7 @@
       "family": "Serranidae",
       "species": "Epinephelus areolatus",
       "common_name": "Aerolate Grouper",
-      "image": "images/epinephelus_areolatus.jpg",
+      "image": "images/epinephelus_areolatus.webp",
       "features": [
         "Dark spots subequal to pupil size.",
         "Caudal fin is truncate with a white edge."
@@ -952,7 +952,7 @@
       "family": "Serranidae",
       "species": "Epinephelus bleekeri",
       "common_name": "Dusky-tail Grouper",
-      "image": "images/epinephelus_bleekeri.jpg",
+      "image": "images/epinephelus_bleekeri.webp",
       "features": [
         "Upper half of body is spotted.",
         "Lower part of caudal fin is dusky."
@@ -964,7 +964,7 @@
       "family": "Serranidae",
       "species": "Epinephelus chabaudi",
       "common_name": "Moustache Grouper",
-      "image": "images/epinephelus_chabaudi.jpg",
+      "image": "images/epinephelus_chabaudi.webp",
       "features": [
         "Three faint bars on the back.",
         "Truncate caudal fin."
@@ -976,7 +976,7 @@
       "family": "Serranidae",
       "species": "Epinephelus chlorostigma",
       "common_name": "Brown-spotted Grouper",
-      "image": "images/epinephelus_chlorostigma.jpg",
+      "image": "images/epinephelus_chlorostigma.webp",
       "features": [
         "Largest spots are smaller than the pupil.",
         "Slightly concave caudal fin with a white margin."
@@ -988,7 +988,7 @@
       "family": "Serranidae",
       "species": "Epinephelus coeruleopunctatus",
       "common_name": "Whitespotted Grouper",
-      "image": "images/epinephelus_coeruleopunctatus.jpg",
+      "image": "images/epinephelus_coeruleopunctatus.webp",
       "features": [
         "3-4 dorsal spines are long.",
         "Covered in small white spots.",
@@ -1001,7 +1001,7 @@
       "family": "Serranidae",
       "species": "Epinephelus coioides",
       "common_name": "Orange-spotted Grouper",
-      "image": "images/epinephelus_coioides.jpg",
+      "image": "images/epinephelus_coioides.webp",
       "features": [
         "5 faint irregular dark bars on body.",
         "Body covered with brownish-orange spots."
@@ -1013,7 +1013,7 @@
       "family": "Serranidae",
       "species": "Epinephelus diacanthus",
       "common_name": "Spinycheek Grouper",
-      "image": "images/epinephelus_diacanthus.jpg",
+      "image": "images/epinephelus_diacanthus.webp",
       "features": [
         "Usually 5 dark vertical bars broader than interspaces.",
         "Posterior nostril is a large vertical slit."
@@ -1025,7 +1025,7 @@
       "family": "Serranidae",
       "species": "Epinephelus epistictus",
       "common_name": "Dotted Grouper",
-      "image": "images/epinephelus_epistictus.jpg",
+      "image": "images/epinephelus_epistictus.webp",
       "features": [
         "Convex dorsal profile.",
         "Yellowish body with blackish-brown spots."
@@ -1037,7 +1037,7 @@
       "family": "Serranidae",
       "species": "Epinephelus fasciatus",
       "common_name": "Blacktip Grouper",
-      "image": "images/epinephelus_fasciatus.jpg",
+      "image": "images/epinephelus_fasciatus.webp",
       "features": [
         "A black triangle on inter-spinous membranes of dorsal fin."
       ]
@@ -1048,7 +1048,7 @@
       "family": "Serranidae",
       "species": "Epinephelus faveatus",
       "common_name": "Barred-chest Grouper",
-      "image": "images/epinephelus_faveatus.jpg",
+      "image": "images/epinephelus_faveatus.webp",
       "features": [
         "Whitish base color with darker spots on fins.",
         "Spots at base of dorsal fin."
@@ -1060,7 +1060,7 @@
       "family": "Serranidae",
       "species": "Epinephelus flavocaeruleus",
       "common_name": "Blue-and-yellow Grouper",
-      "image": "images/epinephelus_flavocaeruleus.jpg",
+      "image": "images/epinephelus_flavocaeruleus.webp",
       "features": [
         "Body is dark grey to blue, fins are bright yellow.",
         "Caudal fin is truncate with a black margin in some fish."
@@ -1072,7 +1072,7 @@
       "family": "Serranidae",
       "species": "Epinephelus fuscoguttatus",
       "common_name": "Brown-marbled Grouper",
-      "image": "images/epinephelus_fuscoguttatus.jpg",
+      "image": "images/epinephelus_fuscoguttatus.webp",
       "features": [
         "Dark saddle blotch on caudal peduncle.",
         "Body has a marbled pattern of dark blotches."
@@ -1084,7 +1084,7 @@
       "family": "Serranidae",
       "species": "Epinephelus lanceolatus",
       "common_name": "Giant Grouper",
-      "image": "images/epinephelus_lanceolatus.jpg",
+      "image": "images/epinephelus_lanceolatus.webp",
       "features": [
         "Fins with numerous small black spots.",
         "Very large size; juveniles are yellow and black."
@@ -1096,7 +1096,7 @@
       "family": "Serranidae",
       "species": "Epinephelus latifasciatus",
       "common_name": "Striped Grouper",
-      "image": "images/epinephelus_latifasciatus.jpg",
+      "image": "images/epinephelus_latifasciatus.webp",
       "features": [
         "Three spotted horizontal lines on body."
       ]
@@ -1107,7 +1107,7 @@
       "family": "Serranidae",
       "species": "Epinephelus longispinis",
       "common_name": "Longspine Grouper",
-      "image": "images/epinephelus_longispinis.jpg",
+      "image": "images/epinephelus_longispinis.webp",
       "features": [
         "Reddish-brown spots that are elongated and darker posteriorly."
       ]
@@ -1118,7 +1118,7 @@
       "family": "Serranidae",
       "species": "Epinephelus malabaricus",
       "common_name": "Malabar Grouper",
-      "image": "images/epinephelus_malabaricus.jpg",
+      "image": "images/epinephelus_malabaricus.webp",
       "features": [
         "5 irregular dark brown bars on body.",
         "Numerous small dark spots."
@@ -1130,7 +1130,7 @@
       "family": "Serranidae",
       "species": "Epinephelus melanostigma",
       "common_name": "One-blotch Grouper",
-      "image": "images/epinephelus_melanostigma.jpg",
+      "image": "images/epinephelus_melanostigma.webp",
       "features": [
         "Single large black blotch in the middle of the dorsal fin base.",
         "Body covered in honeycomb-like spots."
@@ -1142,7 +1142,7 @@
       "family": "Serranidae",
       "species": "Epinephelus merra",
       "common_name": "Honeycomb Grouper",
-      "image": "images/epinephelus_merra.jpg",
+      "image": "images/epinephelus_merra.webp",
       "features": [
         "Distinctive honeycomb pattern of close-set brown hexagonal spots.",
         "Small brown spots and a white reticulated pattern."
@@ -1154,7 +1154,7 @@
       "family": "Serranidae",
       "species": "Epinephelus morrhua",
       "common_name": "Comet Grouper",
-      "image": "images/epinephelus_morrhua.jpg",
+      "image": "images/epinephelus_morrhua.webp",
       "features": [
         "Banding pattern of dark brown bars.",
         "Lines radiating from eye."
@@ -1166,7 +1166,7 @@
       "family": "Serranidae",
       "species": "Epinephelus miliaris",
       "common_name": "Netfin Grouper",
-      "image": "images/epinephelus_miliaris.jpg",
+      "image": "images/epinephelus_miliaris.webp",
       "features": [
         "Small close-set spots on the body.",
         "Large brownish spots on soft portion of fins."
@@ -1178,7 +1178,7 @@
       "family": "Serranidae",
       "species": "Epinephelus ongus",
       "common_name": "White-streaked Grouper",
-      "image": "images/epinephelus_ongus.jpg",
+      "image": "images/epinephelus_ongus.webp",
       "features": [
         "Big rounded eyes.",
         "Convex tail.",
@@ -1191,7 +1191,7 @@
       "family": "Serranidae",
       "species": "Epinephelus poecilonotus",
       "common_name": "Dot-dash Grouper",
-      "image": "images/epinephelus_poecilonotus.jpg",
+      "image": "images/epinephelus_poecilonotus.webp",
       "features": [
         "Dark blotch on back not joined to lower band.",
         "Dark bands on head."
@@ -1203,7 +1203,7 @@
       "family": "Serranidae",
       "species": "Epinephelus polyphekadion",
       "common_name": "Camouflage Grouper",
-      "image": "images/epinephelus_polyphekadion.jpg",
+      "image": "images/epinephelus_polyphekadion.webp",
       "features": [
         "Moderately incised interspinous membrane.",
         "Small dark spots and irregular blotches for camouflage."
@@ -1215,7 +1215,7 @@
       "family": "Serranidae",
       "species": "Epinephelus quoyanus",
       "common_name": "Longfin Grouper",
-      "image": "images/epinephulus_quoyanus.jpg",
+      "image": "images/epinephulus_quoyanus.webp",
       "features": [
         "Large hexagonal spots on body.",
         "Dark brown blotches on a pale background."
@@ -1227,7 +1227,7 @@
       "family": "Serranidae",
       "species": "Epinephelus radiatus",
       "common_name": "Oblique-banded Grouper",
-      "image": "images/epinephelus_radiatus.jpg",
+      "image": "images/epinephelus_radiatus.webp",
       "features": [
         "3rd and 4th dark bands branch ventrally.",
         "Body has radiating lines."
@@ -1239,7 +1239,7 @@
       "family": "Serranidae",
       "species": "Epinephelus spilotoceps",
       "common_name": "Foursaddle Grouper",
-      "image": "images/epinephelus_spilotoceps.jpg",
+      "image": "images/epinephelus_spilotoceps.webp",
       "features": [
         "3 large black blotches (saddles) on the back.",
         "Body covered in small brown spots."
@@ -1251,7 +1251,7 @@
       "family": "Serranidae",
       "species": "Epinephelus tauvina",
       "common_name": "Greasy Grouper",
-      "image": "images/epinephelus_tauvina.jpg",
+      "image": "images/epinephelus_tauvina.webp",
       "features": [
         "Dark spots on dorsal fin.",
         "Elongate body covered in faint, dusky spots."
@@ -1263,7 +1263,7 @@
       "family": "Serranidae",
       "species": "Epinephelus undulosus",
       "common_name": "Wavylined Grouper",
-      "image": "images/epinephelus_undulosus.jpg",
+      "image": "images/epinephelus_undulosus.webp",
       "features": [
         "Dorsal fin membrane not incised.",
         "Wavy brown lines on a paler background."
@@ -1275,7 +1275,7 @@
       "family": "Serranidae",
       "species": "Hyporthodus octofasciatus",
       "common_name": "Eightbar Grouper",
-      "image": "images/hyporthodus_octofasciatus.jpg",
+      "image": "images/hyporthodus_octofasciatus.webp",
       "features": [
         "8 dark vertical bands on body.",
         "Prominent knob on ventral edge of maxilla in adults."
@@ -1287,7 +1287,7 @@
       "family": "Serranidae",
       "species": "Liopropoma lunulatum",
       "common_name": "Not listed",
-      "image": "images/Liopoproma_lunulatum.jpg",
+      "image": "images/Liopoproma_lunulatum.webp",
       "features": [
         "Body is dotted with spots.",
         "Distinctive markings on tail."
@@ -1299,7 +1299,7 @@
       "family": "Serranidae",
       "species": "Liopropoma randalli",
       "common_name": "Not listed",
-      "image": "images/Liopoproma_randalli.jpg",
+      "image": "images/Liopoproma_randalli.webp",
       "features": [
         "Yellow streak from eye.",
         "Black band along the body."
@@ -1311,7 +1311,7 @@
       "family": "Serranidae",
       "species": "Odontanthias rhodopeplus",
       "common_name": "Not listed",
-      "image": "images/odontanthias_rhodopeplus.jpg",
+      "image": "images/odontanthias_rhodopeplus.webp",
       "features": [
         "Yellow tip on dorsal fin.",
         "Orange tip on caudal fin.",
@@ -1324,7 +1324,7 @@
       "family": "Serranidae",
       "species": "Plectropomus areolatus",
       "common_name": "Squaretail Coral Grouper",
-      "image": "images/plectropomus_areolatus.jpg",
+      "image": "images/plectropomus_areolatus.webp",
       "features": [
         "Small blue spots on a red base.",
         "Square-shaped (truncate) tail."
@@ -1336,7 +1336,7 @@
       "family": "Serranidae",
       "species": "Plectropomus laevis",
       "common_name": "Blacksaddled Coralgrouper",
-      "image": "images/plectropomus_laevis.jpg",
+      "image": "images/plectropomus_laevis.webp",
       "features": [
         "Has two color phases: white with large brown saddles, or dark brown/red.",
         "Numerous small blue spots."
@@ -1348,7 +1348,7 @@
       "family": "Serranidae",
       "species": "Plectropomus leopardus",
       "common_name": "Leopard Coral Grouper",
-      "image": "images/plectropomus_leopardus.jpg",
+      "image": "images/plectropomus_leopardus.webp",
       "features": [
         "Thick blue outer ring around the eye.",
         "Body is reddish-brown with numerous small blue spots."
@@ -1360,7 +1360,7 @@
       "family": "Serranidae",
       "species": "Pseudanthias marcia",
       "common_name": "Marcia’s Anthias",
-      "image": "images/pseudanthias_marcia.jpg",
+      "image": "images/pseudanthias_marcia.webp",
       "features": [
         "Distinctive color pattern with pink, orange, and yellow."
       ]
@@ -1371,7 +1371,7 @@
       "family": "Serranidae",
       "species": "Pseudanthias pillai",
       "common_name": "Not listed",
-      "image": "images/pseudanthias_pillai.jpg",
+      "image": "images/pseudanthias_pillai.webp",
       "features": [
         "Pinkish body.",
         "Yellow coloration on back and tail."
@@ -1383,7 +1383,7 @@
       "family": "Serranidae",
       "species": "Pogonoperca ocellata",
       "common_name": "Not listed",
-      "image": "images/pogonoperca_ocellata.jpg",
+      "image": "images/pogonoperca_ocellata.webp",
       "features": [
         "Long blotches on body.",
         "Distinct ocelli (eye-spots)."
@@ -1395,7 +1395,7 @@
       "family": "Serranidae",
       "species": "Sacura boulengeri",
       "common_name": "Boulenger’s Anthias",
-      "image": "images/sacura_boulengeri.jpg",
+      "image": "images/sacura_boulengeri.webp",
       "features": [
         "Filamentous tip on dorsal fin.",
         "White line on body."
@@ -1407,7 +1407,7 @@
       "family": "Serranidae",
       "species": "Variola albimarginata",
       "common_name": "White-edgedlyretail",
-      "image": "images/variola_albimarginata.jpg",
+      "image": "images/variola_albimarginata.webp",
       "features": [
         "Thin white edge on the lunate tail.",
         "Pelvic fins usually do not reach the anus."
@@ -1419,7 +1419,7 @@
       "family": "Serranidae",
       "species": "Variola louti",
       "common_name": "Yellow-edged Lyretail",
-      "image": "images/variola_louti.jpg",
+      "image": "images/variola_louti.webp",
       "features": [
         "Thin yellow edge on the lunate tail.",
         "Pelvic fins of adults reach the anus."
@@ -1431,7 +1431,7 @@
       "family": "Plesiopidae",
       "species": "Plesiops corallicola",
       "common_name": "Blue Gill Longfin",
-      "image": "images/plesiops_corallicola.jpg",
+      "image": "images/plesiops_corallicola.webp",
       "features": [
         "Lateral line in two parts.",
         "Dorsal fin has 11-26 spines."
@@ -1443,7 +1443,7 @@
       "family": "Opistognathidae",
       "species": "Opistognathus rosenbergii",
       "common_name": "Rosenberg’s Jawfish",
-      "image": "images/opistognathus_rosenbergii.jpg",
+      "image": "images/opistognathus_rosenbergii.webp",
       "features": [
         "White linear spots on body.",
         "Large mouth for burrowing."
@@ -1455,7 +1455,7 @@
       "family": "Opistognathidae",
       "species": "Opistognathus nigromarginatus",
       "common_name": "Birdled Jawfish",
-      "image": "images/opistognathus_nigromarginatus.jpg",
+      "image": "images/opistognathus_nigromarginatus.webp",
       "features": [
         "White band on head.",
         "Dark margin on fins."
@@ -1467,7 +1467,7 @@
       "family": "Priacanthidae",
       "species": "Cookeolus japonicus",
       "common_name": "Longfin Bigeye",
-      "image": "images/cookeolus_japonicus.jpg",
+      "image": "images/cookeolus_japonicus.webp",
       "features": [
         "Very large pelvic fins.",
         "Black interspinous membranes in dorsal fin."
@@ -1479,7 +1479,7 @@
       "family": "Priacanthidae",
       "species": "Heteropriacanthus cruentatus",
       "common_name": "Glasseye",
-      "image": "images/heteropriacanthus_cruentatus.jpg",
+      "image": "images/heteropriacanthus_cruentatus.webp",
       "features": [
         "Body covered in black dots.",
         "Large eyes, typical of the family."
@@ -1491,7 +1491,7 @@
       "family": "Priacanthidae",
       "species": "Priacanthus hamrur",
       "common_name": "Moontail Bullseye",
-      "image": "images/priacanthus_hamrur.jpg",
+      "image": "images/priacanthus_hamrur.webp",
       "features": [
         "Deeply lunate (crescent-shaped) caudal fin.",
         "Red body and large eyes."
@@ -1503,7 +1503,7 @@
       "family": "Priacanthidae",
       "species": "Pristigenys refulgens",
       "common_name": "Blackfringe Bigeye",
-      "image": "images/pristigenys_refulgens.jpg",
+      "image": "images/pristigenys_refulgens.webp",
       "features": [
         "Deep red body.",
         "Black fringe on fins."
@@ -1515,7 +1515,7 @@
       "family": "Apogonidae",
       "species": "Apogon ellioti",
       "common_name": "Flag In Cardinal Fish",
-      "image": "images/apogon_ellioti.jpg",
+      "image": "images/apogon_ellioti.webp",
       "features": [
         "Black band through eye.",
         "Black tip on first dorsal fin.",
@@ -1528,7 +1528,7 @@
       "family": "Apogonidae",
       "species": "Apogon queketti",
       "common_name": "Spotfin Cardinal",
-      "image": "images/apogon_queketti.jpg",
+      "image": "images/apogon_queketti.webp",
       "features": [
         "Black spot on operculum.",
         "Black edged fins."
@@ -1540,7 +1540,7 @@
       "family": "Apogonidae",
       "species": "Apogonichthyoides nigripinnis",
       "common_name": "Bullseye",
-      "image": "images/apogonichthyoides_nigripinnis.jpg",
+      "image": "images/apogonichthyoides_nigripinnis.webp",
       "features": [
         "Black tips on scales, giving a netted appearance."
       ]
@@ -1551,7 +1551,7 @@
       "family": "Apogonidae",
       "species": "Apogonichthyoides pseudotaeniatus",
       "common_name": "Doublebar Cardinalfish",
-      "image": "images/apogonichthyoides_pseudotaeniatus.jpg",
+      "image": "images/apogonichthyoides_pseudotaeniatus.webp",
       "features": [
         "Two distinct black bands on body."
       ]
@@ -1562,7 +1562,7 @@
       "family": "Apogonidae",
       "species": "Holapogon maximus",
       "common_name": "Titan Cardinalfish",
-      "image": "images/holapogon_maximus.jpg",
+      "image": "images/holapogon_maximus.webp",
       "features": [
         "Golden or yellowish body."
       ]
@@ -1573,7 +1573,7 @@
       "family": "Apogonidae",
       "species": "Ostorhinchus fasciatus",
       "common_name": "Broadbanded Cardinalfish",
-      "image": "images/ostorhinchus_fasciatus.jpg",
+      "image": "images/ostorhinchus_fasciatus.webp",
       "features": [
         "Stripes on body.",
         "Forked tail.",
@@ -1586,7 +1586,7 @@
       "family": "Apogonidae",
       "species": "Ostorhinchus luteus",
       "common_name": "Yellow Cardinalfish",
-      "image": "images/ostorhinchus_luteus.jpg",
+      "image": "images/ostorhinchus_luteus.webp",
       "features": [
         "Yellow body with black spots."
       ]
@@ -1597,7 +1597,7 @@
       "family": "Apogonidae",
       "species": "Ostorhinchus fleurieu",
       "common_name": "Cardinalfish",
-      "image": "images/ostorhinus_fleurieu.jpg",
+      "image": "images/ostorhinus_fleurieu.webp",
       "features": [
         "Band on caudal peduncle."
       ]
@@ -1608,7 +1608,7 @@
       "family": "Apogonidae",
       "species": "Pristiapogon fraenatus",
       "common_name": "Bridled Cardinalfish",
-      "image": "images/pristiapogon_fraenatus.jpg",
+      "image": "images/pristiapogon_fraenatus.webp",
       "features": [
         "Black band from snout through eye.",
         "Spot on caudal peduncle, half above lateral line."
@@ -1620,7 +1620,7 @@
       "family": "Apogonidae",
       "species": "Sphaeramia orbicularis",
       "common_name": "Orbiculate Cardinalfish",
-      "image": "images/sphaeramia_orbicularis.jpg",
+      "image": "images/sphaeramia_orbicularis.webp",
       "features": [
         "Dark vertical bar on body.",
         "Dark brown spots on posterior body."
@@ -1632,7 +1632,7 @@
       "family": "Carangidae",
       "species": "Alectis ciliaris",
       "common_name": "African Pompano",
-      "image": "images/alectis_ciliaris.jpg",
+      "image": "images/alectis_ciliaris.webp",
       "features": [
         "Juveniles have long, filamentous fin rays."
       ]
@@ -1643,7 +1643,7 @@
       "family": "Carangidae",
       "species": "Alectis indica",
       "common_name": "Indian Threadfish",
-      "image": "images/alectis_indica.jpg",
+      "image": "images/alectis_indica.webp",
       "features": [
         "Deeply compressed body, similar to A. ciliaris."
       ]
@@ -1654,7 +1654,7 @@
       "family": "Carangidae",
       "species": "Atropus atropos",
       "common_name": "Cleftbelly Trevally",
-      "image": "images/atropus_atropos.jpg",
+      "image": "images/atropus_atropos.webp",
       "features": [
         "Black groove on ventral side to accommodate pelvic fins."
       ]
@@ -1665,7 +1665,7 @@
       "family": "Carangidae",
       "species": "Caranx heberi",
       "common_name": "Blacktip Trevally",
-      "image": "images/caranx_heberi.jpg",
+      "image": "images/caranx_heberi.webp",
       "features": [
         "Black tip on the upper lobe of the caudal fin.",
         "Upper jaw is toothless."
@@ -1677,7 +1677,7 @@
       "family": "Carangidae",
       "species": "Elagatis bipinnulata",
       "common_name": "Rainbow Runner",
-      "image": "images/elagatis_bipinnulata.jpg",
+      "image": "images/elagatis_bipinnulata.webp",
       "features": [
         "2 bluish stripes on side.",
         "Detached two-rayed finlet behind dorsal and anal fins."
@@ -1689,7 +1689,7 @@
       "family": "Carangidae",
       "species": "Gnathanodon speciosus",
       "common_name": "Golden Trevally",
-      "image": "images/gnathanodon_speciosus.jpg",
+      "image": "images/gnathanodon_speciosus.webp",
       "features": [
         "Yellow body with black stripes.",
         "Fleshy, papillose lips."
@@ -1701,7 +1701,7 @@
       "family": "Carangidae",
       "species": "Seriolina nigrofasciata",
       "common_name": "Blackbanded Trevally",
-      "image": "images/seriolina_nigrofasciata.jpg",
+      "image": "images/seriolina_nigrofasciata.webp",
       "features": [
         "Greyish soft body.",
         "Faint black bars on body."
@@ -1713,7 +1713,7 @@
       "family": "Carangidae",
       "species": "Scomberoides commersonnianus",
       "common_name": "Talang Queenfish",
-      "image": "images/Scomberoides_commersonianus.jpg",
+      "image": "images/Scomberoides_commersonianus.webp",
       "features": [
         "Distinct pattern of large, dark spots on side."
       ]
@@ -1724,7 +1724,7 @@
       "family": "Lutjanidae",
       "species": "Aphareus furca",
       "common_name": "Small Tooothed Jobfish",
-      "image": "images/aphareus_furca.jpg",
+      "image": "images/aphareus_furca.webp",
       "features": [
         "Preopercle and opercle delimited by a dark line.",
         "Forked tail."
@@ -1736,7 +1736,7 @@
       "family": "Lutjanidae",
       "species": "Aprion virescens",
       "common_name": "Green Jobfish",
-      "image": "images/aprion_virescens.jpg",
+      "image": "images/aprion_virescens.webp",
       "features": [
         "Pectoral fin is short.",
         "Caudal fin deeply forked."
@@ -1748,7 +1748,7 @@
       "family": "Lutjanidae",
       "species": "Lipocheilus carnolabrum",
       "common_name": "Tang’s Snapper",
-      "image": "images/lipocheilus_carnolabrum.jpg",
+      "image": "images/lipocheilus_carnolabrum.webp",
       "features": [
         "Tip of upper jaw with a thickened fleshy knob in adults."
       ]
@@ -1759,7 +1759,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus argentimaculatus",
       "common_name": "Mangrove Red Snapper",
-      "image": "images/lutjanus_argentimaculatus.jpg",
+      "image": "images/lutjanus_argentimaculatus.webp",
       "features": [
         "Silvery spot on scales.",
         "Rounded caudal fin."
@@ -1771,7 +1771,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus bengalensis",
       "common_name": "Bengal Snapper",
-      "image": "images/lutjanus_bengalensis.jpg",
+      "image": "images/lutjanus_bengalensis.webp",
       "features": [
         "Sides of body yellow, with 4 blue lines."
       ]
@@ -1782,7 +1782,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus biguttatus",
       "common_name": "Two-spot Banded Snapper",
-      "image": "images/lutjanus_biguttatus.jpg",
+      "image": "images/lutjanus_biguttatus.webp",
       "features": [
         "Broad pearly white stripe along side.",
         "Two white spots on back."
@@ -1794,7 +1794,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus bohar",
       "common_name": "Two-spot Red Snapper",
-      "image": "images/lutjanus_bohar.jpg",
+      "image": "images/lutjanus_bohar.webp",
       "features": [
         "Pectoral fin pink, with a dorsal edge mostly black.",
         "Two white spots on back in juveniles."
@@ -1806,7 +1806,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus coeruleolineatus",
       "common_name": "Blueline Snapper",
-      "image": "images/lutjanus_coeruleolineatus.jpg",
+      "image": "images/lutjanus_coeruleolineatus.webp",
       "features": [
         "Thin white bands on body.",
         "Black spot below dorsal fin."
@@ -1818,7 +1818,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus decussatus",
       "common_name": "Checkered Snapper",
-      "image": "images/lutjanus_decussatus.jpg",
+      "image": "images/lutjanus_decussatus.webp",
       "features": [
         "Checkerboard pattern on upper sides.",
         "Large black spot on caudal peduncle."
@@ -1830,7 +1830,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus dodecacanthoides",
       "common_name": "Sunbeam Snapper",
-      "image": "images/lutjanus_dodecacanthoides.jpg",
+      "image": "images/lutjanus_dodecacanthoides.webp",
       "features": [
         "Yellow stripes on body."
       ]
@@ -1841,7 +1841,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus erythropterus",
       "common_name": "Crimson Snapper",
-      "image": "images/lutjanus_erythropterus.jpg",
+      "image": "images/lutjanus_erythropterus.webp",
       "features": [
         "Reddish body.",
         "Black patch on back in juveniles."
@@ -1853,7 +1853,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus fulviflamma",
       "common_name": "Dory Snapper",
-      "image": "images/lutjanus_fulviflamma.jpg",
+      "image": "images/lutjanus_fulviflamma.webp",
       "features": [
         "Black spot below dorsal fin.",
         "Yellowish stripes on side."
@@ -1865,7 +1865,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus fulvus",
       "common_name": "Blacktail Snapper",
-      "image": "images/lutjanus_fulvus.jpg",
+      "image": "images/lutjanus_fulvus.webp",
       "features": [
         "Caudal fin is black with a narrow white margin.",
         "Yellowish stripes on a brownish body."
@@ -1877,7 +1877,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus gibbus",
       "common_name": "Humpback Red Snapper",
-      "image": "images/lutjanus_gibbus.jpg",
+      "image": "images/lutjanus_gibbus.webp",
       "features": [
         "Reddish body.",
         "Distinctly pointed soft dorsal and anal fins."
@@ -1889,7 +1889,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus indicus",
       "common_name": "Not listed",
-      "image": "images/lutjanus_indicus.jpg",
+      "image": "images/lutjanus_indicus.webp",
       "features": [
         "Black spot below dorsal fin.",
         "Brownish stripes on body."
@@ -1901,7 +1901,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus johnii",
       "common_name": "John’s Snapper",
-      "image": "images/lutjanus_johnii.jpg",
+      "image": "images/lutjanus_johnii.webp",
       "features": [
         "Large black spot below dorsal fin."
       ]
@@ -1912,7 +1912,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus kasmira",
       "common_name": "Common Bluestripe Snapper",
-      "image": "images/lutjanus_kasmira.jpg",
+      "image": "images/lutjanus_kasmira.webp",
       "features": [
         "4 blue stripes on yellow body.",
         "Well-developed preopercular knob and notch."
@@ -1924,7 +1924,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus lunulatus",
       "common_name": "Lunartail Snapper",
-      "image": "images/lutjanus_lunulatus.jpg",
+      "image": "images/lutjanus_lunulatus.webp",
       "features": [
         "Yellow, crescent-shaped band on caudal fin.",
         "Broad black band behind head."
@@ -1936,7 +1936,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus lutjanus",
       "common_name": "Bigeye Snapper",
-      "image": "images/lutjanus_lutjanus.jpg",
+      "image": "images/lutjanus_lutjanus.webp",
       "features": [
         "Dark yellow stripe from eye to tail.",
         "Thin yellow horizontal lines below."
@@ -1948,7 +1948,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus malabaricus",
       "common_name": "Malabar Blood Snapper",
-      "image": "images/lutjanus_malabaricus.jpg",
+      "image": "images/lutjanus_malabaricus.webp",
       "features": [
         "Large head.",
         "Dotted stripes on body."
@@ -1960,7 +1960,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus quinquelineatus",
       "common_name": "Five-lined Snapper",
-      "image": "images/lutjanus_quinquelineatus.jpg",
+      "image": "images/lutjanus_quinquelineatus.webp",
       "features": [
         "Five bright blue stripes on yellow body.",
         "Black spot below dorsal fin."
@@ -1972,7 +1972,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus rivulatus",
       "common_name": "Blubberlip Snapper",
-      "image": "images/lutjanus_rivulatus.jpg",
+      "image": "images/lutjanus_rivulatus.webp",
       "features": [
         "Numerous wavy blue lines on head.",
         "Scales on sides have bluish-white central spots."
@@ -1984,7 +1984,7 @@
       "family": "Lutjanidae",
       "species": "Lutjanus vitta",
       "common_name": "Brownstripe Red Snapper",
-      "image": "images/lutjanus_vitta.jpg",
+      "image": "images/lutjanus_vitta.webp",
       "features": [
         "Mid-lateral brown band.",
         "Scale rows rise obliquely above lateral line."
@@ -1996,7 +1996,7 @@
       "family": "Lutjanidae",
       "species": "Macolor macularis",
       "common_name": "Midnight Snapper",
-      "image": "images/macolor_macularis.jpg",
+      "image": "images/macolor_macularis.webp",
       "features": [
         "Violet lines on head.",
         "Juveniles are black and white."
@@ -2008,7 +2008,7 @@
       "family": "Lutjanidae",
       "species": "Paracaesio sordida",
       "common_name": "Dirty Ordure Snapper",
-      "image": "images/paracaesio_sordida.jpg",
+      "image": "images/paracaesio_sordida.webp",
       "features": [
         "Uniformly grey to brownish body."
       ]
@@ -2019,7 +2019,7 @@
       "family": "Lutjanidae",
       "species": "Pinjalo lewisi",
       "common_name": "Slender Pinjalo",
-      "image": "images/pinjalo_lewisi.jpg",
+      "image": "images/pinjalo_lewisi.webp",
       "features": [
         "Body more slender than P. pinjalo.",
         "Black border on fins."
@@ -2031,7 +2031,7 @@
       "family": "Lutjanidae",
       "species": "Pinjalo pinjalo",
       "common_name": "Pinjalo",
-      "image": "images/pinjalo_pinjalo.jpg",
+      "image": "images/pinjalo_pinjalo.webp",
       "features": [
         "Rosy pink body.",
         "Flat interorbital space."
@@ -2043,7 +2043,7 @@
       "family": "Lutjanidae",
       "species": "Pristipomoides auricilla",
       "common_name": "Goldflag Jobfish",
-      "image": "images/pristipomoides_auricilla.jpg",
+      "image": "images/pristipomoides_auricilla.webp",
       "features": [
         "Upper lobe of caudal fin is bright yellow.",
         "Faint yellow on sides."
@@ -2055,7 +2055,7 @@
       "family": "Lutjanidae",
       "species": "Pristipomoides filamentosus",
       "common_name": "Crimson Jobfish",
-      "image": "images/pristipomoides_filamentosus.jpg",
+      "image": "images/pristipomoides_filamentosus.webp",
       "features": [
         "Forked caudal fin.",
         "Canine teeth not enlarged.",
@@ -2068,7 +2068,7 @@
       "family": "Lutjanidae",
       "species": "Pristipomoides typus",
       "common_name": "Sharptooth Jobfish",
-      "image": "images/pristipomoides_typus.jpg",
+      "image": "images/pristipomoides_typus.webp",
       "features": [
         "Yellow wavy lines on head.",
         "Filamentous tip on caudal fin."
@@ -2080,7 +2080,7 @@
       "family": "Caesionidae",
       "species": "Caesio caerulaurea",
       "common_name": "Blue and Gold Fusilier",
-      "image": "images/caesio_caerulaurea.jpg",
+      "image": "images/caesio_caerulaurea.webp",
       "features": [
         "Single yellow stripe on side.",
         "Black streak in each caudal lobe."
@@ -2092,7 +2092,7 @@
       "family": "Caesionidae",
       "species": "Caesio cuning",
       "common_name": "Redbelly Yellowtail Fusilier",
-      "image": "images/caesio_cuning.jpg",
+      "image": "images/caesio_cuning.webp",
       "features": [
         "Yellow caudal fin and upper caudal peduncle.",
         "No black markings on fins."
@@ -2104,7 +2104,7 @@
       "family": "Caesionidae",
       "species": "Caesio varilineata",
       "common_name": "Variable-lined Fusilier",
-      "image": "images/caesio_varilineata.jpg",
+      "image": "images/caesio_varilineata.webp",
       "features": [
         "More than one yellow line on side.",
         "Interorbital area is yellowish."
@@ -2116,7 +2116,7 @@
       "family": "Caesionidae",
       "species": "Caesio xanthonotus",
       "common_name": "Yellowback Fusilier",
-      "image": "images/caesio_xanthonotus.jpg",
+      "image": "images/caesio_xanthonotus.webp",
       "features": [
         "Tail and most of back are yellow.",
         "Bluish sides."
@@ -2128,7 +2128,7 @@
       "family": "Caesionidae",
       "species": "Pterocaesio chrysozona",
       "common_name": "Goldband Fusilier",
-      "image": "images/pterocaesio_chrysozona.jpg",
+      "image": "images/pterocaesio_chrysozona.webp",
       "features": [
         "Yellow stripe under lateral line.",
         "Black blotch at tips of caudal fin."
@@ -2140,7 +2140,7 @@
       "family": "Haemulidae",
       "species": "Diagramma pictum",
       "common_name": "Painted Sweetlips",
-      "image": "images/diagramma_pictum.jpg",
+      "image": "images/diagramma_pictum.webp",
       "features": [
         "Juveniles have stripes, adults have spots.",
         "Dorsal fin has 9-10 spines and 21-26 soft rays."
@@ -2152,7 +2152,7 @@
       "family": "Haemulidae",
       "species": "Plectorhinchus albovittatus",
       "common_name": "Two-striped Sweetlips",
-      "image": "images/plectorhinchus_albovittatus.jpg",
+      "image": "images/plectorhinchus_albovittatus.webp",
       "features": [
         "Adults are grey with white bands.",
         "Juveniles have bold black and white stripes."
@@ -2164,7 +2164,7 @@
       "family": "Haemulidae",
       "species": "Plectorhinchus chaetodonoides",
       "common_name": "Harlequin Sweetlips",
-      "image": "images/plectorhinchus_chaetodonoides.jpg",
+      "image": "images/plectorhinchus_chaetodonoides.webp",
       "features": [
         "Juveniles have a dramatic pattern of large brown blotches.",
         "Adults are grey with small dark spots."
@@ -2176,7 +2176,7 @@
       "family": "Haemulidae",
       "species": "Plectorhinchus chubbi",
       "common_name": "Dusky Rubberlip",
-      "image": "images/plectorhinchus_chubbi.jpg",
+      "image": "images/plectorhinchus_chubbi.webp",
       "features": [
         "Brownish black tip on fins.",
         "Thick lips."
@@ -2188,7 +2188,7 @@
       "family": "Haemulidae",
       "species": "Plectorhinchus gaterinus",
       "common_name": "Blackspotted Rubberlip",
-      "image": "images/plectorhinchus_gaterinus.jpg",
+      "image": "images/plectorhinchus_gaterinus.webp",
       "features": [
         "Yellow and black alternating bands on fins.",
         "Body is yellow with black spots."
@@ -2200,7 +2200,7 @@
       "family": "Haemulidae",
       "species": "Plectorhinchus gibbosus",
       "common_name": "Harry Hotlips",
-      "image": "images/Plectorhinchus_gibbosus_juvenile.jpg",
+      "image": "images/Plectorhinchus_gibbosus_juvenile.webp",
       "features": [
         "Lips become greatly swollen with age.",
         "Dorsal fin has 14 spines."
@@ -2212,7 +2212,7 @@
       "family": "Haemulidae",
       "species": "Plectorhinchus sordidus",
       "common_name": "Sordid Rubberlip",
-      "image": "images/plectorhinchus_sordidus.jpg",
+      "image": "images/plectorhinchus_sordidus.webp",
       "features": [
         "Upper bands are horizontal.",
         "Thick lips."
@@ -2224,7 +2224,7 @@
       "family": "Haemulidae",
       "species": "Plectorhinchus vittatus",
       "common_name": "Indian Ocean Oriental Sweetlips",
-      "image": "images/plectorhinchuc_vittatus.jpg",
+      "image": "images/plectorhinchuc_vittatus.webp",
       "features": [
         "Bold black and white horizontal stripes.",
         "Yellow fins."
@@ -2236,7 +2236,7 @@
       "family": "Haemulidae",
       "species": "Pomadasys guoraca",
       "common_name": "Not listed",
-      "image": "images/pomadasys_guoraca.jpg",
+      "image": "images/pomadasys_guoraca.webp",
       "features": [
         "Yellow stripes on body.",
         "Forked tail."
@@ -2248,7 +2248,7 @@
       "family": "Haemulidae",
       "species": "Pomadasys furcatus",
       "common_name": "Banded Grunter",
-      "image": "images/pomadasys_furcatus.jpg",
+      "image": "images/pomadasys_furcatus.webp",
       "features": [
         "6 dark horizontal stripes on body."
       ]
@@ -2259,7 +2259,7 @@
       "family": "Haemulidae",
       "species": "Pomadasys maculatus",
       "common_name": "Saddle Grunt",
-      "image": "images/pomadasys_maculatus.jpg",
+      "image": "images/pomadasys_maculatus.webp",
       "features": [
         "Dark bars or saddles on the back."
       ]
@@ -2270,7 +2270,7 @@
       "family": "Nemipteridae",
       "species": "Nemipterus bipunctatus",
       "common_name": "Delagoa Threadfin Bream",
-      "image": "images/nemipterus_bipunctatus.jpg",
+      "image": "images/nemipterus_bipunctatus.webp",
       "features": [
         "5-7 pale greenish-yellow stripes on body.",
         "Two yellow stripes on anal fin."
@@ -2282,7 +2282,7 @@
       "family": "Nemipteridae",
       "species": "Nemipterus zysron",
       "common_name": "Slender Threadfin Bream",
-      "image": "images/nemipterus_zysron.jpg",
+      "image": "images/nemipterus_zysron.webp",
       "features": [
         "Short yellow filament on upper lobe of caudal fin."
       ]
@@ -2293,7 +2293,7 @@
       "family": "Nemipteridae",
       "species": "Parascolopsis aspinosa",
       "common_name": "Smooth Dwarf Monocle Bream",
-      "image": "images/parascolopsis_aspinosa.jpg",
+      "image": "images/parascolopsis_aspinosa.webp",
       "features": [
         "Dark blotch on side.",
         "Suborbital margin is smooth."
@@ -2305,7 +2305,7 @@
       "family": "Nemipteridae",
       "species": "Parascolopsis baranesi",
       "common_name": "Not listed",
-      "image": "images/parascolopsis_baranesi.jpg",
+      "image": "images/parascolopsis_baranesi.webp",
       "features": [
         "Red patch on side."
       ]
@@ -2316,7 +2316,7 @@
       "family": "Nemipteridae",
       "species": "Parascolopsis capitinis",
       "common_name": "Not listed",
-      "image": "images/parascolopsis_capitinis.jpg",
+      "image": "images/parascolopsis_capitinis.webp",
       "features": [
         "Yellow on upper body, reddish lower down."
       ]
@@ -2327,7 +2327,7 @@
       "family": "Nemipteridae",
       "species": "Parascolopsis eriomma",
       "common_name": "Rosy Dwarf Monocle Bream",
-      "image": "images/parascolopsis_eriomma.jpg",
+      "image": "images/parascolopsis_eriomma.webp",
       "features": [
         "Yellow stripe on side.",
         "Suborbital margin is serrated."
@@ -2339,7 +2339,7 @@
       "family": "Nemipteridae",
       "species": "Parascolopsis inermis",
       "common_name": "Unarmed Dwarf Monocle Bream",
-      "image": "images/parascolopsis_inermis.jpg",
+      "image": "images/parascolopsis_inermis.webp",
       "features": [
         "5-7 pale greenish-yellow stripes on body."
       ]
@@ -2350,7 +2350,7 @@
       "family": "Nemipteridae",
       "species": "Scolopsis aurata",
       "common_name": "Yellowstripe Monocle Bream",
-      "image": "images/scolopsis_aurata.jpg",
+      "image": "images/scolopsis_aurata.webp",
       "features": [
         "Broad golden-yellow stripe on side.",
         "Blue stripe joining the eyes."
@@ -2362,7 +2362,7 @@
       "family": "Nemipteridae",
       "species": "Scolopsis bimaculatus",
       "common_name": "Thumbprint Monocle Bream",
-      "image": "images/scolopsis_bimaculatus.jpg",
+      "image": "images/scolopsis_bimaculatus.webp",
       "features": [
         "Large black or brownish blotch on side."
       ]
@@ -2373,7 +2373,7 @@
       "family": "Nemipteridae",
       "species": "Scolopsis ciliata",
       "common_name": "Saw-jawed Monocle Bream",
-      "image": "images/scolopsis_ciliata.jpg",
+      "image": "images/scolopsis_ciliata.webp",
       "features": [
         "Silvery white stripe on side.",
         "Golden spots on sides."
@@ -2385,7 +2385,7 @@
       "family": "Nemipteridae",
       "species": "Scolopsis vosmeri",
       "common_name": "Whitecheek Monocle Bream",
-      "image": "images/scolopsis_vosmeri.jpg",
+      "image": "images/scolopsis_vosmeri.webp",
       "features": [
         "White vertical bar behind head.",
         "Large suborbital spine."
@@ -2397,7 +2397,7 @@
       "family": "Lethrinidae",
       "species": "Gnathodentex aurolineatus",
       "common_name": "Striped Large-eye Bream",
-      "image": "images/gnathodentex_aurolineatus.jpg",
+      "image": "images/gnathodentex_aurolineatus.webp",
       "features": [
         "Cheeks have scales.",
         "Horizontal yellow lines on a silvery body."
@@ -2409,7 +2409,7 @@
       "family": "Lethrinidae",
       "species": "Gymnocranius elongatus",
       "common_name": "Forktail Large-eye Bream",
-      "image": "images/gymnocranius_elongatus.jpg",
+      "image": "images/gymnocranius_elongatus.webp",
       "features": [
         "Maxilla surface is smooth.",
         "Forked tail."
@@ -2421,7 +2421,7 @@
       "family": "Lethrinidae",
       "species": "Gymnocranius grandoculis",
       "common_name": "Blue-lined Large-eye Bream",
-      "image": "images/gymnocranius_grandoculis.jpg",
+      "image": "images/gymnocranius_grandoculis.webp",
       "features": [
         "Cheeks with scales and wavy blue lines.",
         "Moderately forked caudal fin."
@@ -2433,7 +2433,7 @@
       "family": "Lethrinidae",
       "species": "Lethrinus borbonicus",
       "common_name": "Snubnose Emperor",
-      "image": "images/lethrinus_borbonicus.jpg",
+      "image": "images/lethrinus_borbonicus.webp",
       "features": [
         "Cheeks without scales.",
         "Body is mottled with irregular dark markings."
@@ -2445,7 +2445,7 @@
       "family": "Lethrinidae",
       "species": "Lethrinus conchyliatus",
       "common_name": "Redaxil Emperor",
-      "image": "images/lethrinus_conchyliatus.jpg",
+      "image": "images/lethrinus_conchyliatus.webp",
       "features": [
         "Large, unscaled red patch above pectoral-fin base."
       ]
@@ -2456,7 +2456,7 @@
       "family": "Lethrinidae",
       "species": "Lethrinus erythracanthus",
       "common_name": "Orange-spotted Emperor",
-      "image": "images/lethrinus_erythracanthus.jpg",
+      "image": "images/lethrinus_erythracanthus.webp",
       "features": [
         "Bulbous lips.",
         "Orange spots on a greyish body."
@@ -2468,7 +2468,7 @@
       "family": "Lethrinidae",
       "species": "Lethrinus harak",
       "common_name": "Thumbprintemperor",
-      "image": "images/lethrinus_harak.jpg",
+      "image": "images/lethrinus_harak.webp",
       "features": [
         "Large elliptical blotch edged in yellow on side.",
         "Body is greenish grey."
@@ -2480,7 +2480,7 @@
       "family": "Lethrinidae",
       "species": "Lethrinus mahsena",
       "common_name": "Sky Emperor",
-      "image": "images/lethrinus_mahsena.jpg",
+      "image": "images/lethrinus_mahsena.webp",
       "features": [
         "Body is yellowish to greenish blue, often with darker bars.",
         "Inner base of pectoral fin has scales."
@@ -2492,7 +2492,7 @@
       "family": "Lethrinidae",
       "species": "Lethrinus nebulosus",
       "common_name": "Spangled Emperor",
-      "image": "images/lethrinus_nebulosus.jpg",
+      "image": "images/lethrinus_nebulosus.webp",
       "features": [
         "Blue spots and lines on head and body.",
         "Snout is long.",
@@ -2505,7 +2505,7 @@
       "family": "Lethrinidae",
       "species": "Lethrinus olivaceus",
       "common_name": "Longface Emperor",
-      "image": "images/lethrinus_olivaceus.jpg",
+      "image": "images/lethrinus_olivaceus.webp",
       "features": [
         "Very long, pointed snout.",
         "Inner base of pectoral fin is without scales."
@@ -2517,7 +2517,7 @@
       "family": "Lethrinidae",
       "species": "Lethrinus ornatus",
       "common_name": "Ornate Emperor",
-      "image": "images/lethrinus_ornatus.jpg",
+      "image": "images/lethrinus_ornatus.webp",
       "features": [
         "Yellow stripes on a silvery body.",
         "Red at axil of pectoral fin."
@@ -2529,7 +2529,7 @@
       "family": "Lethrinidae",
       "species": "Lethrinus lentjan",
       "common_name": "Pink Ear Emperor",
-      "image": "images/lethrinus_lentjan.jpg",
+      "image": "images/lethrinus_lentjan.webp",
       "features": [
         "Red mark on the upper edge of the operculum.",
         "Inner base of pectoral fin is scaled."
@@ -2541,7 +2541,7 @@
       "family": "Lethrinidae",
       "species": "Monotaxis grandoculis",
       "common_name": "Humpnose Big-eye Bream",
-      "image": "images/monotaxis_grandoculis.jpg",
+      "image": "images/monotaxis_grandoculis.webp",
       "features": [
         "Cheeks with scales.",
         "Develops a hump on the snout with age.",
@@ -2554,7 +2554,7 @@
       "family": "Lethrinidae",
       "species": "Wattsia mossambica",
       "common_name": "Mozambique Large-eye Bream",
-      "image": "images/wattsia_mossambica.jpg",
+      "image": "images/wattsia_mossambica.webp",
       "features": [
         "Back is dusky yellow.",
         "Dorsal fin is olive-yellow."
@@ -2566,7 +2566,7 @@
       "family": "Sparidae",
       "species": "Argyrops spinifer",
       "common_name": "King Soldier Bream",
-      "image": "images/argyrops_spinifer.jpg",
+      "image": "images/argyrops_spinifer.webp",
       "features": [
         "First few dorsal spines are extremely elongated and flattened.",
         "Reddish body."
@@ -2578,7 +2578,7 @@
       "family": "Sparidae",
       "species": "Rhabdosargus sarba",
       "common_name": "Goldlined Seabream",
-      "image": "images/rhabdosargus_sarba.jpg",
+      "image": "images/rhabdosargus_sarba.webp",
       "features": [
         "Golden horizontal lines on a silvery body."
       ]
@@ -2589,7 +2589,7 @@
       "family": "Mullidae",
       "species": "Mulloidichthys pfluegeri",
       "common_name": "Orange Goatfish",
-      "image": "images/mulloidichthys_pfluegeri.jpg",
+      "image": "images/mulloidichthys_pfluegeri.webp",
       "features": [
         "Alternate orange-red bands on body.",
         "No marks on fins."
@@ -2601,7 +2601,7 @@
       "family": "Mullidae",
       "species": "Parupeneus cyclostomus",
       "common_name": "Gold-saddle Goatfish",
-      "image": "images/parupeneus_cyclostomus.jpg",
+      "image": "images/parupeneus_cyclostomus.webp",
       "features": [
         "Yellow saddle on caudal peduncle.",
         "Barbels extend to or beyond posterior end of head."
@@ -2613,7 +2613,7 @@
       "family": "Mullidae",
       "species": "Parupeneus heptacanthus",
       "common_name": "Cinnabar Goatfish",
-      "image": "images/parupeneus_heptacanthus.jpg",
+      "image": "images/parupeneus_heptacanthus.webp",
       "features": [
         "Small reddish-brown spot on side.",
         "Light yellow stripe on body."
@@ -2625,7 +2625,7 @@
       "family": "Mullidae",
       "species": "Parupeneus indicus",
       "common_name": "Indian Goatfish",
-      "image": "images/parupeneus_indicus.jpg",
+      "image": "images/parupeneus_indicus.webp",
       "features": [
         "Black spot on caudal peduncle.",
         "Elongate yellow spot on side."
@@ -2637,7 +2637,7 @@
       "family": "Mullidae",
       "species": "Parupeneus macronemus",
       "common_name": "Long-barbel Goatfish",
-      "image": "images/parupeneus_macronemus.jpg",
+      "image": "images/parupeneus_macronemus.webp",
       "features": [
         "Last ray of soft dorsal and anal fins are elongate.",
         "Dark saddle on caudal peduncle."
@@ -2649,7 +2649,7 @@
       "family": "Mullidae",
       "species": "Parupeneus trifasciatus",
       "common_name": "Doublebar Goatfish",
-      "image": "images/parupeneus_trifasciatus.jpg",
+      "image": "images/parupeneus_trifasciatus.webp",
       "features": [
         "Two dark vertical bands on body."
       ]
@@ -2660,7 +2660,7 @@
       "family": "Mullidae",
       "species": "Upeneus japonicus",
       "common_name": "Bensasi Goatfish",
-      "image": "images/upeneus_japonicus.jpg",
+      "image": "images/upeneus_japonicus.webp",
       "features": [
         "Stripes only on upper lobe of caudal fin."
       ]
@@ -2671,7 +2671,7 @@
       "family": "Mullidae",
       "species": "Upeneus moluccensis",
       "common_name": "Goldband Goatfish",
-      "image": "images/upeneus_moluccensis.jpg",
+      "image": "images/upeneus_moluccensis.webp",
       "features": [
         "Stripes on both lobes of caudal fin.",
         "Yellow stripe on side."
@@ -2683,7 +2683,7 @@
       "family": "Mullidae",
       "species": "Upeneus tragula",
       "common_name": "Freckled Goatfish",
-      "image": "images/upeneus_tragula.jpg",
+      "image": "images/upeneus_tragula.webp",
       "features": [
         "Caudal fin is striped.",
         "Body is mottled and freckled."
@@ -2695,7 +2695,7 @@
       "family": "Mullidae",
       "species": "Upeneus vittatus",
       "common_name": "Yellowstriped Goatfish",
-      "image": "images/upeneus_vittatus.jpg",
+      "image": "images/upeneus_vittatus.webp",
       "features": [
         "Thick dark band on side.",
         "Striped caudal fin."
@@ -2707,7 +2707,7 @@
       "family": "Pempheridae",
       "species": "Pempheris adusta",
       "common_name": "Dusky Sweeper",
-      "image": "images/pempheris_adusta.jpg",
+      "image": "images/pempheris_adusta.webp",
       "features": [
         "Eye is large.",
         "Body is laterally compressed.",
@@ -2720,7 +2720,7 @@
       "family": "Monodactylidae",
       "species": "Monodactylus argenteus",
       "common_name": "Silver Moony",
-      "image": "images/monodactylus_argenteus.jpg",
+      "image": "images/monodactylus_argenteus.webp",
       "features": [
         "Silver, disc-shaped body.",
         "Thick black tip on dorsal and anal fins."
@@ -2732,7 +2732,7 @@
       "family": "Toxotidae",
       "species": "Toxotes jaculatrix",
       "common_name": "Banded Archerfish",
-      "image": "images/toxotes_jaculatrix.jpg",
+      "image": "images/toxotes_jaculatrix.webp",
       "features": [
         "Lower jaw protruding.",
         "Dark, wedge-shaped bars on upper side."
@@ -2744,7 +2744,7 @@
       "family": "Kyphosidae",
       "species": "Kyphosus cinerascens",
       "common_name": "Blue Sea Chub",
-      "image": "images/kyphosus_cinerascens.jpg",
+      "image": "images/kyphosus_cinerascens.webp",
       "features": [
         "Hockey-stick shaped teeth.",
         "Uniform grey or bluish color."
@@ -2756,7 +2756,7 @@
       "family": "Kyphosidae",
       "species": "Kyphosus vaigiensis",
       "common_name": "Brassy Chub",
-      "image": "images/kyphosus_vaigiensis.jpg",
+      "image": "images/kyphosus_vaigiensis.webp",
       "features": [
         "Blue stripes on body.",
         "Moderately forked tail."
@@ -2768,7 +2768,7 @@
       "family": "Scatophagidae",
       "species": "Scatophagus argus",
       "common_name": "Spotted Scat",
-      "image": "images/scatophagus_argus.jpg",
+      "image": "images/scatophagus_argus.webp",
       "features": [
         "Single dorsal fin is deeply notched.",
         "Body covered in large dark spots."
@@ -2780,7 +2780,7 @@
       "family": "Drepaneidae",
       "species": "Drepane punctata",
       "common_name": "Spotted Sicklefish",
-      "image": "images/drepane_punctata.jpg",
+      "image": "images/drepane_punctata.webp",
       "features": [
         "Long, sickle-shaped pectoral fin.",
         "Vertical rows of dark spots."
@@ -2792,7 +2792,7 @@
       "family": "Chaetodontidae",
       "species": "Chaetodon auriga",
       "common_name": "Threadfin Butterflyfish",
-      "image": "images/chaetodon_auriga.jpg",
+      "image": "images/chaetodon_auriga.webp",
       "features": [
         "Filament extending from the soft dorsal fin.",
         "Black eye-band.",
@@ -2805,7 +2805,7 @@
       "family": "Chaetodontidae",
       "species": "Chaetodon collare",
       "common_name": "Redtail Butterflyfish",
-      "image": "images/chaetodon_collare.jpg",
+      "image": "images/chaetodon_collare.webp",
       "features": [
         "White band behind the eye.",
         "Red tail.",
@@ -2818,7 +2818,7 @@
       "family": "Chaetodontidae",
       "species": "Chaetodon decussatus",
       "common_name": "Indian Vagabond Butterflyfish",
-      "image": "images/chaetodon_decussatus.jpg",
+      "image": "images/chaetodon_decussatus.webp",
       "features": [
         "White tip on caudal fin, with yellow inside and a black outer tip.",
         "Chevron markings."
@@ -2830,7 +2830,7 @@
       "family": "Chaetodontidae",
       "species": "Chaetodon falcula",
       "common_name": "Blackwedged Butterflyfish",
-      "image": "images/chaetodon_falcula.jpg",
+      "image": "images/chaetodon_falcula.webp",
       "features": [
         "Two large, dark saddle-like patches on the back.",
         "Black spot on caudal peduncle."
@@ -2842,7 +2842,7 @@
       "family": "Chaetodontidae",
       "species": "Chaetodon gardineri",
       "common_name": "Gardner’s Butterflyfish",
-      "image": "images/chaetodon_gardineri.jpg",
+      "image": "images/chaetodon_gardineri.webp",
       "features": [
         "Yellow body with faint vertical lines.",
         "Dark posterior section."
@@ -2854,7 +2854,7 @@
       "family": "Chaetodontidae",
       "species": "Chaetodon lunulatus",
       "common_name": "Oval Butterflyfish",
-      "image": "images/chaetodon_lunulatus.jpg",
+      "image": "images/chaetodon_lunulatus.webp",
       "features": [
         "Broad black bands and stripes on body.",
         "Curved purple lines on side."
@@ -2866,7 +2866,7 @@
       "family": "Chaetodontidae",
       "species": "Chaetodon octofasciatus",
       "common_name": "Eightband Butterflyfish",
-      "image": "images/chaetodon_octofasciatus.jpg",
+      "image": "images/chaetodon_octofasciatus.webp",
       "features": [
         "Eight vertical black bands on a yellow or white body.",
         "Dark band does not cross the eye."
@@ -2878,7 +2878,7 @@
       "family": "Chaetodontidae",
       "species": "Chaetodon trifasciatus",
       "common_name": "Melon Butterflyfish",
-      "image": "images/chaetodon_trifasciatus.jpg",
+      "image": "images/chaetodon_trifasciatus.webp",
       "features": [
         "Black streak on body and at base of dorsal and anal fins.",
         "Longitudinal purple stripes on body."
@@ -2890,7 +2890,7 @@
       "family": "Chaetodontidae",
       "species": "Heniochus acuminatus",
       "common_name": "Pennant Coralfish",
-      "image": "images/heniochus_acuminatus.jpg",
+      "image": "images/heniochus_acuminatus.webp",
       "features": [
         "Very long, white dorsal fin filament.",
         "Two broad black bands on a white body."
@@ -2902,7 +2902,7 @@
       "family": "Chaetodontidae",
       "species": "Heniochus monoceros",
       "common_name": "Masked Bannerfish",
-      "image": "images/heniochus_monoceros.jpg",
+      "image": "images/heniochus_monoceros.webp",
       "features": [
         "Short dorsal fin extension.",
         "Band across eye.",
@@ -2915,7 +2915,7 @@
       "family": "Chaetodontidae",
       "species": "Roa excelsa",
       "common_name": "Hawaiian Gold-barred Butterflyfish",
-      "image": "images/roa_excelsa.jpg",
+      "image": "images/roa_excelsa.webp",
       "features": [
         "White body with broad, dark brown or golden bars.",
         "Ocelli (eyespots) on the dorsal fin."
@@ -2927,7 +2927,7 @@
       "family": "Pomacanthidae",
       "species": "Apolemichthys xanthurus",
       "common_name": "Yellowtail Angelfish",
-      "image": "images/apolemichthys_xanthurus.jpg",
+      "image": "images/apolemichthys_xanthurus.webp",
       "features": [
         "Tail is yellow.",
         "Soft rays of dorsal and anal fins are black."
@@ -2939,7 +2939,7 @@
       "family": "Pomacanthidae",
       "species": "Pomacanthus annularis",
       "common_name": "Blue Ring Angelfish",
-      "image": "images/pomacanthus_annularis.jpg",
+      "image": "images/pomacanthus_annularis.webp",
       "features": [
         "Blue ring on the side of the body (adults).",
         "Curved blue lines on a brownish body."
@@ -2951,7 +2951,7 @@
       "family": "Pomacanthidae",
       "species": "Pomacanthus imperator",
       "common_name": "Emperor Angelfish",
-      "image": "images/pomacanthus_imperator.jpg",
+      "image": "images/pomacanthus_imperator.webp",
       "features": [
         "Adults have longitudinal yellow lines on a blue body.",
         "Juveniles have concentric white and blue rings."
@@ -2963,7 +2963,7 @@
       "family": "Pomacanthidae",
       "species": "Pomacanthus semicirculatus",
       "common_name": "Semicircle Angelfish",
-      "image": "images/pomacanthus_semicirculatus.jpg",
+      "image": "images/pomacanthus_semicirculatus.webp",
       "features": [
         "Adults are greenish-brown with blue spots.",
         "Juveniles have semicircular white and blue lines."
@@ -2975,7 +2975,7 @@
       "family": "Pentacerotidae",
       "species": "Histiopterus typus",
       "common_name": "Sailfin Armourhead",
-      "image": "images/histiopterus_typus.jpg",
+      "image": "images/histiopterus_typus.webp",
       "features": [
         "Spinous part of dorsal fin is arched and not deeply notched.",
         "Blotch of variable intensity."
@@ -2987,7 +2987,7 @@
       "family": "Terapontidae",
       "species": "Pelates quadrilineatus",
       "common_name": "Fourlined Terapon",
-      "image": "images/pelates_quadrilineatus.jpg",
+      "image": "images/pelates_quadrilineatus.webp",
       "features": [
         "Several horizontal dark stripes.",
         "Lower opercular spine not extending beyond edge of opercular flap."
@@ -2999,7 +2999,7 @@
       "family": "Terapontidae",
       "species": "Terapon jarbua",
       "common_name": "Jarbua Terapon",
-      "image": "images/terapon_jarbua.jpg",
+      "image": "images/terapon_jarbua.webp",
       "features": [
         "Curved stripes on body.",
         "Spinous part of dorsal fin is strongly arched and deeply notched."
@@ -3011,7 +3011,7 @@
       "family": "Terapontidae",
       "species": "Terapon theraps",
       "common_name": "Largescaled Terapon",
-      "image": "images/terapon_theraps.jpg",
+      "image": "images/terapon_theraps.webp",
       "features": [
         "Stripes on body are almost straight and broad."
       ]
@@ -3022,7 +3022,7 @@
       "family": "Kuhliidae",
       "species": "Kuhlia mugil",
       "common_name": "Barred Flagtail",
-      "image": "images/kuhlia_mugil.jpg",
+      "image": "images/kuhlia_mugil.webp",
       "features": [
         "Distinct black and white pattern on caudal fin.",
         "Two opercular spines."
@@ -3034,7 +3034,7 @@
       "family": "Cirrhitidae",
       "species": "Cirrhitichthys bleekeri",
       "common_name": "Not listed",
-      "image": "images/cirrhitichthys_bleekeri.jpg",
+      "image": "images/cirrhitichthys_bleekeri.webp",
       "features": [
         "Cirri (small tufts) on the tips of dorsal spines.",
         "Reddish-brown blotches on body."
@@ -3046,7 +3046,7 @@
       "family": "Pomacentridae",
       "species": "Abudefduf sordidus",
       "common_name": "Blackspot Sergeant",
-      "image": "images/abudefduf_sordidus.jpg",
+      "image": "images/abudefduf_sordidus.webp",
       "features": [
         "Six dark vertical bands on a pale body.",
         "Black spot at the base of the pectoral fin."
@@ -3058,7 +3058,7 @@
       "family": "Pomacentridae",
       "species": "Abudefduf saxatilis",
       "common_name": "Sergeant-major",
-      "image": "images/abudefduf_saxatilis.jpg",
+      "image": "images/abudefduf_saxatilis.webp",
       "features": [
         "Five dark vertical bands on body.",
         "Upper body is often yellowish."
@@ -3070,7 +3070,7 @@
       "family": "Pomacentridae",
       "species": "Abudefduf vaigiensis",
       "common_name": "Indo-pacific Sergeant",
-      "image": "images/abudefduf_vaigiensis.jpg",
+      "image": "images/abudefduf_vaigiensis.webp",
       "features": [
         "Five strong, dark bands on body.",
         "Yellow back."
@@ -3082,7 +3082,7 @@
       "family": "Pomacentridae",
       "species": "Amphiprion clarkii",
       "common_name": "Yellowtail Clownfish",
-      "image": "images/amphiprion_clarkii.jpg",
+      "image": "images/amphiprion_clarkii.webp",
       "features": [
         "Two white bars on a black or brown body.",
         "Yellow or orange tail."
@@ -3094,7 +3094,7 @@
       "family": "Pomacentridae",
       "species": "Amphiprion sebae",
       "common_name": "Sebae Anemonefish",
-      "image": "images/amphiprion_sebae.jpg",
+      "image": "images/amphiprion_sebae.webp",
       "features": [
         "Two white bands, the middle one is often wide.",
         "Dark body."
@@ -3106,7 +3106,7 @@
       "family": "Pomacentridae",
       "species": "Amphiprion percula",
       "common_name": "Orange Clownfish",
-      "image": "images/amphiprion_percula.jpg",
+      "image": "images/amphiprion_percula.webp",
       "features": [
         "Bright orange body with three white bars.",
         "Bars are outlined in black."
@@ -3118,7 +3118,7 @@
       "family": "Pomacentridae",
       "species": "Dascyllus aruanus",
       "common_name": "Whitetail Dascyllus",
-      "image": "images/dascyllus_aruanus.jpg",
+      "image": "images/dascyllus_aruanus.webp",
       "features": [
         "Three black bars on a white body.",
         "White tail."
@@ -3130,7 +3130,7 @@
       "family": "Pomacentridae",
       "species": "Dascyllus melanurus",
       "common_name": "Blacktail Humbug",
-      "image": "images/dascyllus_melanurus.jpg",
+      "image": "images/dascyllus_melanurus.webp",
       "features": [
         "Four dark bands across body.",
         "Black tail."
@@ -3142,7 +3142,7 @@
       "family": "Pomacentridae",
       "species": "Dascyllus trimaculatus",
       "common_name": "Threespot Dascyllus",
-      "image": "images/dascyllus_trimaculatus.jpg",
+      "image": "images/dascyllus_trimaculatus.webp",
       "features": [
         "Black body with a white spot on the forehead and upper sides."
       ]
@@ -3153,7 +3153,7 @@
       "family": "Pomacentridae",
       "species": "Dischistodus perspicillatus",
       "common_name": "White Damsel",
-      "image": "images/dischistodus_perspicillatus.jpg",
+      "image": "images/dischistodus_perspicillatus.webp",
       "features": [
         "Black blotches on a white or pale body."
       ]
@@ -3164,7 +3164,7 @@
       "family": "Pomacentridae",
       "species": "Neoglyphidodon melas",
       "common_name": "Bowtie Damselfish",
-      "image": "images/neoglyphidodon_melas.jpg",
+      "image": "images/neoglyphidodon_melas.webp",
       "features": [
         "Adults are entirely black.",
         "Juveniles are bright yellow with blue lines."
@@ -3176,7 +3176,7 @@
       "family": "Pomacentridae",
       "species": "Pristotis obtusirostris",
       "common_name": "Gulf Damselfish",
-      "image": "images/pristotis_obtusirostris.jpg",
+      "image": "images/pristotis_obtusirostris.webp",
       "features": [
         "Whitish lips, elongated body.",
         "13 spines and 12-13 rays in dorsal fin."
@@ -3188,7 +3188,7 @@
       "family": "Pomacentridae",
       "species": "Stegastes fasciolatus",
       "common_name": "Pacific Gregory",
-      "image": "images/stegastes_fasciolatus.jpg",
+      "image": "images/stegastes_fasciolatus.webp",
       "features": [
         "Brown markings on scales.",
         "Dusky grey-brown body."
@@ -3200,7 +3200,7 @@
       "family": "Pomacentridae",
       "species": "Stegastes nigricans",
       "common_name": "Dusky Farmerfish",
-      "image": "images/stegastes_nigricans.jpg",
+      "image": "images/stegastes_nigricans.webp",
       "features": [
         "Diffuse black spot on posterior of dorsal fin.",
         "Dark, almost black body."
@@ -3212,7 +3212,7 @@
       "family": "Labridae",
       "species": "Bodianus neilli",
       "common_name": "Bay of Bengal Hogfish",
-      "image": "images/bodianus_neilli.jpg",
+      "image": "images/bodianus_neilli.webp",
       "features": [
         "Large dark blotch on dorsal fin.",
         "Reddish coloration on head and anterior body."
@@ -3224,7 +3224,7 @@
       "family": "Labridae",
       "species": "Cheilinus undulatus",
       "common_name": "Humphead Wrasse",
-      "image": "images/cheilinus_undulatus.jpg",
+      "image": "images/cheilinus_undulatus.webp",
       "features": [
         "Prominent hump on the head in adults.",
         "Wavy green and purplish-brown lines."
@@ -3236,7 +3236,7 @@
       "family": "Labridae",
       "species": "Cheilinus chlorourus",
       "common_name": "Floral Wrasse",
-      "image": "images/cheilinus_chlorourus.jpg",
+      "image": "images/cheilinus_chlorourus.webp",
       "features": [
         "Head with red spots.",
         "Body is mottled with small white and dark spots."
@@ -3248,7 +3248,7 @@
       "family": "Labridae",
       "species": "Cheilinus fasciatus",
       "common_name": "Redbreasted Wrasse",
-      "image": "images/cheilinus_fasciatus.jpg",
+      "image": "images/cheilinus_fasciatus.webp",
       "features": [
         "6 dark vertical bands on a pale body.",
         "Reddish-orange stripes and spots on head."
@@ -3260,7 +3260,7 @@
       "family": "Labridae",
       "species": "Choerodon anchorago",
       "common_name": "Orange-dotted Tuskfish",
-      "image": "images/choerodon_anchorago.jpg",
+      "image": "images/choerodon_anchorago.webp",
       "features": [
         "Rectangular white saddle on back.",
         "Head with orange spots."
@@ -3272,7 +3272,7 @@
       "family": "Labridae",
       "species": "Choerodon robustus",
       "common_name": "Robust Tuskfish",
-      "image": "images/choerodon_robustus.jpg",
+      "image": "images/choerodon_robustus.webp",
       "features": [
         "Blue lines on head.",
         "Several horizontal rows of blue spots on caudal peduncle."
@@ -3284,7 +3284,7 @@
       "family": "Labridae",
       "species": "Coris centralis",
       "common_name": "Not listed",
-      "image": "images/coris_centralis.jpg",
+      "image": "images/coris_centralis.webp",
       "features": [
         "Black dotted line passing horizontally."
       ]
@@ -3295,7 +3295,7 @@
       "family": "Labridae",
       "species": "Coris formosa",
       "common_name": "Queen Coris",
-      "image": "images/coris_formosa.jpg",
+      "image": "images/coris_formosa.webp",
       "features": [
         "Adult male has brilliant blue to green stripes on head.",
         "Juvenile is orange with white, black-edged saddles."
@@ -3307,7 +3307,7 @@
       "family": "Labridae",
       "species": "Chromis viridis",
       "common_name": "Blue Green Damselfish",
-      "image": "images/chromis_viridis.jpg",
+      "image": "images/chromis_viridis.webp",
       "features": [
         "Uniformly bluish-green color."
       ]
@@ -3318,7 +3318,7 @@
       "family": "Labridae",
       "species": "Cymolutes praetextatus",
       "common_name": "Knife Razorfish",
-      "image": "images/cymolutes_praetextatus.jpg",
+      "image": "images/cymolutes_praetextatus.webp",
       "features": [
         "Laterally compressed, knife-like body.",
         "Dives into sand to escape danger."
@@ -3330,7 +3330,7 @@
       "family": "Labridae",
       "species": "Gomphosus caeruleus",
       "common_name": "Green Birdmouth Wrasse",
-      "image": "images/gomphosus_caeruleus.jpg",
+      "image": "images/gomphosus_caeruleus.webp",
       "features": [
         "Snout produced into a prominent tube-like structure.",
         "Body is greenish-blue."
@@ -3342,7 +3342,7 @@
       "family": "Labridae",
       "species": "Halichoeres hortulanus",
       "common_name": "Checkerboard Wrasse",
-      "image": "images/halichoeres_hortulanus.jpg",
+      "image": "images/halichoeres_hortulanus.webp",
       "features": [
         "Prominent yellow patch on back.",
         "Checkerboard-like pattern on scales."
@@ -3354,7 +3354,7 @@
       "family": "Labridae",
       "species": "Halichoeres scapularis",
       "common_name": "Zigzag Wrasse",
-      "image": "images/halichoeres_scapularis.jpg",
+      "image": "images/halichoeres_scapularis.webp",
       "features": [
         "Brown or blackish zigzag stripe along side."
       ]
@@ -3365,7 +3365,7 @@
       "family": "Labridae",
       "species": "Halichoeres zeylonicus",
       "common_name": "Goldstripe Wrasse",
-      "image": "images/halichoeres_zeylonicus.jpg",
+      "image": "images/halichoeres_zeylonicus.webp",
       "features": [
         "Orange-yellow lateral stripe with a wavy blue margin.",
         "Bluish bands radiating from eye."
@@ -3377,7 +3377,7 @@
       "family": "Labridae",
       "species": "Hologymnosus doliatus",
       "common_name": "Pastel Ringwrasse",
-      "image": "images/hologymnosus_doliatus.jpg",
+      "image": "images/hologymnosus_doliatus.webp",
       "features": [
         "Terminal male has a deep blue to purple bar followed by a broad light red bar.",
         "Initial phase has numerous thin vertical bars."
@@ -3389,7 +3389,7 @@
       "family": "Labridae",
       "species": "Hemigymnus melapterus",
       "common_name": "Blackeye Thicklip",
-      "image": "images/hemigymnus_melapterus.jpg",
+      "image": "images/hemigymnus_melapterus.webp",
       "features": [
         "Anterior half of body is dark, posterior is white.",
         "Thick lips."
@@ -3401,7 +3401,7 @@
       "family": "Labridae",
       "species": "Iniistius cyanifrons",
       "common_name": "Not listed",
-      "image": "images/iniistius_cyanifrons.jpg",
+      "image": "images/iniistius_cyanifrons.webp",
       "features": [
         "Blue transverse lines on head.",
         "Teeth protruding."
@@ -3413,7 +3413,7 @@
       "family": "Labridae",
       "species": "Iniistius pavo",
       "common_name": "Peacock Wrasse",
-      "image": "images/iniistius_pavo.jpg",
+      "image": "images/iniistius_pavo.webp",
       "features": [
         "First 2 dorsal spines are separated from the rest of the fin.",
         "Blue-edged black spot below 6th dorsal-fin spine."
@@ -3425,7 +3425,7 @@
       "family": "Labridae",
       "species": "Iniistius twistii",
       "common_name": "Redblotch Razorfish",
-      "image": "images/iniistius_twistii.jpg",
+      "image": "images/iniistius_twistii.webp",
       "features": [
         "Red patch below eye.",
         "Dark vertical band below eye."
@@ -3437,7 +3437,7 @@
       "family": "Labridae",
       "species": "Labroides dimidiatus",
       "common_name": "Bluestreak Cleaner Wrasse",
-      "image": "images/labroides_dimidiatus.jpg",
+      "image": "images/labroides_dimidiatus.webp",
       "features": [
         "Black stripe that widens towards the tail.",
         "Known for cleaning other fish."
@@ -3449,7 +3449,7 @@
       "family": "Labridae",
       "species": "Oxycheilinus digramma",
       "common_name": "Cheeklined Wrasse",
-      "image": "images/oxycheilinus_digramma.jpg",
+      "image": "images/oxycheilinus_digramma.webp",
       "features": [
         "Distinctive lines on the cheek.",
         "Transparent tail."
@@ -3461,7 +3461,7 @@
       "family": "Labridae",
       "species": "Pteragogus flagellifer",
       "common_name": "Cocktail Wrasse",
-      "image": "images/pteragogus_flagellifer.jpg",
+      "image": "images/pteragogus_flagellifer.webp",
       "features": [
         "Flagella-like extension on dorsal fin.",
         "Rounded tail."
@@ -3473,7 +3473,7 @@
       "family": "Labridae",
       "species": "Stethojulis interrupta",
       "common_name": "Cutribbon Wrasse",
-      "image": "images/stethojulis_interrupta.jpg",
+      "image": "images/stethojulis_interrupta.webp",
       "features": [
         "Midlateral stripe.",
         "Orange spot near eye."
@@ -3485,7 +3485,7 @@
       "family": "Labridae",
       "species": "Thalassoma hardwicke",
       "common_name": "Sixbar Wrasse",
-      "image": "images/thalassoma_hardwicke.jpg",
+      "image": "images/thalassoma_hardwicke.webp",
       "features": [
         "Six distinct vertical bands on side.",
         "Saddle-like spot on back."
@@ -3497,7 +3497,7 @@
       "family": "Labridae",
       "species": "Thalassoma lunare",
       "common_name": "Moon Wrasse",
-      "image": "images/thalassoma_lunare.jpg",
+      "image": "images/thalassoma_lunare.webp",
       "features": [
         "Lunar-shaped pattern on tail.",
         "Red or purple lines on head.",
@@ -3510,7 +3510,7 @@
       "family": "Labridae",
       "species": "Xiphocheilus typus",
       "common_name": "Blue-banded Wrasse",
-      "image": "images/xiphocheilus_typus.jpg",
+      "image": "images/xiphocheilus_typus.webp",
       "features": [
         "Blue bands on head.",
         "Protruding teeth."
@@ -3522,7 +3522,7 @@
       "family": "Scaridae",
       "species": "Scarus ghobban",
       "common_name": "Blue-barred Parrotfish",
-      "image": "images/scarus_ghobban.jpg",
+      "image": "images/scarus_ghobban.webp",
       "features": [
         "Often has 5 irregular blue bars on side.",
         "Blue margin on fins."
@@ -3534,7 +3534,7 @@
       "family": "Scaridae",
       "species": "Scarus rubroviolaceus",
       "common_name": "Ember Parrotfish",
-      "image": "images/scarus_rubroviolaceus.jpg",
+      "image": "images/scarus_rubroviolaceus.webp",
       "features": [
         "Head profile rises sharply.",
         "Pale red anteriorly, greenish posteriorly."
@@ -3546,7 +3546,7 @@
       "family": "Sphyraenidae",
       "species": "Sphyraena iburiensis",
       "common_name": "Not listed",
-      "image": "images/sphyraena_iburiensis.jpg",
+      "image": "images/sphyraena_iburiensis.webp",
       "features": [
         "2 longitudinal stripes on body.",
         "Transparent first dorsal fin."
@@ -3558,7 +3558,7 @@
       "family": "Pinguipedidae",
       "species": "Parapercis alboguttata",
       "common_name": "Whitespot Sandsmelt",
-      "image": "images/parapercis_alboguttata.jpg",
+      "image": "images/parapercis_alboguttata.webp",
       "features": [
         "Two dark red spots on side.",
         "Indistinct blotches on body."
@@ -3570,7 +3570,7 @@
       "family": "Pinguipedidae",
       "species": "Parapercis hexophtalma",
       "common_name": "Not listed",
-      "image": "images/parapercis_hexophtalma.jpg",
+      "image": "images/parapercis_hexophtalma.webp",
       "features": [
         "Black blotch on caudal fin.",
         "Rows of spots along the body."
@@ -3582,7 +3582,7 @@
       "family": "Pinguipedidae",
       "species": "Parapercis pulchella",
       "common_name": "Harlequin Sandsmelt",
-      "image": "images/parapercis_pulchella.jpg",
+      "image": "images/parapercis_pulchella.webp",
       "features": [
         "Checkered pattern on lower body.",
         "Dark saddles on back."
@@ -3594,7 +3594,7 @@
       "family": "Percophidae",
       "species": "Bembrops caudimacula",
       "common_name": "Not listed",
-      "image": "images/bembrops_caudimacula.jpg",
+      "image": "images/bembrops_caudimacula.webp",
       "features": [
         "Anterior black spot on first dorsal fin.",
         "Lateral line slopes near hind part of pectoral fin."
@@ -3606,7 +3606,7 @@
       "family": "Blenniidae",
       "species": "Petroscirtes breviceps",
       "common_name": "Striped Poison-fang Blenny Mimic",
-      "image": "images/petroscirtes_breviceps.jpg",
+      "image": "images/petroscirtes_breviceps.webp",
       "features": [
         "Fringed flap (cirri) over eyes.",
         "No scales."
@@ -3618,7 +3618,7 @@
       "family": "Blenniidae",
       "species": "Xiphasia setifer",
       "common_name": "Hairtail Blenny",
-      "image": "images/xiphasia_setifer.jpg",
+      "image": "images/xiphasia_setifer.webp",
       "features": [
         "Extremely elongated, eel-like body."
       ]
@@ -3629,7 +3629,7 @@
       "family": "Gobidae",
       "species": "Favonigobius reichei",
       "common_name": "Indo-pacific Tropical Sand Goby",
-      "image": "images/favonigobius_reichei.jpg",
+      "image": "images/favonigobius_reichei.webp",
       "features": [
         "Pelvic fins united.",
         "Small, sand-colored goby."
@@ -3641,7 +3641,7 @@
       "family": "Gobidae",
       "species": "Oxyurichthys papuensis",
       "common_name": "Frogface Goby",
-      "image": "images/oxyurichthys_papuensis.jpg",
+      "image": "images/oxyurichthys_papuensis.webp",
       "features": [
         "Elongated body with a pointed tail."
       ]
@@ -3652,7 +3652,7 @@
       "family": "Ephippidae",
       "species": "Ephippus orbis",
       "common_name": "Orbfish",
-      "image": "images/ephippus_orbis.jpg",
+      "image": "images/ephippus_orbis.webp",
       "features": [
         "Deep, orb-like body.",
         "Faint dark bars on silvery body."
@@ -3664,7 +3664,7 @@
       "family": "Ephippidae",
       "species": "Platax teira",
       "common_name": "Longfin Batfish",
-      "image": "images/platax_teira.jpg",
+      "image": "images/platax_teira.webp",
       "features": [
         "Juveniles have very long dorsal and anal fins.",
         "Adults are more disc-shaped with dark bars."
@@ -3676,7 +3676,7 @@
       "family": "Siganidae",
       "species": "Siganus canaliculatus",
       "common_name": "White-spotted Spinefoot",
-      "image": "images/siganus_canaliculatus.jpg",
+      "image": "images/siganus_canaliculatus.webp",
       "features": [
         "Pale blue spots on body.",
         "No bands on body."
@@ -3688,7 +3688,7 @@
       "family": "Siganidae",
       "species": "Siganus fuscescens",
       "common_name": "Mottled Spinefoot",
-      "image": "images/siganus_fuscescens.jpg",
+      "image": "images/siganus_fuscescens.webp",
       "features": [
         "Bluish-white spots on a brownish body."
       ]
@@ -3699,7 +3699,7 @@
       "family": "Siganidae",
       "species": "Siganus guttatus",
       "common_name": "Goldlined Spinefoot",
-      "image": "images/siganus_guttatus.jpg",
+      "image": "images/siganus_guttatus.webp",
       "features": [
         "Orange spotted body.",
         "Large yellow spot below dorsal fin."
@@ -3711,7 +3711,7 @@
       "family": "Siganidae",
       "species": "Siganus javus",
       "common_name": "Streaked Spinefoot",
-      "image": "images/siganus_javus.jpg",
+      "image": "images/siganus_javus.webp",
       "features": [
         "Silvery blue undulating lines on lower sides.",
         "Blue spots on head and upper sides."
@@ -3723,7 +3723,7 @@
       "family": "Siganidae",
       "species": "Siganus insomnis",
       "common_name": "Not listed",
-      "image": "images/siganus_insomnis.jpg",
+      "image": "images/siganus_insomnis.webp",
       "features": [
         "Horizontal golden bronze bands breaking into spots."
       ]
@@ -3734,7 +3734,7 @@
       "family": "Siganidae",
       "species": "Siganus sutor",
       "common_name": "Shoemaker Spinefoot",
-      "image": "images/siganus_sutor.jpg",
+      "image": "images/siganus_sutor.webp",
       "features": [
         "Variable color pattern with blotches.",
         "Dark spots on body."
@@ -3746,7 +3746,7 @@
       "family": "Siganidae",
       "species": "Siganus vermiculatus",
       "common_name": "Vermiculated Spinefoot",
-      "image": "images/siganus_vermiculatus.jpg",
+      "image": "images/siganus_vermiculatus.webp",
       "features": [
         "Vermiculated (wavy lines) pattern on body."
       ]
@@ -3757,7 +3757,7 @@
       "family": "Zanclidae",
       "species": "Zanclus cornutus",
       "common_name": "Moorish Idol",
-      "image": "images/zanclus_cornutus.jpg",
+      "image": "images/zanclus_cornutus.webp",
       "features": [
         "Compressed, discoid body.",
         "Broad vertical bands of black, white, and yellow.",
@@ -3770,7 +3770,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus bariene",
       "common_name": "Black-spot Surgeonfish",
-      "image": "images/acanthurus_bariene.jpg",
+      "image": "images/acanthurus_bariene.webp",
       "features": [
         "Black spot behind eye.",
         "Blue line at fin base."
@@ -3782,7 +3782,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus blochii",
       "common_name": "Ringtail Surgeonfish",
-      "image": "images/acanthurus_blochii.jpg",
+      "image": "images/acanthurus_blochii.webp",
       "features": [
         "White bar at tail base.",
         "Brown socket around spine.",
@@ -3795,7 +3795,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus dussumieri",
       "common_name": "Eyestripe Surgeonfish",
-      "image": "images/acanthurus_dussumieri.jpg",
+      "image": "images/acanthurus_dussumieri.webp",
       "features": [
         "Yellow band through the eye.",
         "Orange band between eyes."
@@ -3807,7 +3807,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus grammoptilus",
       "common_name": "Finelined Surgeonfish",
-      "image": "images/acanthurus_grammoptilus.jpg",
+      "image": "images/acanthurus_grammoptilus.webp",
       "features": [
         "White band on caudal fin base.",
         "Bluish bands on head."
@@ -3819,7 +3819,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus lineatus",
       "common_name": "Lined Surgeonfish",
-      "image": "images/acanthurus_lineatus.jpg",
+      "image": "images/acanthurus_lineatus.webp",
       "features": [
         "Black-edged blue and yellow stripes.",
         "Lower part of body is pale lavender."
@@ -3831,7 +3831,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus mata",
       "common_name": "Elongate Surgeonfish",
-      "image": "images/acanthurus_mata.jpg",
+      "image": "images/acanthurus_mata.webp",
       "features": [
         "Longitudinal blue lines on head and body.",
         "Yellow area behind eye."
@@ -3843,7 +3843,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus nigricauda",
       "common_name": "Epaulette Surgeonfish",
-      "image": "images/acanthurus_nigricauda.jpg",
+      "image": "images/acanthurus_nigricauda.webp",
       "features": [
         "Black stripe extending forward from the caudal spine.",
         "Pointed black stripe behind eye."
@@ -3855,7 +3855,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus tennentii",
       "common_name": "Doubleband Surgeonfish",
-      "image": "images/acanthurus_tennentii.jpg",
+      "image": "images/acanthurus_tennentii.webp",
       "features": [
         "Two dark bands behind the head.",
         "White band at caudal fin base."
@@ -3867,7 +3867,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus triostegus",
       "common_name": "Convict Surgeonfish",
-      "image": "images/acanthurus_triostegus.jpg",
+      "image": "images/acanthurus_triostegus.webp",
       "features": [
         "Narrow dark bars on a light greenish-grey body."
       ]
@@ -3878,7 +3878,7 @@
       "family": "Acanthuridae",
       "species": "Acanthurus xanthopterus",
       "common_name": "Yellowfin Surgeonfish",
-      "image": "images/acanthurus_xanthopterus.jpg",
+      "image": "images/acanthurus_xanthopterus.webp",
       "features": [
         "Outer part of pectoral fin is yellow.",
         "Whitish band at base of tail."
@@ -3890,7 +3890,7 @@
       "family": "Acanthuridae",
       "species": "Ctenochaetus striatus",
       "common_name": "Striated Surgeonfish",
-      "image": "images/ctenochaetus_striatus.jpg",
+      "image": "images/ctenochaetus_striatus.webp",
       "features": [
         "Fine, pale longitudinal lines on body.",
         "Small orange spots on head."
@@ -3902,7 +3902,7 @@
       "family": "Acanthuridae",
       "species": "Naso brachycentron",
       "common_name": "Humpback Unicornfish",
-      "image": "images/naso_brachycentron.jpg",
+      "image": "images/naso_brachycentron.webp",
       "features": [
         "Prominent hump on the back."
       ]
@@ -3913,7 +3913,7 @@
       "family": "Acanthuridae",
       "species": "Naso brevirostris",
       "common_name": "Spotted Unicornfish",
-      "image": "images/naso_brevirostris.jpg",
+      "image": "images/naso_brevirostris.webp",
       "features": [
         "Long, horn-like projection in front of eyes.",
         "Body covered in small dark spots."
@@ -3925,7 +3925,7 @@
       "family": "Acanthuridae",
       "species": "Naso elegans",
       "common_name": "Elegant Unicornfish",
-      "image": "images/naso_elegans.jpg",
+      "image": "images/naso_elegans.webp",
       "features": [
         "Orange keel on caudal peduncle.",
         "Black-bordered caudal fin."
@@ -3937,7 +3937,7 @@
       "family": "Acanthuridae",
       "species": "Naso hexacanthus",
       "common_name": "Sleek Unicornfish",
-      "image": "images/naso_hexacanthus.jpg",
+      "image": "images/naso_hexacanthus.webp",
       "features": [
         "No horn or hump.",
         "Can rapidly change color from brown to pale blue."
@@ -3949,7 +3949,7 @@
       "family": "Acanthuridae",
       "species": "Naso lopezi",
       "common_name": "Elongate Unicornfish",
-      "image": "images/naso_lopezi.jpg",
+      "image": "images/naso_lopezi.webp",
       "features": [
         "Dark spots on body.",
         "Distinct color divide on body."
@@ -3961,7 +3961,7 @@
       "family": "Acanthuridae",
       "species": "Naso mcdadei",
       "common_name": "Squarenose Unicornfish",
-      "image": "images/naso_mcdadei.jpg",
+      "image": "images/naso_mcdadei.webp",
       "features": [
         "Convexly prominent snout.",
         "Uniform brownish body."
@@ -3973,7 +3973,7 @@
       "family": "Acanthuridae",
       "species": "Naso tergus",
       "common_name": "Not listed",
-      "image": "images/naso_tergus.jpg",
+      "image": "images/naso_tergus.webp",
       "features": [
         "6 dorsal spines.",
         "Uniform brownish body."
@@ -3985,7 +3985,7 @@
       "family": "Acanthuridae",
       "species": "Naso thynnoides",
       "common_name": "Oneknife Unicornfish",
-      "image": "images/naso_thynnoides.jpg",
+      "image": "images/naso_thynnoides.webp",
       "features": [
         "Single caudal peduncle plate.",
         "Pectoral tip is yellowish."
@@ -3997,7 +3997,7 @@
       "family": "Acanthuridae",
       "species": "Naso tonganus",
       "common_name": "Bulbnose Unicornfish",
-      "image": "images/naso_tonganus.jpg",
+      "image": "images/naso_tonganus.webp",
       "features": [
         "Bulbous snout in adults."
       ]
@@ -4008,7 +4008,7 @@
       "family": "Acanthuridae",
       "species": "Naso tuberosus",
       "common_name": "Humpnose Unicornfish",
-      "image": "images/naso_tuberosus.jpg",
+      "image": "images/naso_tuberosus.webp",
       "features": [
         "Adults with a rounded bump on snout.",
         "2 keeled caudal plates."
@@ -4020,7 +4020,7 @@
       "family": "Acanthuridae",
       "species": "Naso unicornis",
       "common_name": "Bluespine Unicornfish",
-      "image": "images/naso_unicornis.jpg",
+      "image": "images/naso_unicornis.webp",
       "features": [
         "Forward-projecting horn on forehead.",
         "Blue spines on caudal peduncle."
@@ -4032,7 +4032,7 @@
       "family": "Acanthuridae",
       "species": "Naso vlamingii",
       "common_name": "Bignose Unicornfish",
-      "image": "images/naso_vlamingii.jpg",
+      "image": "images/naso_vlamingii.webp",
       "features": [
         "Prominent bump on snout.",
         "Intricate blue pattern on body."
@@ -4044,7 +4044,7 @@
       "family": "Acanthuridae",
       "species": "Zebrasoma velifer",
       "common_name": "Sailfin Tang",
-      "image": "images/zebrasoma_velifer.jpg",
+      "image": "images/zebrasoma_velifer.webp",
       "features": [
         "Very large, sail-like dorsal and anal fins.",
         "Dark bands with yellowish lines."
@@ -4056,7 +4056,7 @@
       "family": "Balistidae",
       "species": "Abalistes stellatus",
       "common_name": "Not listed",
-      "image": "images/abalistes_stellatus.jpg",
+      "image": "images/abalistes_stellatus.webp",
       "features": [
         "Numerous small blue spots on body.",
         "Deeply grooved caudal peduncle."
@@ -4068,7 +4068,7 @@
       "family": "Balistidae",
       "species": "Balistapus undulatus",
       "common_name": "Orange-lined Triggerfish",
-      "image": "images/balistapus_undulatus.jpg",
+      "image": "images/balistapus_undulatus.webp",
       "features": [
         "Numerous orange stripes on a dark greenish-black body.",
         "6 spines in 2 rows on caudal peduncle."
@@ -4080,7 +4080,7 @@
       "family": "Balistidae",
       "species": "Balistoides viridescens",
       "common_name": "Titan Triggerfish",
-      "image": "images/balistoides_viridescens.jpg",
+      "image": "images/balistoides_viridescens.webp",
       "features": [
         "Large size.",
         "Dark area around the eye and upper snout.",
@@ -4093,7 +4093,7 @@
       "family": "Balistidae",
       "species": "Canthidermis maculata",
       "common_name": "Rough Triggerfish",
-      "image": "images/canthidermis_maculata.jpg",
+      "image": "images/canthidermis_maculata.webp",
       "features": [
         "Body covered in small elongated dots.",
         "Dark caudal fin."
@@ -4105,7 +4105,7 @@
       "family": "Balistidae",
       "species": "Melichthys indicus",
       "common_name": "Indian Triggerfish",
-      "image": "images/melichthys_indicus.jpg",
+      "image": "images/melichthys_indicus.webp",
       "features": [
         "White bands at the base of the dorsal and anal fins.",
         "Narrow white edge on caudal fin."
@@ -4117,7 +4117,7 @@
       "family": "Balistidae",
       "species": "Odonus niger",
       "common_name": "Red-toothed Triggerfish",
-      "image": "images/odonus_niger.jpg",
+      "image": "images/odonus_niger.webp",
       "features": [
         "Teeth are red.",
         "Deep blue or purplish body."
@@ -4129,7 +4129,7 @@
       "family": "Balistidae",
       "species": "Rhinecanthus aculeatus",
       "common_name": "White-banded Triggerfish",
-      "image": "images/rhinecanthus_aculeatus.jpg",
+      "image": "images/rhinecanthus_aculeatus.webp",
       "features": [
         "4 diagonal bluish-white bands on side.",
         "3 blue lines on head."
@@ -4141,7 +4141,7 @@
       "family": "Balistidae",
       "species": "Sufflamen fraenatum",
       "common_name": "Masked Triggerfish",
-      "image": "images/images/sufflamen_fraenatum.jpg",
+      "image": "images/images/sufflamen_fraenatum.webp",
       "features": [
         "Pale band running from corner of mouth backwards.",
         "Yellowish-brown to dark brown body."
@@ -4153,7 +4153,7 @@
       "family": "Balistidae",
       "species": "Xanthichthys lineopunctatus",
       "common_name": "Striped Triggerfish",
-      "image": "images/images/xanthichthys_lineopunctatus.jpg",
+      "image": "images/images/xanthichthys_lineopunctatus.webp",
       "features": [
         "Brown ridged lines on side."
       ]
@@ -4164,7 +4164,7 @@
       "family": "Monacanthidae",
       "species": "Aluterus monoceros",
       "common_name": "Unicorn Leatherjacket Filefish",
-      "image": "images/images/aluterus_monoceros.jpg",
+      "image": "images/images/aluterus_monoceros.webp",
       "features": [
         "Dorsal-fin spine is weak.",
         "Uniformly colored body."
@@ -4176,7 +4176,7 @@
       "family": "Monacanthidae",
       "species": "Aluterus scriptus",
       "common_name": "Scribbled Leatherjacket Filefish",
-      "image": "images/aluterus_scriptus.jpg",
+      "image": "images/aluterus_scriptus.webp",
       "features": [
         "Body covered with blue lines and brown spots.",
         "Long caudal fin."
@@ -4188,7 +4188,7 @@
       "family": "Monacanthidae",
       "species": "Lalmohania velutina",
       "common_name": "Not listed",
-      "image": "images/lalmohania_velutina.jpg",
+      "image": "images/lalmohania_velutina.webp",
       "features": [
         "Prickly spotted body.",
         "Caudal fin is long."
@@ -4200,7 +4200,7 @@
       "family": "Monacanthidae",
       "species": "Paramonacanthus frenatus",
       "common_name": "Wedgetail Filefish",
-      "image": "images/paramonacanthus_frenatus.jpg",
+      "image": "images/paramonacanthus_frenatus.webp",
       "features": [
         "Convex black dorsal fin membrane.",
         "Mottled body pattern."
@@ -4212,7 +4212,7 @@
       "family": "Triacanthidae",
       "species": "Pseudotriacanthus strigilifer",
       "common_name": "Long-spined Tripodfish",
-      "image": "images/pseudotriacanthus_strigilifer.jpg",
+      "image": "images/pseudotriacanthus_strigilifer.webp",
       "features": [
         "Long spines on dorsal and pelvic fins.",
         "Distinctive color pattern."
@@ -4224,7 +4224,7 @@
       "family": "Triacanthidae",
       "species": "Triacanthus biaculeatus",
       "common_name": "Short-nosed Tripodfish",
-      "image": "images/triacanthus_biaculeatus.jpg",
+      "image": "images/triacanthus_biaculeatus.webp",
       "features": [
         "Two prominent pelvic fin spines.",
         "Silvery body."
@@ -4236,7 +4236,7 @@
       "family": "Ostraciidae",
       "species": "Lactoria cornuta",
       "common_name": "Long Horn Cowfish",
-      "image": "images/lactoria_cornuta.jpg",
+      "image": "images/lactoria_cornuta.webp",
       "features": [
         "Long horns protruding from above the eyes.",
         "Boxy body shape."
@@ -4248,7 +4248,7 @@
       "family": "Ostraciidae",
       "species": "Ostracion cubicus",
       "common_name": "Yellow Boxfish",
-      "image": "images/ostracion_cubicus.jpg",
+      "image": "images/ostracion_cubicus.webp",
       "features": [
         "Body is encased in a bony, box-like carapace.",
         "Juveniles are bright yellow with black spots."
@@ -4260,7 +4260,7 @@
       "family": "Ostraciidae",
       "species": "Ostracion nasus",
       "common_name": "Horn-nosed Boxfish",
-      "image": "images/ostracion_nasus.jpg",
+      "image": "images/ostracion_nasus.webp",
       "features": [
         "Small protuberance (horn) on the snout."
       ]
@@ -4271,7 +4271,7 @@
       "family": "Ostraciidae",
       "species": "Tetrosomus gibbosus",
       "common_name": "Humpback Turretfish",
-      "image": "images/tetrosomus_gibbosus.jpg",
+      "image": "images/tetrosomus_gibbosus.webp",
       "features": [
         "Box-shaped fish with a prominent hump on the back.",
         "Tubular protuberance."
@@ -4283,7 +4283,7 @@
       "family": "Tetraodontidae",
       "species": "Arothron hispidus",
       "common_name": "White-spotted Puffer",
-      "image": "images/arothron_hispidus.jpg",
+      "image": "images/arothron_hispidus.webp",
       "features": [
         "White spots on a green or grey background.",
         "Yellow and black circles around pectoral fin."
@@ -4295,7 +4295,7 @@
       "family": "Tetraodontidae",
       "species": "Arothron immaculatus",
       "common_name": "Immaculate Puffer",
-      "image": "images/arothron_immaculatus.jpg",
+      "image": "images/arothron_immaculatus.webp",
       "features": [
         "Body covered with small prickles.",
         "Can be yellowish or grey, often with dark markings."
@@ -4307,7 +4307,7 @@
       "family": "Tetraodontidae",
       "species": "Arothron stellatus",
       "common_name": "Stellate Puffer",
-      "image": "images/arothron_stellatus.jpg",
+      "image": "images/arothron_stellatus.webp",
       "features": [
         "Spotted dorsal part (bands in juvenile).",
         "Large size."
@@ -4319,7 +4319,7 @@
       "family": "Tetraodontidae",
       "species": "Canthigaster solandri",
       "common_name": "Spotted Sharpnose",
-      "image": "images/canthigaster_solandri.jpg",
+      "image": "images/canthigaster_solandri.webp",
       "features": [
         "Lines radiating from the eye.",
         "White spots on body."
@@ -4331,7 +4331,7 @@
       "family": "Tetraodontidae",
       "species": "Chelonodon patoca",
       "common_name": "Milkspotted Puffer",
-      "image": "images/chelonodon_patoca.jpg",
+      "image": "images/chelonodon_patoca.webp",
       "features": [
         "Large white spots on a dark back.",
         "Prickly belly."
@@ -4343,7 +4343,7 @@
       "family": "Tetraodontidae",
       "species": "Lagocephalus inermis",
       "common_name": "Smooth Blaasop",
-      "image": "images/lagocephalus_inermis.jpg",
+      "image": "images/lagocephalus_inermis.webp",
       "features": [
         "Smooth back.",
         "Silvery belly."
@@ -4355,7 +4355,7 @@
       "family": "Tetraodontidae",
       "species": "Torquigener brevipinnis",
       "common_name": "Not listed",
-      "image": "images/torquigener_brevipinnis.jpg",
+      "image": "images/torquigener_brevipinnis.webp",
       "features": [
         "1 or more small spines wholly on caudal peduncle.",
         "Banded tail."
@@ -4367,7 +4367,7 @@
       "family": "Tetraodontidae",
       "species": "Torquigener flavimaculosus",
       "common_name": "Not listed",
-      "image": "images/torquigener_flavimaculosus.jpg",
+      "image": "images/torquigener_flavimaculosus.webp",
       "features": [
         "Yellow spots on back.",
         "Banded tail."
@@ -4379,7 +4379,7 @@
       "family": "Diodontidae",
       "species": "Cyclichthys spilostylus",
       "common_name": "Spotbase Burrfish",
-      "image": "images/cyclichthys_spilostylus.jpg",
+      "image": "images/cyclichthys_spilostylus.webp",
       "features": [
         "Spines have yellow tips or bases.",
         "Short, fixed spines."
@@ -4391,7 +4391,7 @@
       "family": "Diodontidae",
       "species": "Diodon hystrix",
       "common_name": "Spot-fin Porcupinefish",
-      "image": "images/diodon_hystrix.jpg",
+      "image": "images/diodon_hystrix.webp",
       "features": [
         "Body covered in long, sharp spines.",
         "Large eyes.",
