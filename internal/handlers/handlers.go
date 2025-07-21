@@ -203,12 +203,14 @@ func (h *Handlers) FishDetail(w http.ResponseWriter, r *http.Request) {
 		AllFish        []models.Fish
 		RelatedSpecies []models.Fish
 		Publication    models.PublicationDetails
+		DatabaseTitle  string // Add this field
 	}{
 		Fish:           fish,
 		Index:          index,
 		AllFish:        h.FishDB.Fishes,
 		RelatedSpecies: relatedSpecies,
 		Publication:    h.FishDB.PublicationDetails,
+		DatabaseTitle:  h.FishDB.Title, // Assign the main database title
 	}
 
 	w.Header().Set("Content-Type", "text/html")
