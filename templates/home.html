@@ -315,9 +315,12 @@
                 <input
                   type="text"
                   name="search"
+                  id="home-search"
                   placeholder="Search fish species..."
                   class="flex-1 px-6 py-4 text-gray-900 placeholder-blue-400 bg-transparent rounded-xl outline-none text-lg"
+                  list="home-suggestions"
                 />
+                <datalist id="home-suggestions"></datalist>
                 <button
                   type="submit"
                   class="p-4 text-blue-500 hover:text-blue-700 transition-colors"
@@ -673,7 +676,7 @@
           {{range .FeaturedFish}}
           <a href="/fish/{{.Species}}" class="card-hover bg-white rounded-2xl overflow-hidden shadow-md block">
             <div class="h-40 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
-              <img src="/static/{{.Image}}" alt="{{.CommonName}}" class="w-full h-full object-cover">
+              <img src="/static/{{.Image}}" alt="{{.CommonName}}" class="w-full h-full object-cover" loading="lazy">
             </div>
             <div class="p-4">
               <div class="font-bold text-gray-900">{{.CommonName}}</div>
@@ -808,6 +811,37 @@
 
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Autocomplete functionality for home page search
+        const homeSearchInput = document.getElementById('home-search');
+        const homeSuggestionsDatalist = document.getElementById('home-suggestions');
+        let homeDebounceTimeout;
+
+        homeSearchInput.addEventListener('input', () => {
+            clearTimeout(homeDebounceTimeout);
+            homeDebounceTimeout = setTimeout(async () => {
+                const query = homeSearchInput.value;
+                if (query.length > 1) { // Fetch suggestions after 2 or more characters
+                    try {
+                        const response = await fetch(`/api/suggestions?q=${encodeURIComponent(query)}`);
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        const suggestions = await response.json();
+                        homeSuggestionsDatalist.innerHTML = ''; // Clear previous suggestions
+                        suggestions.forEach(suggestion => {
+                            const option = document.createElement('option');
+                            option.value = suggestion;
+                            homeSuggestionsDatalist.appendChild(option);
+                        });
+                    } catch (error) {
+                        console.error('Error fetching suggestions:', error);
+                    }
+                } else {
+                    homeSuggestionsDatalist.innerHTML = ''; // Clear suggestions if query is too short
+                }
+            }, 300); // Debounce time in milliseconds
         });
       });
     </script>

@@ -202,9 +202,11 @@
               id="search"
               value="{{.SearchQuery}}"
               placeholder="Search species..."
-              class="flex-1 px-4 py-2 text-gray-900 placeholder-blue-400 bg-transparent rounded-xl outline-none"
+              class="flex-1 px-3 py-1.5 text-gray-900 placeholder-blue-400 bg-transparent rounded-xl outline-none"
+              list="suggestions"
             >
-            <button type="submit" class="p-2 text-blue-500 hover:text-blue-700 transition-colors">
+            <datalist id="suggestions"></datalist>
+            <button type="submit" class="p-1.5 text-blue-500 hover:text-blue-700 transition-colors">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
               </svg>
@@ -356,7 +358,7 @@
                 const card = `
                     <div class="card-hover bg-white p-4 rounded-2xl border border-blue-50 flex flex-col">
                         <a href="/fish/${fish.species}" class="block image-container mb-4">
-                            <img src="/static/${fish.image}" alt="${fish.common_name}" class="fish-image">
+                            <img src="/static/${fish.image}" alt="${fish.common_name}" class="fish-image" loading="lazy">
                             <span class="order-badge">${fish.order}</span>
                         </a>
                         <div class="flex-grow">
@@ -418,18 +420,6 @@
                 renderFish(fishes);
                 currentPage++;
 
-                // If this is the first load, update total fish count from the backend
-                // This assumes the backend sends total count in a header or a separate endpoint
-                // For now, we rely on the initial TotalFishCount from the Go template
-                // If you want dynamic total count, you'd need a separate API endpoint for it.
-                if (currentPage === 2 && fishes.length > 0) { // Only update on first successful load
-                    // This is a workaround. Ideally, the API would return total count.
-                    // For now, we use the initial totalFish from the Go template.
-                    // If the filters change, the totalFish needs to be re-evaluated by the backend.
-                    // The current setup re-evaluates totalFish on full page load (form submission).
-                    // For dynamic updates without full page reload, a separate API for total count is needed.
-                }
-
                 if (fishes.length === 0 && fishListContainer.children.length === 0) {
                     noResultsMessage.style.display = 'block';
                 } else {
@@ -443,6 +433,37 @@
                 loadingIndicator.style.display = 'none';
             }
         }
+
+        // Autocomplete functionality
+        const searchInput = document.getElementById('search');
+        const suggestionsDatalist = document.getElementById('suggestions');
+        let debounceTimeout;
+
+        searchInput.addEventListener('input', () => {
+            clearTimeout(debounceTimeout);
+            debounceTimeout = setTimeout(async () => {
+                const query = searchInput.value;
+                if (query.length > 1) { // Fetch suggestions after 2 or more characters
+                    try {
+                        const response = await fetch(`/api/suggestions?q=${encodeURIComponent(query)}`);
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        const suggestions = await response.json();
+                        suggestionsDatalist.innerHTML = ''; // Clear previous suggestions
+                        suggestions.forEach(suggestion => {
+                            const option = document.createElement('option');
+                            option.value = suggestion;
+                            suggestionsDatalist.appendChild(option);
+                        });
+                    } catch (error) {
+                        console.error('Error fetching suggestions:', error);
+                    }
+                } else {
+                    suggestionsDatalist.innerHTML = ''; // Clear suggestions if query is too short
+                }
+            }, 300); // Debounce time in milliseconds
+        });
 
         // Initial load of fish when the page loads
         loadFish();

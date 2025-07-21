@@ -21,13 +21,17 @@ import (
 
 // Fish struct represents a fish species
 type Fish struct {
-	Class      string   `json:"class"`
-	Order      string   `json:"order"`
-	Family     string   `json:"family"`
-	Species    string   `json:"species"`
-	CommonName string   `json:"common_name"`
-	Image      string   `json:"image"`
-	Features   []string `json:"features"`
+	Class            string   `json:"class"`
+	Order            string   `json:"order"`
+	Family           string   `json:"family"`
+	Species          string   `json:"species"`
+	CommonName       string   `json:"common_name"`
+	Image            string   `json:"image"`
+	Features         []string `json:"features"`
+	MinSizeCm        float64  `json:"min_size_cm,omitempty"` // New field
+	MaxSizeCm        float64  `json:"max_size_cm,omitempty"` // New field
+	Diet             string   `json:"diet,omitempty"`        // New field
+	ConservationStatus string   `json:"conservation_status,omitempty"` // New field
 }
 
 // PublicationDetails struct represents publication metadata
@@ -84,7 +88,7 @@ func initTemplates() error {
 	funcMap := template.FuncMap{
 		"add": func(a, b int) int { return a + b },
 		"sub": func(a, b int) int { return a - b },
-		"len": func(s []Fish) int { return len(s) },
+		
 		"lt":  func(a, b int) bool { return a < b },
 		"gt":  func(a, b int) bool { return a > b },
 	}
@@ -296,19 +300,57 @@ func fishDetail(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Find related species (same family, then same order if not enough)
+	relatedSpecies := []Fish{}
+	const maxRelated = 4 // Max number of related species to show
+
+	// Try to find species from the same family first
+	for _, f := range fishDB.Fishes {
+		if f.Species != fish.Species && f.Family == fish.Family {
+			relatedSpecies = append(relatedSpecies, f)
+			if len(relatedSpecies) >= maxRelated {
+				break
+			}
+		}
+	}
+
+	// If not enough, find species from the same order
+	if len(relatedSpecies) < maxRelated {
+		for _, f := range fishDB.Fishes {
+			if f.Species != fish.Species && f.Order == fish.Order && f.Family != fish.Family {
+				// Check if already added to avoid duplicates
+				foundInRelated := false
+				for _, rs := range relatedSpecies {
+					if rs.Species == f.Species {
+						foundInRelated = true
+						break
+					}
+				}
+				if !foundInRelated {
+					relatedSpecies = append(relatedSpecies, f)
+					if len(relatedSpecies) >= maxRelated {
+						break
+					}
+				}
+			}
+		}
+	}
+
 	data := struct {
-		Fish        Fish
-		Index       int
-		AllFish     []Fish
-		Publication struct {
+		Fish         Fish
+		Index        int
+		AllFish      []Fish
+		RelatedSpecies []Fish // New field for related species
+		Publication  struct {
 			Title     string
 			Publisher string
 			ISSN      string
 		}
 	}{
-		Fish:    fish,
-		Index:   index,
-		AllFish: fishDB.Fishes,
+		Fish:        fish,
+		Index:       index,
+		AllFish:     fishDB.Fishes,
+		RelatedSpecies: relatedSpecies,
 		Publication: struct {
 			Title     string
 			Publisher string
@@ -507,6 +549,36 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(map[string]string{"ai_response": kimiResp.Message.Content})
 }
 
+// API endpoint for search suggestions
+func apiSuggestions(w http.ResponseWriter, r *http.Request) {
+	query := r.URL.Query().Get("q")
+	if query == "" {
+		json.NewEncoder(w).Encode([]string{})
+		return
+	}
+
+	lowerQuery := strings.ToLower(query)
+	suggestionsMap := make(map[string]struct{}) // Use a map to store unique suggestions
+
+	for _, fish := range fishDB.Fishes {
+		if strings.Contains(strings.ToLower(fish.CommonName), lowerQuery) {
+			suggestionsMap[fish.CommonName] = struct{}{}
+		}
+		if strings.Contains(strings.ToLower(fish.Species), lowerQuery) {
+			suggestionsMap[fish.Species] = struct{}{}
+		}
+	}
+
+	suggestions := []string{}
+	for s := range suggestionsMap {
+		suggestions = append(suggestions, s)
+	}
+	sort.Strings(suggestions) // Sort suggestions alphabetically
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(suggestions)
+}
+
 func main() {
 	// Initialize templates
 	if err := initTemplates(); err != nil {
@@ -537,6 +609,7 @@ func main() {
 		r.Get("/fish/{species}", apiFishDetail)
 		r.Get("/search", apiSearch) // Deprecated, but still works by calling apiAllFish
 		r.Get("/ask-ai", apiAskAI)
+		r.Get("/suggestions", apiSuggestions) // New endpoint for search suggestions
 	})
 
 	// Serve static files

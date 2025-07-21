@@ -258,7 +258,7 @@
                             const card = `
                                 <div class="card-hover bg-white p-4 rounded-2xl border border-blue-50 flex flex-col">
                                     <a href="/fish/${fish.species}" class="block image-container mb-4">
-                                        <img src="/static/${fish.image}" alt="${fish.common_name}" class="fish-image">
+                                        <img src="/static/${fish.image}" alt="${fish.common_name}" class="fish-image" loading="lazy">
                                         <span class="order-badge">${fish.order}</span>
                                     </a>
                                     <div class="flex-grow">

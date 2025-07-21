@@ -190,10 +190,10 @@
       <!-- Fish Image -->
       <div class="md:col-span-1">
         <div class="info-card">
-          <img src="/static/{{.Fish.Image}}" alt="{{.Fish.CommonName}}" class="w-full object-contain rounded-t-lg">
+          <img src="/static/{{.Fish.Image}}" alt="{{.Fish.CommonName}}" class="w-full object-contain rounded-t-lg" loading="lazy">
           <div class="p-6">
             <div class="flex justify-between items-center mb-4">
-              <h3 class="text-lg font-semibold text-gray-900">Taxonomy</h3>
+              <h3 class="text-lg font-semibold text-gray-900">Taxonomy & Basic Info</h3>
               <i class="fas fa-dna text-blue-500"></i>
             </div>
             <div class="space-y-3">
@@ -213,6 +213,24 @@
                 <span class="text-gray-600">Species:</span>
                 <span class="font-medium italic">{{.Fish.Species}}</span>
               </div>
+              {{if .Fish.MinSizeCm}}
+              <div class="flex justify-between">
+                <span class="text-gray-600">Size:</span>
+                <span class="font-medium">{{printf "%.0f" .Fish.MinSizeCm}} - {{printf "%.0f" .Fish.MaxSizeCm}} cm</span>
+              </div>
+              {{end}}
+              {{if .Fish.Diet}}
+              <div class="flex justify-between">
+                <span class="text-gray-600">Diet:</span>
+                <span class="font-medium">{{.Fish.Diet}}</span>
+              </div>
+              {{end}}
+              {{if .Fish.ConservationStatus}}
+              <div class="flex justify-between">
+                <span class="text-gray-600">Conservation:</span>
+                <span class="font-medium">{{.Fish.ConservationStatus}}</span>
+              </div>
+              {{end}}
             </div>
           </div>
         </div>
@@ -327,8 +345,30 @@
       </div>
     </div>
     
+    <!-- Related Species -->
+    {{if .RelatedSpecies}}
+    <div class="mt-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+        <i class="fas fa-link text-blue-500 mr-2"></i>Related Species
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {{range .RelatedSpecies}}
+        <a href="/fish/{{.Species}}" class="card-hover bg-white rounded-2xl overflow-hidden shadow-md block">
+          <div class="h-32 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
+            <img src="/static/{{.Image}}" alt="{{.CommonName}}" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="p-3">
+            <div class="font-bold text-gray-900 text-sm">{{.CommonName}}</div>
+            <div class="text-xs text-gray-500 italic">{{.Species}}</div>
+          </div>
+        </a>
+        {{end}}
+      </div>
+    </div>
+    {{end}}
+
     <!-- Navigation -->
-    <div class="flex justify-between items-center py-6 border-t border-gray-200">
+    <div class="flex justify-between items-center py-6 border-t border-gray-200 mt-8">
       {{if gt .Index 0}}
       <a href="/fish/{{(index .AllFish (sub .Index 1)).Species}}" class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 font-medium px-4 py-3 bg-white rounded-lg shadow hover:shadow-md transition-all">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
