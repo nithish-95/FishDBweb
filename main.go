@@ -118,17 +118,17 @@ func home(w http.ResponseWriter, r *http.Request) {
 	}
 
 	data := struct {
-		Title         string
-		Publisher     string
-		FeaturedFish  []Fish
+		Title        string
+		Publisher    string
+		FeaturedFish []Fish
 	}{
-		Title:         fishDB.Title,
-		Publisher:     fishDB.PublicationDetails.Publisher,
-		FeaturedFish:  shuffledFishes[:featuredCount],
+		Title:        fishDB.Title,
+		Publisher:    fishDB.PublicationDetails.Publisher,
+		FeaturedFish: shuffledFishes[:featuredCount],
 	}
 
 	w.Header().Set("Content-Type", "text/html")
-	if err := templates.ExecuteTemplate(w, "home_new.html", data); err != nil {
+	if err := templates.ExecuteTemplate(w, "home.html", data); err != nil {
 		log.Printf("Error executing template: %v", err)
 		http.Error(w, "Internal server error", http.StatusInternalServerError)
 	}
@@ -156,7 +156,7 @@ func listFish(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "text/html")
-	if err := templates.ExecuteTemplate(w, "list_new.html", data); err != nil {
+	if err := templates.ExecuteTemplate(w, "list.html", data); err != nil {
 		log.Printf("Error executing template: %v", err)
 		http.Error(w, "Internal server error", http.StatusInternalServerError)
 	}
@@ -208,7 +208,7 @@ func fishDetail(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "text/html")
-	if err := templates.ExecuteTemplate(w, "detail_new.html", data); err != nil {
+	if err := templates.ExecuteTemplate(w, "detail.html", data); err != nil {
 		log.Printf("Error executing template: %v", err)
 		http.Error(w, "Internal server error", http.StatusInternalServerError)
 	}
@@ -306,7 +306,6 @@ func apiFishBySpecies(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(results)
 }
 
-
 // API endpoint: Get specific fish by species
 func apiFishDetail(w http.ResponseWriter, r *http.Request) {
 	speciesParam := chi.URLParam(r, "species")
@@ -343,9 +342,9 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Create the chat request
-	ollamaReq := OllamaChatRequest{
-		Model: "tinyllama:latest",
+	// Create the chat request for Kimi k2
+	kimiReq := OllamaChatRequest{ // Reusing OllamaChatRequest struct as it's compatible
+		Model: "kimi-k2", // Changed to Kimi k2 model
 		Messages: []ChatMessage{
 			{
 				Role:    "user",
@@ -358,9 +357,9 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 		},
 	}
 
-	jsonReq, err := json.Marshal(ollamaReq)
+	jsonReq, err := json.Marshal(kimiReq)
 	if err != nil {
-		log.Printf("Error marshalling Ollama request: %v", err)
+		log.Printf("Error marshalling Kimi k2 request: %v", err)
 		http.Error(w, "Internal server error", http.StatusInternalServerError)
 		return
 	}
@@ -368,7 +367,7 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 	// Create HTTP request
 	req, err := http.NewRequest(
 		"POST",
-		"http://ec2-3-239-52-22.compute-1.amazonaws.com:8080/v1/chat/completions",
+		"YOUR_KIMI_K2_API_ENDPOINT_HERE", // Placeholder for Kimi k2 API endpoint
 		bytes.NewBuffer(jsonReq),
 	)
 	if err != nil {
@@ -378,13 +377,13 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 	}
 
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", "Bearer demo")
+	req.Header.Set("Authorization", "Bearer YOUR_KIMI_K2_API_KEY_HERE") // Placeholder for Kimi k2 API key
 
 	// Make HTTP call
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
-		log.Printf("Error calling Ollama API: %v", err)
+		log.Printf("Error calling Kimi k2 API: %v", err)
 		http.Error(w, "Failed to get AI response", http.StatusInternalServerError)
 		return
 	}
@@ -392,22 +391,22 @@ func apiAskAI(w http.ResponseWriter, r *http.Request) {
 
 	if resp.StatusCode != http.StatusOK {
 		body, _ := io.ReadAll(resp.Body)
-		log.Printf("Ollama API returned non-OK status: %d, body: %s", resp.StatusCode, string(body))
-		http.Error(w, "Ollama API error", http.StatusInternalServerError)
+		log.Printf("Kimi k2 API returned non-OK status: %d, body: %s", resp.StatusCode, string(body))
+		http.Error(w, "Kimi k2 API error", http.StatusInternalServerError)
 		return
 	}
 
 	// Parse the response
-	var ollamaResp OllamaChatResponse
-	if err := json.NewDecoder(resp.Body).Decode(&ollamaResp); err != nil {
-		log.Printf("Error decoding Ollama response: %v", err)
+	var kimiResp OllamaChatResponse // Reusing OllamaChatResponse struct
+	if err := json.NewDecoder(resp.Body).Decode(&kimiResp); err != nil {
+		log.Printf("Error decoding Kimi k2 response: %v", err)
 		http.Error(w, "Internal server error", http.StatusInternalServerError)
 		return
 	}
 
 	// Return the AI response
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(map[string]string{"ai_response": ollamaResp.Message.Content})
+	json.NewEncoder(w).Encode(map[string]string{"ai_response": kimiResp.Message.Content})
 }
 
 func main() {
