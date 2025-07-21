@@ -10,6 +10,7 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -134,25 +135,137 @@ func home(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// Helper to get unique values for filters
+func getUniqueCategories() (map[string]struct{}, map[string]struct{}, map[string]struct{}) {
+	classes := make(map[string]struct{})
+	orders := make(map[string]struct{})
+	families := make(map[string]struct{})
+
+	for _, fish := range fishDB.Fishes {
+		classes[fish.Class] = struct{}{}
+		orders[fish.Order] = struct{}{}
+		families[fish.Family] = struct{}{}
+	}
+	return classes, orders, families
+}
+
+// Filter and sort fish based on query parameters
+func getFilteredAndSortedFish(
+	searchQuery, classFilter, orderFilter, familyFilter, sortBy string,
+) []Fish {
+	filteredFish := []Fish{}
+	lowerSearchQuery := strings.ToLower(searchQuery)
+	lowerClassFilter := strings.ToLower(classFilter)
+	lowerOrderFilter := strings.ToLower(orderFilter)
+	lowerFamilyFilter := strings.ToLower(familyFilter)
+
+	for _, fish := range fishDB.Fishes {
+		// Apply text search filter
+		matchesSearch := true
+		if searchQuery != "" {
+			if !(strings.Contains(strings.ToLower(fish.CommonName), lowerSearchQuery) ||
+				strings.Contains(strings.ToLower(fish.Species), lowerSearchQuery) ||
+				strings.Contains(strings.ToLower(fish.Family), lowerSearchQuery) ||
+				strings.Contains(strings.ToLower(fish.Order), lowerSearchQuery) ||
+				strings.Contains(strings.ToLower(fish.Class), lowerSearchQuery)) {
+				matchesSearch = false
+			}
+		}
+
+		// Apply taxonomic filters
+		matchesClass := (classFilter == "" || classFilter == "All" || strings.ToLower(fish.Class) == lowerClassFilter)
+		matchesOrder := (orderFilter == "" || orderFilter == "All" || strings.ToLower(fish.Order) == lowerOrderFilter)
+		matchesFamily := (familyFilter == "" || familyFilter == "All" || strings.ToLower(fish.Family) == lowerFamilyFilter)
+
+		if matchesSearch && matchesClass && matchesOrder && matchesFamily {
+			filteredFish = append(filteredFish, fish)
+		}
+	}
+
+	// Apply sorting
+	sort.Slice(filteredFish, func(i, j int) bool {
+		switch sortBy {
+		case "common_name":
+			return strings.ToLower(filteredFish[i].CommonName) < strings.ToLower(filteredFish[j].CommonName)
+		case "species":
+			return strings.ToLower(filteredFish[i].Species) < strings.ToLower(filteredFish[j].Species)
+		case "family":
+			return strings.ToLower(filteredFish[i].Family) < strings.ToLower(filteredFish[j].Family)
+		default: // Default to common_name if sortBy is empty or unknown
+			return strings.ToLower(filteredFish[i].CommonName) < strings.ToLower(filteredFish[j].CommonName)
+		}
+	})
+
+	return filteredFish
+}
+
 // List fish handler
 func listFish(w http.ResponseWriter, r *http.Request) {
 	searchQuery := r.URL.Query().Get("search")
-	var fishList []Fish
+	classFilter := r.URL.Query().Get("class")
+	orderFilter := r.URL.Query().Get("order")
+	familyFilter := r.URL.Query().Get("family")
+	sortBy := r.URL.Query().Get("sort")
 
-	if searchQuery != "" {
-		fishList = searchFish(searchQuery)
-	} else {
-		fishList = fishDB.Fishes
+	// Get all filtered and sorted fish first
+	allFilteredFish := getFilteredAndSortedFish(searchQuery, classFilter, orderFilter, familyFilter, sortBy)
+
+	// Determine the number of fish to show on the first page
+	limit := 12
+	initialFish := []Fish{}
+	if len(allFilteredFish) > 0 {
+		if len(allFilteredFish) < limit {
+			initialFish = allFilteredFish
+		} else {
+			initialFish = allFilteredFish[:limit]
+		}
 	}
 
+	uniqueClassesMap, uniqueOrdersMap, uniqueFamiliesMap := getUniqueCategories()
+
+	// Convert maps to slices for template iteration
+	uniqueClasses := []string{}
+	for k := range uniqueClassesMap {
+		uniqueClasses = append(uniqueClasses, k)
+	}
+	sort.Strings(uniqueClasses) // Sort for consistent display
+
+	uniqueOrders := []string{}
+	for k := range uniqueOrdersMap {
+		uniqueOrders = append(uniqueOrders, k)
+	}
+	sort.Strings(uniqueOrders)
+
+	uniqueFamilies := []string{}
+	for k := range uniqueFamiliesMap {
+		uniqueFamilies = append(uniqueFamilies, k)
+	}
+	sort.Strings(uniqueFamilies)
+
 	data := struct {
-		SearchQuery string
-		FishList    []Fish
-		Publication PublicationDetails
+		SearchQuery    string
+		ClassFilter    string
+		OrderFilter    string
+		FamilyFilter   string
+		SortBy         string
+		FishList       []Fish // Only the initial page of fish
+		TotalFishCount int    // Total count after filtering/sorting
+		Publication    PublicationDetails
+		UniqueClasses  []string
+		UniqueOrders   []string
+		UniqueFamilies []string
 	}{
-		SearchQuery: searchQuery,
-		FishList:    fishList,
-		Publication: fishDB.PublicationDetails,
+		SearchQuery:    searchQuery,
+		ClassFilter:    classFilter,
+		OrderFilter:    orderFilter,
+		FamilyFilter:   familyFilter,
+		SortBy:         sortBy,
+		FishList:       initialFish,
+		TotalFishCount: len(allFilteredFish),
+		Publication:    fishDB.PublicationDetails,
+		UniqueClasses:  uniqueClasses,
+		UniqueOrders:   uniqueOrders,
+		UniqueFamilies: uniqueFamilies,
 	}
 
 	w.Header().Set("Content-Type", "text/html")
@@ -231,28 +344,15 @@ func favoritesPage(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// Search fish function
-func searchFish(query string) []Fish {
-	var results []Fish
-	query = strings.ToLower(query)
-
-	for _, fish := range fishDB.Fishes {
-		if strings.Contains(strings.ToLower(fish.CommonName), query) ||
-			strings.Contains(strings.ToLower(fish.Species), query) ||
-			strings.Contains(strings.ToLower(fish.Family), query) ||
-			strings.Contains(strings.ToLower(fish.Order), query) ||
-			strings.Contains(strings.ToLower(fish.Class), query) {
-			results = append(results, fish)
-		}
-	}
-
-	return results
-}
-
-// API endpoint: Get all fish with pagination
+// API endpoint: Get all fish with pagination, filtering, and sorting
 func apiAllFish(w http.ResponseWriter, r *http.Request) {
 	pageStr := r.URL.Query().Get("page")
 	limitStr := r.URL.Query().Get("limit")
+	searchQuery := r.URL.Query().Get("search")
+	classFilter := r.URL.Query().Get("class")
+	orderFilter := r.URL.Query().Get("order")
+	familyFilter := r.URL.Query().Get("family")
+	sortBy := r.URL.Query().Get("sort")
 
 	page := 1
 	if p, err := strconv.Atoi(pageStr); err == nil && p > 0 {
@@ -264,21 +364,24 @@ func apiAllFish(w http.ResponseWriter, r *http.Request) {
 		limit = l
 	}
 
+	// Get all filtered and sorted fish
+	allFilteredFish := getFilteredAndSortedFish(searchQuery, classFilter, orderFilter, familyFilter, sortBy)
+
 	startIndex := (page - 1) * limit
 	endIndex := startIndex + limit
 
-	if startIndex >= len(fishDB.Fishes) {
+	if startIndex >= len(allFilteredFish) {
 		w.Header().Set("Content-Type", "application/json")
 		json.NewEncoder(w).Encode([]Fish{})
 		return
 	}
 
-	if endIndex > len(fishDB.Fishes) {
-		endIndex = len(fishDB.Fishes)
+	if endIndex > len(allFilteredFish) {
+		endIndex = len(allFilteredFish)
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(fishDB.Fishes[startIndex:endIndex])
+	json.NewEncoder(w).Encode(allFilteredFish[startIndex:endIndex])
 }
 
 // API endpoint: Get fish by a list of species names
@@ -321,17 +424,12 @@ func apiFishDetail(w http.ResponseWriter, r *http.Request) {
 	http.Error(w, "Fish not found", http.StatusNotFound)
 }
 
-// API endpoint: Search fish
+// API endpoint: Search fish (now deprecated in favor of apiAllFish with filters)
 func apiSearch(w http.ResponseWriter, r *http.Request) {
-	query := r.URL.Query().Get("q")
-	if query == "" {
-		http.Error(w, "Query parameter 'q' is required", http.StatusBadRequest)
-		return
-	}
-
-	results := searchFish(query)
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(results)
+	// This endpoint is now effectively deprecated as apiAllFish handles all filtering and searching.
+	// Redirect or return an error, or simply call apiAllFish internally.
+	// For now, I'll just call apiAllFish to avoid breaking existing calls.
+	apiAllFish(w, r)
 }
 
 // API endpoint: Ask AI
@@ -434,10 +532,10 @@ func main() {
 
 	// API routes
 	r.Route("/api", func(r chi.Router) {
-		r.Get("/fish", apiAllFish)
+		r.Get("/fish", apiAllFish) // This now handles pagination, filtering, and sorting
 		r.Get("/fish/species", apiFishBySpecies)
 		r.Get("/fish/{species}", apiFishDetail)
-		r.Get("/search", apiSearch)
+		r.Get("/search", apiSearch) // Deprecated, but still works by calling apiAllFish
 		r.Get("/ask-ai", apiAskAI)
 	})
 

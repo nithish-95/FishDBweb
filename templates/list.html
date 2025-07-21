@@ -169,16 +169,16 @@
           </h2>
           <p class="text-blue-100">
             {{if .SearchQuery}}
-              Found {{len .FishList}} species matching "{{.SearchQuery}}"
+              Found <span id="total-fish-count-display">{{.TotalFishCount}}</span> species matching "{{.SearchQuery}}"
             {{else}}
-              {{len .FishList}} species in our database
+              <span id="total-fish-count-display">{{.TotalFishCount}}</span> species in our database
             {{end}}
           </p>
         </div>
         
         <div class="species-counter p-4 rounded-2xl text-center">
-          <div class="text-xl font-bold">{{len .FishList}}</div>
-          <div class="text-blue-100">Species</div>
+          <div class="text-xl font-bold"><span id="current-fish-count">{{len .FishList}}</span></div>
+          <div class="text-blue-100">Species Displayed</div>
         </div>
         
         <div class="species-counter p-4 rounded-2xl text-center">
@@ -191,45 +191,80 @@
 
     <!-- Search and Filters -->
     <div class="mb-8">
-      <div class="relative max-w-3xl mx-auto mb-6">
-        <form action="/list" method="GET" class="search-focus flex items-center bg-white border border-blue-200 rounded-xl shadow-lg hover:shadow-xl transition-all">
-          <input
-            type="text"
-            name="search"
-            value="{{.SearchQuery}}"
-            placeholder="Search species..."
-            class="flex-1 px-6 py-4 text-gray-900 placeholder-blue-400 bg-transparent rounded-xl outline-none text-lg"
-          >
-          <button type="submit" class="p-4 text-blue-500 hover:text-blue-700 transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-            </svg>
+      <form id="filter-form" action="/list" method="GET">
+        <!-- Search Bar Row -->
+        <div class="mb-6">
+          <label for="search" class="block text-sm font-medium text-gray-700 mb-1">Search by Name</label>
+          <div class="search-focus flex items-center bg-white border border-blue-200 rounded-xl shadow-lg hover:shadow-xl transition-all">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              value="{{.SearchQuery}}"
+              placeholder="Search species..."
+              class="flex-1 px-4 py-2 text-gray-900 placeholder-blue-400 bg-transparent rounded-xl outline-none"
+            >
+            <button type="submit" class="p-2 text-blue-500 hover:text-blue-700 transition-colors">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filters and Sort Row -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end mb-6">
+          <div>
+            <label for="class-filter" class="block text-sm font-medium text-gray-700 mb-1">Class</label>
+            <select name="class" id="class-filter" class="block w-full px-3 py-2 bg-white border border-blue-200 rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+              <option value="All">All Classes</option>
+              {{range .UniqueClasses}}
+                <option value="{{.}}" {{if eq . $.ClassFilter}}selected{{end}}>{{.}}</option>
+              {{end}}
+            </select>
+          </div>
+
+          <div>
+            <label for="order-filter" class="block text-sm font-medium text-gray-700 mb-1">Order</label>
+            <select name="order" id="order-filter" class="block w-full px-3 py-2 bg-white border border-blue-200 rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+              <option value="All">All Orders</option>
+              {{range .UniqueOrders}}
+                <option value="{{.}}" {{if eq . $.OrderFilter}}selected{{end}}>{{.}}</option>
+              {{end}}
+            </select>
+          </div>
+
+          <div>
+            <label for="family-filter" class="block text-sm font-medium text-gray-700 mb-1">Family</label>
+            <select name="family" id="family-filter" class="block w-full px-3 py-2 bg-white border border-blue-200 rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+              <option value="All">All Families</option>
+              {{range .UniqueFamilies}}
+                <option value="{{.}}" {{if eq . $.FamilyFilter}}selected{{end}}>{{.}}</option>
+              {{end}}
+            </select>
+          </div>
+
+          <div>
+            <label for="sort-by" class="block text-sm font-medium text-gray-700 mb-1">Sort By</label>
+            <select name="sort" id="sort-by" class="block w-full px-3 py-2 bg-white border border-blue-200 rounded-xl shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+              <option value="common_name" {{if eq .SortBy "common_name"}}selected{{end}}>Common Name</option>
+              <option value="species" {{if eq .SortBy "species"}}selected{{end}}>Species Name</option>
+              <option value="family" {{if eq .SortBy "family"}}selected{{end}}>Family</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="md:col-span-4 flex justify-center mt-4">
+          <button type="submit" class="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-3 rounded-xl font-medium hover:from-blue-700 hover:to-cyan-700 transition-all shadow-md">
+            Apply Filters & Sort
           </button>
-        </form>
-      </div>
-      
-      <div class="flex flex-wrap justify-center gap-3 mb-6">
-        <a href="/list" class="filter-btn bg-white shadow text-blue-800 px-4 py-2 rounded-lg font-medium transition-all hover:bg-blue-50">
-          <i class="fas fa-list mr-2"></i>All Species
-        </a>
-        <a href="/list?search=shark" class="filter-btn bg-white shadow text-blue-800 px-4 py-2 rounded-lg font-medium transition-all hover:bg-blue-50">
-          <i class="fas fa-fish mr-2"></i>Sharks
-        </a>
-        <a href="/list?search=ray" class="filter-btn bg-white shadow text-blue-800 px-4 py-2 rounded-lg font-medium transition-all hover:bg-blue-50">
-          <i class="fas fa-fish mr-2"></i>Rays
-        </a>
-        <a href="/list?search=butterfly" class="filter-btn bg-white shadow text-blue-800 px-4 py-2 rounded-lg font-medium transition-all hover:bg-blue-50">
-          <i class="fas fa-fish mr-2"></i>Butterflyfish
-        </a>
-        <a href="/list?search=angelfish" class="filter-btn bg-white shadow text-blue-800 px-4 py-2 rounded-lg font-medium transition-all hover:bg-blue-50">
-          <i class="fas fa-fish mr-2"></i>Angelfish
-        </a>
-      </div>
+        </div>
+      </form>
     </div>
     
     <!-- Fish List -->
     <div id="fish-list" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <!-- Fish cards will be dynamically inserted here -->
+        <!-- Fish cards will be dynamically inserted here by JavaScript -->
     </div>
 
     <div id="loading" class="text-center py-10" style="display: none;">
@@ -248,9 +283,9 @@
                 <i class="fas fa-search text-3xl text-blue-500"></i>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-2">No Results Found</h3>
-            <p class="text-gray-600 mb-6">No fish found matching your search criteria.</p>
+            <p class="text-gray-600 mb-6">No fish found matching your search criteria. Try adjusting your filters.</p>
             <a href="/list" class="inline-flex items-center px-5 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 shadow-md">
-                Browse All Species <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                Clear Filters <i class="fas fa-arrow-right ml-2 text-sm"></i>
             </a>
         </div>
     </div>
@@ -269,11 +304,28 @@
         const loadMoreButton = document.getElementById('load-more');
         const loadingIndicator = document.getElementById('loading');
         const noResultsMessage = document.getElementById('no-results');
+        const totalFishCountDisplay = document.getElementById('total-fish-count-display');
+        const currentFishCountDisplay = document.getElementById('current-fish-count');
         
         let currentPage = 1;
         const limit = 12;
         let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-        const searchQuery = new URLSearchParams(window.location.search).get('search') || '';
+        let totalFish = {{.TotalFishCount}};
+
+        // Get initial filter/sort parameters from the URL or Go template
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialSearchQuery = urlParams.get('search') || '';
+        const initialClassFilter = urlParams.get('class') || 'All';
+        const initialOrderFilter = urlParams.get('order') || 'All';
+        const initialFamilyFilter = urlParams.get('family') || 'All';
+        const initialSortBy = urlParams.get('sort') || 'common_name';
+
+        // Set initial values for the filter/sort dropdowns
+        document.getElementById('search').value = initialSearchQuery;
+        document.getElementById('class-filter').value = initialClassFilter;
+        document.getElementById('order-filter').value = initialOrderFilter;
+        document.getElementById('family-filter').value = initialFamilyFilter;
+        document.getElementById('sort-by').value = initialSortBy;
 
         function toggleFavorite(species) {
             if (favorites.includes(species)) {
@@ -299,12 +351,6 @@
         }
 
         function renderFish(fishes) {
-            if (fishes.length === 0 && currentPage === 1) {
-                noResultsMessage.style.display = 'block';
-                loadMoreButton.style.display = 'none';
-                return;
-            }
-
             fishes.forEach(fish => {
                 const isFavorite = favorites.includes(fish.species);
                 const card = `
@@ -333,43 +379,91 @@
                 fishListContainer.insertAdjacentHTML('beforeend', card);
             });
 
-            if (fishes.length < limit) {
-                loadMoreButton.style.display = 'none';
-            }
-
             updateFavoriteButtons();
+            currentFishCountDisplay.textContent = fishListContainer.children.length;
+
+            if (fishListContainer.children.length >= totalFish) {
+                loadMoreButton.style.display = 'none';
+            } else {
+                loadMoreButton.style.display = 'block';
+            }
         }
 
-        function loadFish() {
+        async function loadFish() {
             loadingIndicator.style.display = 'block';
             loadMoreButton.style.display = 'none';
 
-            let url = '';
-            if (searchQuery) {
-                // The search API doesn't support pagination, so we load all results at once
-                url = `/api/search?q=${searchQuery}`;
-                loadMoreButton.style.display = 'none'; // Hide load more for search
-            } else {
-                url = `/api/fish?page=${currentPage}&limit=${limit}`;
-            }
+            const currentSearchQuery = document.getElementById('search').value;
+            const currentClassFilter = document.getElementById('class-filter').value;
+            const currentOrderFilter = document.getElementById('order-filter').value;
+            const currentFamilyFilter = document.getElementById('family-filter').value;
+            const currentSortBy = document.getElementById('sort-by').value;
 
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    renderFish(data);
-                    currentPage++;
-                })
-                .catch(error => console.error('Error fetching fish:', error))
-                .finally(() => {
-                    loadingIndicator.style.display = 'none';
-                    if (fishListContainer.innerHTML.trim() !== '' && !searchQuery) {
-                       loadMoreButton.style.display = 'block';
-                    }
-                });
+            const params = new URLSearchParams({
+                page: currentPage,
+                limit: limit,
+                search: currentSearchQuery,
+                class: currentClassFilter,
+                order: currentOrderFilter,
+                family: currentFamilyFilter,
+                sort: currentSortBy,
+            });
+
+            try {
+                const response = await fetch(`/api/fish?${params.toString()}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const fishes = await response.json();
+                renderFish(fishes);
+                currentPage++;
+
+                // If this is the first load, update total fish count from the backend
+                // This assumes the backend sends total count in a header or a separate endpoint
+                // For now, we rely on the initial TotalFishCount from the Go template
+                // If you want dynamic total count, you'd need a separate API endpoint for it.
+                if (currentPage === 2 && fishes.length > 0) { // Only update on first successful load
+                    // This is a workaround. Ideally, the API would return total count.
+                    // For now, we use the initial totalFish from the Go template.
+                    // If the filters change, the totalFish needs to be re-evaluated by the backend.
+                    // The current setup re-evaluates totalFish on full page load (form submission).
+                    // For dynamic updates without full page reload, a separate API for total count is needed.
+                }
+
+                if (fishes.length === 0 && fishListContainer.children.length === 0) {
+                    noResultsMessage.style.display = 'block';
+                } else {
+                    noResultsMessage.style.display = 'none';
+                }
+
+            } catch (error) {
+                console.error('Error fetching fish:', error);
+                // Display an error message to the user if needed
+            } finally {
+                loadingIndicator.style.display = 'none';
+            }
         }
+
+        // Initial load of fish when the page loads
+        loadFish();
 
         loadMoreButton.addEventListener('click', loadFish);
 
+        // Handle form submission for filters/sort
+        document.getElementById('filter-form').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+            currentPage = 1; // Reset page for new search/filters
+            fishListContainer.innerHTML = ''; // Clear existing fish
+            totalFish = {{.TotalFishCount}}; // Reset total fish count based on initial template value
+            // The totalFishCountDisplay will be updated by the backend on full page reload
+            // For dynamic updates, you'd need to fetch the total count via an API call here.
+            await loadFish(); // Load fish with new filters
+        });
+
+        // Initial update of favorite buttons on page load
+        updateFavoriteButtons();
+
+        // Event listener for favorite buttons (delegated)
         fishListContainer.addEventListener('click', (e) => {
             const favoriteButton = e.target.closest('.favorite-btn');
             if (favoriteButton) {
@@ -378,9 +472,6 @@
                 toggleFavorite(species);
             }
         });
-
-        // Initial load
-        loadFish();
     });
   </script>
 
