@@ -1,4 +1,4 @@
-module fishdb
+module github.com/nithish-95/ShoalsofSapphire
 
 go 1.22.5
 
