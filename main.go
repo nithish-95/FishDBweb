@@ -7,6 +7,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+	"github.com/joho/godotenv"
 
 	"github.com/nithish-95/ShoalsofSapphire/internal/data"
 	"github.com/nithish-95/ShoalsofSapphire/internal/handlers"
@@ -14,6 +15,11 @@ import (
 )
 
 func main() {
+	// Load environment variables from .env file
+	if err := godotenv.Load(); err != nil {
+		log.Printf("Error loading .env file: %v", err)
+	}
+
 	// Initialize templates
 	if err := templates.InitTemplates(); err != nil {
 		log.Fatalf("Error initializing templates: %v", err)

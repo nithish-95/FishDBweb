@@ -49,12 +49,20 @@ type ModelOptions struct {
 	Temperature float32 `json:"temperature"`
 }
 
-type OllamaChatResponse struct {
+type KimiChatResponse struct {
+	ID        string `json:"id"`
+	Object    string `json:"object"`
+	Created   int64  `json:"created"`
 	Model     string `json:"model"`
-	CreatedAt string `json:"created_at"`
-	Message   struct {
-		Role    string `json:"role"`
-		Content string `json:"content"`
-	} `json:"message"`
-	Done bool `json:"done"`
+	Choices   []struct {
+		Index        int         `json:"index"`
+		Message      ChatMessage `json:"message"`
+		FinishReason string      `json:"finish_reason"`
+	} `json:"choices"`
+	Usage struct {
+		PromptTokens     int `json:"prompt_tokens"`
+		CompletionTokens int `json:"completion_tokens"`
+		TotalTokens      int `json:"total_tokens"`
+		CachedTokens     int `json:"cached_tokens"`
+	} `json:"usage"`
 }

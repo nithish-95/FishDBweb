@@ -11,7 +11,10 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
+
+	"os"
 
 	"github.com/go-chi/chi/v5"
 
@@ -23,6 +26,8 @@ import (
 type Handlers struct {
 	FishDB    *models.FishDatabase
 	Templates *template.Template
+	AICache   map[string]string
+	CacheMutex sync.Mutex
 }
 
 // NewHandlers creates a new Handlers instance
@@ -30,6 +35,8 @@ func NewHandlers(fishDB *models.FishDatabase, tmpl *template.Template) *Handlers
 	return &Handlers{
 		FishDB:    fishDB,
 		Templates: tmpl,
+		AICache:   make(map[string]string),
+		CacheMutex: sync.Mutex{},
 	}
 }
 
@@ -335,7 +342,7 @@ func (h *Handlers) APIAskAI(w http.ResponseWriter, r *http.Request) {
 
 	// Create the chat request for Kimi k2
 	kimiReq := models.OllamaChatRequest{ // Reusing OllamaChatRequest struct as it's compatible
-		Model: "kimi-k2", // Changed to Kimi k2 model
+		Model: "kimi-k2-0711-preview", // Changed to Kimi k2 model
 		Messages: []models.ChatMessage{
 			{
 				Role:    "user",
@@ -348,6 +355,17 @@ func (h *Handlers) APIAskAI(w http.ResponseWriter, r *http.Request) {
 		},
 	}
 
+	// Check cache first
+	h.CacheMutex.Lock()
+	if cachedResponse, found := h.AICache[query]; found {
+		h.CacheMutex.Unlock()
+		log.Printf("Returning cached AI response for query: %s", query)
+		w.Header().Set("Content-Type", "application/json")
+		json.NewEncoder(w).Encode(map[string]string{"ai_response": cachedResponse})
+		return
+	}
+	h.CacheMutex.Unlock()
+
 	jsonReq, err := json.Marshal(kimiReq)
 	if err != nil {
 		log.Printf("Error marshalling Kimi k2 request: %v", err)
@@ -358,7 +376,7 @@ func (h *Handlers) APIAskAI(w http.ResponseWriter, r *http.Request) {
 	// Create HTTP request
 	req, err := http.NewRequest(
 		"POST",
-		"YOUR_KIMI_K2_API_ENDPOINT_HERE", // Placeholder for Kimi k2 API endpoint
+		os.Getenv("KIMI_K2_URL"),
 		bytes.NewBuffer(jsonReq),
 	)
 	if err != nil {
@@ -368,7 +386,7 @@ func (h *Handlers) APIAskAI(w http.ResponseWriter, r *http.Request) {
 	}
 
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", "Bearer YOUR_KIMI_K2_API_KEY_HERE") // Placeholder for Kimi k2 API key
+	req.Header.Set("Authorization", "Bearer "+os.Getenv("KIMI_K2_API"))
 
 	// Make HTTP call
 	client := &http.Client{}
@@ -387,17 +405,40 @@ func (h *Handlers) APIAskAI(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		log.Printf("Error reading Kimi k2 response body: %v", err)
+		http.Error(w, "Internal server error", http.StatusInternalServerError)
+		return
+	}
+	log.Printf("Kimi k2 API raw response body: %s", string(body))
+
 	// Parse the response
-	var kimiResp models.OllamaChatResponse // Reusing OllamaChatResponse struct
-	if err := json.NewDecoder(resp.Body).Decode(&kimiResp); err != nil {
+	var kimiResp models.KimiChatResponse
+	if err := json.Unmarshal(body, &kimiResp); err != nil {
 		log.Printf("Error decoding Kimi k2 response: %v", err)
 		http.Error(w, "Internal server error", http.StatusInternalServerError)
 		return
 	}
 
+	if len(kimiResp.Choices) == 0 || kimiResp.Choices[0].Message.Content == "" {
+		log.Printf("Kimi k2 API response content is empty or malformed: %+v", kimiResp)
+		http.Error(w, "Empty or malformed AI response", http.StatusInternalServerError)
+		return
+	}
+
+	aiResponseContent := kimiResp.Choices[0].Message.Content
+
+	// Store in cache
+	h.CacheMutex.Lock()
+	h.AICache[query] = aiResponseContent
+	h.CacheMutex.Unlock()
+
+	log.Printf("Kimi k2 AI response content: %s", aiResponseContent)
+
 	// Return the AI response
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(map[string]string{"ai_response": kimiResp.Message.Content})
+	json.NewEncoder(w).Encode(map[string]string{"ai_response": aiResponseContent})
 }
 
 // API endpoint for search suggestions

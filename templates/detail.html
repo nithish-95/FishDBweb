@@ -487,7 +487,8 @@
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        aiResponseText.innerText = data.ai_response || "No response from AI.";
+        const formattedResponse = formatMarkdownToHtml(data.ai_response || "No response from AI.");
+        aiResponseText.innerHTML = formattedResponse;
       } catch (error) {
         console.error("Error fetching AI response:", error);
         aiResponseText.innerText = "Failed to get AI response. Please check your Ollama setup and network connection.";
@@ -615,6 +616,15 @@
 
     // Initial button state
     updateFavoriteButton();
+
+    function formatMarkdownToHtml(markdown) {
+      let html = markdown;
+      // Convert bold text: **text** to <strong>text</strong>
+      html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      // Convert headings: ### Heading to <h3>Heading</h3>
+      html = html.replace(/^###\s*(.*)$/gm, '<h3>$1</h3>');
+      return html;
+    }
   </script>
 </body>
 </html>
